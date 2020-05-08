@@ -5,6 +5,7 @@
         "ostream": "cpp",
         "string": "cpp",
         "iostream": "cpp",
-        "iomanip": "cpp"
+        "iomanip": "cpp",
+        "algorithm": "cpp"
     }
 }
