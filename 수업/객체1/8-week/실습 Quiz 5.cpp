@@ -5,19 +5,35 @@ using namespace std;
 
 
 int main(){
-    int char1[10] = {5, 10, 36, 42, 49 ,53, 62, 71, 78, 82};
+    int arr[10] = {5, 10, 36, 42, 49 ,53, 62, 71, 78, 82};
 
-    sort(char1, char1 + 10);
-    cout <<"char1 is ";
-    
-    for(int i = 0; i < 10; i++){
-        cout << char1[i] << " ";
-    }cout << endl;
+    int result[11];
 
+    // generate a random element
     srand(time(0));
-    int num = rand() % 101;
-    cout << "rand number is : " << num << endl;
+    int randomness = rand() % 101;
+
+    int index = -1;
+    for(int i = 0; i < 10; i++){
+        if(randomness <= arr[i]){
+            index = i;
+            break;
+        }
+    }
+    if(index == -1){
+        index = 10;
+    }
+
+    for(int i = 0; i < index; i++){
+        result[i] = arr[i];
+    }
+    result[index] = randomness;
+    for(int i = index + 1; i < 11; i++){
+        result[i] = arr[i - 1];
+    }
     
-    sort(char1, char1 + 11);
-    cout << "new char is ";
+    cout << "char1 is 5, 10, 36, 42, 49, 53, 62, 71, 79, 82" << endl;
+    cout << "random num is : " << randomness << endl;
+    cout << "new char array is : " << result << endl;
+    // ? error... check later.......
 }

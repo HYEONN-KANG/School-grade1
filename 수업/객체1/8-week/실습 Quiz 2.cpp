@@ -12,20 +12,42 @@ int main(){
 
     
     for(int i = 0; i < 5; i++){
-        arr1[i] = rand() % 10;
-        arr2[i] = rand() % 10;
+        arr1[i] = '0' + rand() % 10; // ASCII 코드에 '0'과 48은 같은 의미.
+        arr2[i] = '0' + rand() % 10;
     }
 
-
-    cout << "arr1 = " << arr1 << ", arr2 = " << arr2 << " 이며" << endl;
-    
-    int a = strcmp(arr1, arr2);
-
-    if(a < 0){
-        cout << "arr1은 arr2보다 큽니다." << endl;
-    }else if(a == 0){
-        cout << "arr1은 arr2와 같습니다." << endl;
-    }else{
-        cout << "arr2은 arr1보다 큽니다." << endl;
+    int compareResult = 0;
+    // if compareResult == -1, arr1 < arr2. Else if compareResult == 1, arr1 > arr2
+    for(int i = 0; i < 5; i++){
+        if(arr1[i] > arr2[i]){
+            compareResult = 1;
+            break;
+        }
+        else if(arr1[i] < arr2[i]){
+            compareResult = -1;
+            break;
+        }
     }
+
+    // print the two arrays
+    cout << "char1 = ";
+    for(int i = 0; i < 5; i++){
+        cout << arr1[i];
+    }
+    cout << ", char2 = ";
+    for(int i = 0; i < 5; i++){
+        cout << arr2[i];
+    }
+
+    if(compareResult == 0){
+        cout << ", char1 == char2" << endl;
+    }
+    else if(compareResult == -1){
+        cout << ", char1 < char2" << endl;
+    }
+    else if(compareResult == 1){
+        cout << ", char1 > char2" << endl;
+    }
+
+    return 0;
 }
