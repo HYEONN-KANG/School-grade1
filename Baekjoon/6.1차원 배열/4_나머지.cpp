@@ -18,20 +18,17 @@ int main(){
         namuji[i] = arr[i] % 42;
     }
 
-    // 나머지 배열 수 중 같은 값의 수를 세기
+    // 나머지 배열 수 중 서로 다른 값의 수를 세기
     int count = 0;
+    int sum = 0;
 
-    for(int i = 0; i < 10; i++){
-        int num = namuji[i];
-
-        for(int j = 0; j < 10; j++){
-            if(i != j && i < j){
-                if(num == namuji[j]){
-                    count++;
-                }
-            }
+    for(int j = 0; j <= 41; j++){
+        for(int i = 0; i < 10; i++){
+            if(namuji[i] - j == 0) count++;
         }
+        if(count != 0) sum++;
+        count = 0;
     }
 
-    cout << 10 - count << "\n";
+    cout << sum << "\n";
 }

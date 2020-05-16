@@ -15,7 +15,7 @@ XSS는 다양한 방법으로 공격이 가능하다.
 ```
 
 ```html
-<a href="javascript:alert('XSS)">XSS</a>
+<a href="javascript:alert('XSS')">XSS</a>
 ```
 
 ```html
@@ -237,9 +237,74 @@ X-XSS-Protection: 1; report=<reporting-uri>
 
 <h1>XSS 관련 문제</h1>
 
-1) xssgame 1,2번
-https://xss-game.appspot.com/
+<h2>1) xssgame 1,2
+https://xss-game.appspot.com/</h2>
 
+<h3>Level 1</h3>
 
-2) webhacking-kr old.23
-https://webhacking.kr/old.php
+![image](https://user-images.githubusercontent.com/62539341/82110432-84055380-9779-11ea-96ce-bd319ba726b4.png)
+
+![image](https://user-images.githubusercontent.com/62539341/82110472-caf34900-9779-11ea-9f34-6e9a05ae4315.png)
+
+Javascript로 alert 창을 띄우면 다음 단계로 넘어간다고 적혀있습니다.
+
+![image](https://user-images.githubusercontent.com/62539341/82110691-41dd1180-977b-11ea-99cd-7c6cd820ccae.png)
+
+제 타깃입니다. 일단 아무거나 입력해보았습니다.
+
+![image](https://user-images.githubusercontent.com/62539341/82110702-5e794980-977b-11ea-871a-24f60ea7193b.png)
+
+GET 방식으로 query 값이 들어가나봅니다.
+
+문제에서 alert를 띄워보라고 해서 맨 처음에 배운 기본적인 alert를 써서 GET 방식으로 보내봤더니
+
+![image](https://user-images.githubusercontent.com/62539341/82110741-92546f00-977b-11ea-89a3-6d9380fc85e8.png)
+
+아직 페이지 소스보기를 안해봤는데.. 문제가 풀렸습니다..!
+
+<h3>Level 2</h3>
+
+![image](https://user-images.githubusercontent.com/62539341/82110813-e8c1ad80-977b-11ea-882e-e76918f29bd7.png)
+
+이번 문제도... alert() 를 팝업하라는군요.
+
+![image](https://user-images.githubusercontent.com/62539341/82110843-068f1280-977c-11ea-8673-f2efa65dc1dd.png)
+
+이번 문제의 타깃입니다. 어떤 내용을 입력해서 포스트하는 웹 페이지 같습니다.
+
+이번엔 바로 프레임소스를 보도록 하겠습니다.
+
+![image](https://user-images.githubusercontent.com/62539341/82111065-296df680-977d-11ea-92e2-7419b4d795e6.png)
+
+POST 방식으로 입력받는군요..
+
+![image](https://user-images.githubusercontent.com/62539341/82111096-78b42700-977d-11ea-9be7-247534d77e31.png)
+
+아까처럼 입력하니 문제가 안풀립니다...
+
+다른 방법을 써야겠군요
+
+![image](https://user-images.githubusercontent.com/62539341/82111116-a305e480-977d-11ea-87e5-d41d70cd0a43.png)
+
+이번엔 이렇게 한번 입력해봤더니 
+
+![image](https://user-images.githubusercontent.com/62539341/82111124-b913a500-977d-11ea-9e3f-3ce7b1f00c85.png)
+
+성공입니다!!
+
+<h2>2) webhacking-kr old.23</h2>
+
+![image](https://user-images.githubusercontent.com/62539341/82112191-a309e280-9785-11ea-8314-8e7ba330736c.png)
+
+이번에도 저의 목표는 alert를 띄우는 것이네요.
+
+![image](https://user-images.githubusercontent.com/62539341/82112204-c7fe5580-9785-11ea-8ab7-571140780249.png)
+
+GET 방식으로 입력값을 받아오는군요.
+
+![image](https://user-images.githubusercontent.com/62539341/82112372-3e4f8780-9787-11ea-9b2b-6364dff2a762.png)
+
+![image](https://user-images.githubusercontent.com/62539341/82112530-99ce4500-9788-11ea-8538-31686d2a02f8.png)
+
+아까 썼던 두 방법을 사용해봤는데 통하지 않습니다. 
+(어떻게 하지..?)
