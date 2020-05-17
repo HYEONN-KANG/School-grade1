@@ -1,10 +1,10 @@
-<h3>3_1 ì—°ì‚°ì ìš°ì„  ìˆœìœ„ì™€ ê²°í•©ë²•ì¹™</h3>
+<h3>3_1 ¿¬»êÀÚ ¿ì¼± ¼øÀ§¿Í °áÇÕ¹ıÄ¢</h3>
 
 ![image](https://user-images.githubusercontent.com/62539341/81494901-428f2700-92e7-11ea-95ac-21c09a13c76f.png)
-https://en.cppreference.com/w/cpp/language/operator_precedence ë¥¼ ì°¸ê³ í•˜ê¸°
+https://en.cppreference.com/w/cpp/language/operator_precedence ¸¦ Âü°íÇÏ±â
 
 ```cpp
-#include <cmath> // ì—¬ëŸ¬ ìˆ˜í•™ í•¨ìˆ˜ë“¤ì´ ìˆëŠ” ë¼ì´ë¸ŒëŸ¬ë¦¬
+#include <cmath> // ¿©·¯ ¼öÇĞ ÇÔ¼öµéÀÌ ÀÖ´Â ¶óÀÌºê·¯¸®
 
 int main(){
     int x = std::pow(2,3);  // x = 2^3.
@@ -13,9 +13,9 @@ int main(){
     return 0;
 }
 ```
-cmath ì•ˆì— pow í•¨ìˆ˜ê°€ ìˆë‹¤. powëŠ” ì œê³± í•¨ìˆ˜.
+cmath ¾È¿¡ pow ÇÔ¼ö°¡ ÀÖ´Ù. pow´Â Á¦°ö ÇÔ¼ö.
 
-<h3>3_2 ì‚°ìˆ  ì—°ì‚°ì arithmetic operator</h3>
+<h3>3_2 »ê¼ú ¿¬»êÀÚ arithmetic operator</h3>
 
 ```cpp
 int main(){
@@ -29,7 +29,7 @@ int main(){
 }
 ```
 
-<h3>3_3 ì¦ê° ì—°ì‚°ì increment/decrement operator</h3>
+<h3>3_3 Áõ°¨ ¿¬»êÀÚ increment/decrement operator</h3>
 
 ```cpp
 int main(){
@@ -45,7 +45,7 @@ int main(){
 }
 ```
 
-<h3>3_4  sizeof, ì‰¼í‘œ ì—°ì‚°ì comma operator, ì‚¼í•­ ì—°ì‚°ì conditional operator</h3>
+<h3>3_4  sizeof, ½°Ç¥ ¿¬»êÀÚ comma operator, »ïÇ× ¿¬»êÀÚ conditional operator</h3>
 
 ```cpp
 int main(){
@@ -78,7 +78,7 @@ int main(){
     cout << ((x % 2 == 0) ? "even" : "odd")<< endl;
 }
 ```
-<h3>3_5 ê´€ê³„ ì—°ì‚°ì relational operators</h3>
+<h3>3_5 °ü°è ¿¬»êÀÚ relational operators</h3>
 
 ```cpp
 int main(){
@@ -121,7 +121,7 @@ int main(){
 }
 ```
 
-<h3>3_6 ë…¼ë¦¬ ì—°ì‚°ì logical operators</h3>
+<h3>3_6 ³í¸® ¿¬»êÀÚ logical operators</h3>
 
 ```cpp
 int main(){
@@ -136,7 +136,7 @@ int main(){
     int x = 2;
     int y = 2;
 
-    if(x == 1 && y++ = 2){  // x = 1 ì´ ì•„ë‹ˆë¯€ë¡œ ì˜¤ë¥¸ìª½ì€ ê³„ì‚°ì„ í•˜ì§€ X.
+    if(x == 1 && y++ = 2){  // x = 1 ÀÌ ¾Æ´Ï¹Ç·Î ¿À¸¥ÂÊÀº °è»êÀ» ÇÏÁö X.
         // do something
     }
     
@@ -145,7 +145,7 @@ int main(){
     return 0;
 }
 ```
-<h3>3_7 ì´ì§„ìˆ˜ binary numbers</h3>
+<h3>3_7 ÀÌÁø¼ö binary numbers</h3>
 decimal number : 0 1 2 3 4 5 6 7 8 9 10 11 12 13 ...<br>
 binary number  : 0 1 10 11 100 101 110 111 1000 1001 1010 ...
 
@@ -158,12 +158,12 @@ binary number  : 10 = 2^1 * 1 + 2^0 * 0 = 2(decimal)<br>
 = 94
 
 <b>1001 1110</b><br>
-ê°€ì¥ ì²«ë²ˆì§¸ ê°’ì´ 1ì´ë¯€ë¡œ ìŒìˆ˜. ë³´ìˆ˜ë¥¼ ì·¨í•˜ë©´ 0110 0001. ì—¬ê¸°ì— 1ì„ ë”í•˜ë©´ 0110 0010 -> 98 -> (-98)
+°¡Àå Ã¹¹øÂ° °ªÀÌ 1ÀÌ¹Ç·Î À½¼ö. º¸¼ö¸¦ ÃëÇÏ¸é 0110 0001. ¿©±â¿¡ 1À» ´õÇÏ¸é 0110 0010 -> 98 -> (-98)
 
-<b>unsigned ë¼ë©´? </b><br>
+<b>unsigned ¶ó¸é? </b><br>
 1001 1110 -> 128 + 16 + 8 + 4 + 2
 
-<h3>3_8 ë¹„íŠ¸ë‹¨ìœ„ ì—°ì‚°ì bitwise operators ì»´í“¨í„° ì‘ë™ì›ë¦¬</h3>
+<h3>3_8 ºñÆ®´ÜÀ§ ¿¬»êÀÚ bitwise operators ÄÄÇ»ÅÍ ÀÛµ¿¿ø¸®</h3>
 
 ```cpp
 #include <iostream>
@@ -188,26 +188,26 @@ int main(){
     cout << std::bitset<8>(a >> 2) << " " << (a >> 2) << endl;  
     cout << std::bitset<8>(a >> 3) << " " << (a >> 3) << endl;
 
-    // !ëŠ” logical not. bitwise notì€ ~
+    // !´Â logical not. bitwise notÀº ~
     cout << std::bitset<8>(~a) << " " << (~a) << endl;  // output 11111101 4294967293
 
-    // binaryëŠ” ì•ì— 0bë¥¼ ë¶™ì¸ë‹¤.
+    // binary´Â ¾Õ¿¡ 0b¸¦ ºÙÀÎ´Ù.
     unsigned int x = 0b1100;
     unsigned int y = 0b0110;
 
     cout << x << " " << y << endl;  // 12 6
 
-    cout << std::bitset<4>(x & y) << endl;  // bitwise AND ë‘˜ë‹¤ 1ì´ë©´ 1
-    cout << std::bitset<4>(x | y) << endl;  // bitwise OR  ë‘˜ ì¤‘ í•˜ë‚˜ë¼ë„ 1ì´ë©´ 1
-    cout << std::bitset<4>(x ^ y) << endl;  // bitwise XOR ë‘˜ ì¤‘ í•˜ë‚˜'ë§Œ' 1ì´ë©´ 1
+    cout << std::bitset<4>(x & y) << endl;  // bitwise AND µÑ´Ù 1ÀÌ¸é 1
+    cout << std::bitset<4>(x | y) << endl;  // bitwise OR  µÑ Áß ÇÏ³ª¶óµµ 1ÀÌ¸é 1
+    cout << std::bitset<4>(x ^ y) << endl;  // bitwise XOR µÑ Áß ÇÏ³ª'¸¸' 1ÀÌ¸é 1
 
-    x &= y; // ì´ë ‡ê²Œ ë¶™ì—¬ ì‚¬ìš©í•  ìˆ˜ ìˆë‹¤.
+    x &= y; // ÀÌ·¸°Ô ºÙ¿© »ç¿ëÇÒ ¼ö ÀÖ´Ù.
     
     return 0;
 }
 ```
 
-<h3>3_9 ë¹„íŠ¸ í”Œë˜ê·¸, ë¹„íŠ¸ ë§ˆìŠ¤í¬ ì‚¬ìš©ë²• Bit Flags, Bit masks</h3>
+<h3>3_9 ºñÆ® ÇÃ·¡±×, ºñÆ® ¸¶½ºÅ© »ç¿ë¹ı Bit Flags, Bit masks</h3>
 
 ```cpp
 #include <iostream>
@@ -270,7 +270,7 @@ int main(){
 }
 ```
 
-- bitflag ê°€ ì‹¤ì „ì—ì„œ ì‚¬ìš©ë˜ëŠ” ì˜ˆì œ
+- bitflag °¡ ½ÇÀü¿¡¼­ »ç¿ëµÇ´Â ¿¹Á¦
 ```cpp
 #include <iostream>
 #include <bitset>
@@ -301,12 +301,12 @@ int main(){
 }
 ```
 
-- ì—°ìŠµë¬¸ì œ í’€ì–´ë³´ê¸°
-1. ë‹¤ìŒì˜ ê²½ìš°ì— ëŒ€í•´ í”Œë˜ê·¸ë¥¼ ë°”ê¿”ë³´ì„¸ìš”.
-- ê¸°ì‚¬ë¥¼ ë´¤ì„ ë•Œ
-- ê¸°ì‚¬ì˜ ì¢‹ì•„ìš”ë¥¼ í´ë¦­í–ˆì„ ë•Œ
-- ê¸°ì‚¬ì˜ ì¢‹ì•„ìš”ë¥¼ ë‹¤ì‹œ í´ë¦­í–ˆì„ ë•Œ
-- ë³¸ ê¸°ì‚¬ë§Œ ì‚­ì œí•  ë•Œ
+- ¿¬½À¹®Á¦ Ç®¾îº¸±â
+1. ´ÙÀ½ÀÇ °æ¿ì¿¡ ´ëÇØ ÇÃ·¡±×¸¦ ¹Ù²ãº¸¼¼¿ä.
+- ±â»ç¸¦ ºÃÀ» ¶§
+- ±â»çÀÇ ÁÁ¾Æ¿ä¸¦ Å¬¸¯ÇßÀ» ¶§
+- ±â»çÀÇ ÁÁ¾Æ¿ä¸¦ ´Ù½Ã Å¬¸¯ÇßÀ» ¶§
+- º» ±â»ç¸¸ »èÁ¦ÇÒ ¶§
 
 ```cpp
 #include <iostream>
@@ -324,33 +324,33 @@ int main(){
     cout << bitset<8>(option_deleted) << endl;
 
     unsigned char my_article_flags = 0;
-    cout << "ê¸°ì¡´ í”Œë˜ê·¸:" << setw(4) << bitset<8>(my_article_flags) << endl;
+    cout << "±âÁ¸ ÇÃ·¡±×:" << setw(4) << bitset<8>(my_article_flags) << endl;
 
-    // ê¸°ì‚¬ë¥¼ ë´¤ì„ ë•Œ
+    // ±â»ç¸¦ ºÃÀ» ¶§
     my_article_flags |= option_viewed;
-    cout << "ê¸°ì‚¬ë¥¼ ë´¤ì„ ë•Œ:" << setw(4) << bitset<8>(my_article_flags) << endl;    
+    cout << "±â»ç¸¦ ºÃÀ» ¶§:" << setw(4) << bitset<8>(my_article_flags) << endl;    
 
-    // ê¸°ì‚¬ì˜ ì¢‹ì•„ìš”ë¥¼ í´ë¦­í–ˆì„ ë•Œ
+    // ±â»çÀÇ ÁÁ¾Æ¿ä¸¦ Å¬¸¯ÇßÀ» ¶§
     my_article_flags |= option_liked;
-    cout << "ê¸°ì‚¬ì˜ ì¢‹ì•„ìš”ë¥¼ í´ë¦­í–ˆì„ ë•Œ:" << setw(4) << bitset<8>(my_article_flags) << endl;
+    cout << "±â»çÀÇ ÁÁ¾Æ¿ä¸¦ Å¬¸¯ÇßÀ» ¶§:" << setw(4) << bitset<8>(my_article_flags) << endl;
 
-    // ê¸°ì‚¬ì˜ ì¢‹ì•„ìš”ë¥¼ ë‹¤ì‹œ í´ë¦­í–ˆì„ ë•Œ
+    // ±â»çÀÇ ÁÁ¾Æ¿ä¸¦ ´Ù½Ã Å¬¸¯ÇßÀ» ¶§
     my_article_flags &= ~option_liked;
-    cout << "ê¸°ì‚¬ì˜ ì¢‹ì•„ìš”ë¥¼ ë‹¤ì‹œ í´ë¦­í–ˆì„ ë•Œ:" << setw(4) << bitset<8>(my_article_flags) << endl;
+    cout << "±â»çÀÇ ÁÁ¾Æ¿ä¸¦ ´Ù½Ã Å¬¸¯ÇßÀ» ¶§:" << setw(4) << bitset<8>(my_article_flags) << endl;
 
-    // ë³¸ ê¸°ì‚¬ë§Œ ì‚­ì œí•  ë•Œ
+    // º» ±â»ç¸¸ »èÁ¦ÇÒ ¶§
     my_article_flags &= option_deleted;
-    cout << "ë³¸ ê¸°ì‚¬ë§Œ ì‚­ì œí•  ë•Œ:" << setw(4) << bitset<8>(my_article_flags) << endl;
+    cout << "º» ±â»ç¸¸ »èÁ¦ÇÒ ¶§:" << setw(4) << bitset<8>(my_article_flags) << endl;
 
     return 0;
 }
 ```
-2. ì•„ë˜ ë‘ ì¤„ì´ ì™œ ë™ì¼í•˜ê²Œ ì‘ë™í•˜ëŠ”ì§€ ì„¤ëª…í•´ë³´ì„¸ìš”.
+2. ¾Æ·¡ µÎ ÁÙÀÌ ¿Ö µ¿ÀÏÇÏ°Ô ÀÛµ¿ÇÏ´ÂÁö ¼³¸íÇØº¸¼¼¿ä.
 
 ```cpp
 myflags &= ~(option4 | option5);
 myflags &= ~option4 & ~option5;
 ```
 
-ì´ìœ  : ë“œëª¨ë¥´ê°„ì˜ ë²•ì¹™?ì´ë‘ ë¹„ìŠ·í•œ ì›ë¦¬ë¼ê³  ìƒê°í•œë‹¤.
-ê°„ë‹¨í•˜ê²Œ ì˜ˆë¥¼ ë“¤ì–´ option4 == 0001ì´ê³  option5 == 0110ì´ë¼ê³  ê°€ì •í•˜ë©´ ì²« ì¤„ì—ì„œ ()ì•ˆì— option4 | option5 ëŠ” 0111ì´ ë˜ê³  ì´ ê°’ì— ~ë¥¼ ë¶™ì˜€ìœ¼ë¯€ë¡œ ìš°ë³€ì˜ ê°’ì€ 1000ì´ ëœë‹¤. ë‘ë²ˆì§¸ ì¤„ì—ì„œ ~option4ëŠ” 1110, ~option5ëŠ” 1001ì´ê³  ì´ ë‘ê°’ì„ & í–ˆìœ¼ë¯€ë¡œ ìš°ë³€ì˜ ê°’ì€ 1000ì´ ëœë‹¤. ë”°ë¼ì„œ ë‘ ì‹ ëª¨ë‘ ë™ì¼í•˜ê²Œ ì‘ë™í•˜ëŠ” ê²ƒì´ë‹¤.
+ÀÌÀ¯ : µå¸ğ¸£°£ÀÇ ¹ıÄ¢?ÀÌ¶û ºñ½ÁÇÑ ¿ø¸®¶ó°í »ı°¢ÇÑ´Ù.
+°£´ÜÇÏ°Ô ¿¹¸¦ µé¾î option4 == 0001ÀÌ°í option5 == 0110ÀÌ¶ó°í °¡Á¤ÇÏ¸é Ã¹ ÁÙ¿¡¼­ ()¾È¿¡ option4 | option5 ´Â 0111ÀÌ µÇ°í ÀÌ °ª¿¡ ~¸¦ ºÙ¿´À¸¹Ç·Î ¿ìº¯ÀÇ °ªÀº 1000ÀÌ µÈ´Ù. µÎ¹øÂ° ÁÙ¿¡¼­ ~option4´Â 1110, ~option5´Â 1001ÀÌ°í ÀÌ µÎ°ªÀ» & ÇßÀ¸¹Ç·Î ¿ìº¯ÀÇ °ªÀº 1000ÀÌ µÈ´Ù. µû¶ó¼­ µÎ ½Ä ¸ğµÎ µ¿ÀÏÇÏ°Ô ÀÛµ¿ÇÏ´Â °ÍÀÌ´Ù.
