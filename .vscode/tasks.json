@@ -12,7 +12,7 @@
             "command": "g++",
             "args": [
                 "${file}",
-                "-o",
+                "-g",
                 "${fileDirname}/${fileBasenameNoExtension}"
             ],
             "group": "build",

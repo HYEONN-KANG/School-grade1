@@ -308,3 +308,31 @@ GET 방식으로 입력값을 받아오는군요.
 
 아까 썼던 두 방법을 사용해봤는데 통하지 않습니다. 
 (어떻게 하지..?)
+
+강좌에서 사용자 인풋이 <,> 같은 게 들어올 필요가 없다면 thml 태그로 인식 안되도록 막는 방법으로 XSS를 막을 수 있다고 했다. 그러면 <,>를 직접 쓰지 않고 아스키코드로 변환해서 넣어보면 되지 않을까?
+
+![image](https://user-images.githubusercontent.com/62539341/82132797-a43b1e00-981e-11ea-93a8-038fa064aeb5.png)
+
+세 값 모두 넣어봤는데 경고창이 뜨지 않는다. 다시 한번 고민해봐야겠다...
+
+계속 아무거나 입력해보다가 찾아낸 것은
+
+![image](https://user-images.githubusercontent.com/62539341/82132889-e4e76700-981f-11ea-9cb1-94ac052f2619.png)
+
+숫자를 입력하면 무리없이 잘 나온다.
+
+![image](https://user-images.githubusercontent.com/62539341/82132901-05afbc80-9820-11ea-9831-d3373cdb807b.png)
+
+이렇게 문자를 입력하니까 no hack이라고 뜬다. 그러면 문자를 다 막는 것인가?
+
+![image](https://user-images.githubusercontent.com/62539341/82132912-29730280-9820-11ea-932b-703a0954ba51.png)
+
+a와 b 사이에 물음표?를 넣으니까 잘 출력된다.
+
+그러면 script alert 명령에 사이사이에 문자가 아닌 것을 넣으면 아마 잘 출력될 것이다. 그렇다고 숫자나 ? 같은거를 넣으면 명령이 제대로 실행안될 것이니 아까 사용하던 아스키코드에 NULL 를 넣으면 되지 않을까?
+
+![image](https://user-images.githubusercontent.com/62539341/82133028-b5d1f500-9821-11ea-97e3-fb36af9b2191.png)
+
+![image](https://user-images.githubusercontent.com/62539341/82133041-c1bdb700-9821-11ea-9982-8d6d13dd010e.png)
+
+드디어 풀렸다!!! 마지막 문제가 제일 어려웠다..
