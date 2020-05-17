@@ -207,4 +207,150 @@ int main(){
 }
 ```
 
-<h3>3_9 </h3>
+<h3>3_9 비트 플래그, 비트 마스크 사용법 Bit Flags, Bit masks</h3>
+
+```cpp
+#include <iostream>
+#include <bitset>
+using namespace std;
+
+int main(){
+    const unsigned char opt0 = 1 << 0; 
+    const unsigned char opt1 = 1 << 1; 
+    const unsigned char opt2 = 1 << 2; 
+    const unsigned char opt3 = 1 << 3; 
+
+    cout << bitset<8>(opt0) << endl;
+    cout << bitset<8>(opt1) << endl;
+    cout << bitset<8>(opt2) << endl;
+    cout << bitset<8>(opt3) << endl;
+
+    unsigned char items_flag = 0;
+    cout << "No item " << bitset<8>(items_flag) << endl;
+
+    // item0 on
+    items_flag |= opt0;
+    cout << "Item0 obtained " << bitset<8>(items_flag) << endl;
+
+    // item3 on
+    items_flag |= opt3;
+    cout << "Item3 obtained " << bitset<8>(items_flag) << endl;
+
+    // item3 lost
+    items_flag &= ~opt3;
+    cout << "Item3 lost " << bitset<8>(items_flag) << endl;
+
+    // do you have item1 ?
+    if(items_flag & opt1){
+        cout << "I have item1" << endl;
+    }else{
+        cout << "Not have item1" << endl;
+    }
+
+    // do you have item0 ?
+    if(items_flag & opt0){
+        cout << "I have item0" << endl;
+    }else{
+        cout << "Not have item0" << endl;
+    }
+
+    // obtain item 2, 3
+    items_flag |= (opt2 | opt3);
+    cout << bitset<8>(opt2 | opt3) << endl;
+    cout << "Item2, Item3 obtained " << bitset<8>(items_flag) << endl;
+
+    if((items_flag & opt2) && !(items_flag & opt1)){
+        items_flag ^= opt2;
+        items_flag ^= opt1;
+    }
+
+    cout << bitset<8>(items_flag) << endl;
+
+    return 0;
+}
+```
+
+- bitflag 가 실전에서 사용되는 예제
+```cpp
+#include <iostream>
+#include <bitset>
+using namespace std;
+
+int main(){
+    const unsigned int red_mask = 0xFF0000;
+    const unsigned int green_mask = 0x00FF00;
+    const unsigned int blue_mask = 0x0000FF;
+
+    cout << std::bitset<32>(red_mask) << endl;
+    cout << std::bitset<32>(green_mask) << endl;
+    cout << std::bitset<32>(blue_mask) << endl;
+
+    unsigned int pixel_color = 0xFFD700;
+
+    cout << std::bitset<32>(pixel_color) << endl;
+
+    unsigned char red = (pixel_color & red_mask) >> 16;
+    unsigned char green = (pixel_color & green_mask) >> 8;
+    unsigned char blue = pixel_color & blue_mask;
+
+    cout << "red " << bitset<8>(red) << " " << int(red) << endl; 
+    cout << "green " << bitset<8>(green) << " " << int(green) << endl; 
+    cout << "blue " << bitset<8>(blue) << " " << int(blue) << endl; 
+
+    return 0;
+}
+```
+
+- 연습문제 풀어보기
+1. 다음의 경우에 대해 플래그를 바꿔보세요.
+- 기사를 봤을 때
+- 기사의 좋아요를 클릭했을 때
+- 기사의 좋아요를 다시 클릭했을 때
+- 본 기사만 삭제할 때
+
+```cpp
+#include <iostream>
+#include <bitset>
+#include <iomanip>
+using namespace std;
+
+int main(){
+    unsigned char option_viewed = 0x01;
+    unsigned char option_liked = 0x04;
+    unsigned char option_deleted = 0x80;
+
+    cout << bitset<8>(option_viewed) << endl;
+    cout << bitset<8>(option_liked) << endl;
+    cout << bitset<8>(option_deleted) << endl;
+
+    unsigned char my_article_flags = 0;
+    cout << "기존 플래그:" << setw(4) << bitset<8>(my_article_flags) << endl;
+
+    // 기사를 봤을 때
+    my_article_flags |= option_viewed;
+    cout << "기사를 봤을 때:" << setw(4) << bitset<8>(my_article_flags) << endl;    
+
+    // 기사의 좋아요를 클릭했을 때
+    my_article_flags |= option_liked;
+    cout << "기사의 좋아요를 클릭했을 때:" << setw(4) << bitset<8>(my_article_flags) << endl;
+
+    // 기사의 좋아요를 다시 클릭했을 때
+    my_article_flags &= ~option_liked;
+    cout << "기사의 좋아요를 다시 클릭했을 때:" << setw(4) << bitset<8>(my_article_flags) << endl;
+
+    // 본 기사만 삭제할 때
+    my_article_flags &= option_deleted;
+    cout << "본 기사만 삭제할 때:" << setw(4) << bitset<8>(my_article_flags) << endl;
+
+    return 0;
+}
+```
+2. 아래 두 줄이 왜 동일하게 작동하는지 설명해보세요.
+
+```cpp
+myflags &= ~(option4 | option5);
+myflags &= ~option4 & ~option5;
+```
+
+이유 : 드모르간의 법칙?이랑 비슷한 원리라고 생각한다.
+간단하게 예를 들어 option4 == 0001이고 option5 == 0110이라고 가정하면 첫 줄에서 ()안에 option4 | option5 는 0111이 되고 이 값에 ~를 붙였으므로 우변의 값은 1000이 된다. 두번째 줄에서 ~option4는 1110, ~option5는 1001이고 이 두값을 & 했으므로 우변의 값은 1000이 된다. 따라서 두 식 모두 동일하게 작동하는 것이다.
