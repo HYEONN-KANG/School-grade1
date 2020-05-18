@@ -1,36 +1,36 @@
-ì¶œì²˜ : https://opentutorials.org/index.php/course/62
+ÃâÃ³ : https://opentutorials.org/index.php/course/62
 
-<h1>PHP ê°•ì˜ ìš”ì•½</h1>
-<h3>PHPëž€ ë¬´ì—‡ì¸ê°€?</h3>
+<h1>PHP °­ÀÇ ¿ä¾à</h1>
+<h3>PHP¶õ ¹«¾ùÀÎ°¡?</h3>
 
 ![](https://grm-project-template-bucket.s3.ap-northeast-2.amazonaws.com/lesson/les_ZVCZS_1533200934311/39b799024e850d787d9eb469f4e7a8c5f892fa1b4425b937dc242dc4757dfbc9.png)
 
-ClientëŠ” Serverì— ìš”ì²­, Serverì€ Clientì˜ ìš”ì²­ì— ì‘ë‹µí•˜ëŠ” ì—­í• ì„ í•œë‹¤.
+Client´Â Server¿¡ ¿äÃ», ServerÀº ClientÀÇ ¿äÃ»¿¡ ÀÀ´äÇÏ´Â ¿ªÇÒÀ» ÇÑ´Ù.
 
-ìš°ë¦¬ëŠ” í”ížˆ ë„¤ì´ë²„ë‚˜ êµ¬ê¸€ê³¼ ê°™ì€ ì‚¬ì´íŠ¸ì— ì ‘ì†í•  ë•Œ, ì›¹ ë¸Œë¼ìš°ì €(Web Browser)ì„ ì‚¬ìš©í•œë‹¤. ì´ê²ƒì„ *Web Client*ë¼ê³ ë„ ë¶€ë¥¸ë‹¤. ë°˜ëŒ€ë¡œ ì„œë²„ ìª½ì—ëŠ” *Web Server*ê°€ ì¡´ìž¬í•œë‹¤.
+¿ì¸®´Â ÈçÈ÷ ³×ÀÌ¹ö³ª ±¸±Û°ú °°Àº »çÀÌÆ®¿¡ Á¢¼ÓÇÒ ¶§, À¥ ºê¶ó¿ìÀú(Web Browser)À» »ç¿ëÇÑ´Ù. ÀÌ°ÍÀ» *Web Client*¶ó°íµµ ºÎ¸¥´Ù. ¹Ý´ë·Î ¼­¹ö ÂÊ¿¡´Â *Web Server*°¡ Á¸ÀçÇÑ´Ù.
 
-*Web Client*ì˜ ì¢…ë¥˜ì—ëŠ” íŒŒì´ì–´í­ìŠ¤, ì¸í„°ë„· ìµìŠ¤í”Œë¡œì–´, í¬ë¡¬, ì‚¬íŒŒë¦¬ ë“±ì´ ìžˆë‹¤. *Web Server*ì˜ ì¢…ë¥˜ì—ëŠ” Apache, IIS, nginx ë“±ì´ ìžˆë‹¤.
+*Web Client*ÀÇ Á¾·ù¿¡´Â ÆÄÀÌ¾îÆø½º, ÀÎÅÍ³Ý ÀÍ½ºÇÃ·Î¾î, Å©·Ò, »çÆÄ¸® µîÀÌ ÀÖ´Ù. *Web Server*ÀÇ Á¾·ù¿¡´Â Apache, IIS, nginx µîÀÌ ÀÖ´Ù.
 
-ì˜ˆë¥¼ ë“¤ì–´ ë„ë©”ì¸ì— o2.org/topic.php ë¼ê³  ì ê³  Enter í‚¤ë¥¼ ëˆ„ë¥´ë©´ Web  Serverì—ì„œ í™•ìž¥ìžê°€ phpë¼ëŠ” ê²ƒì„ í™•ì¸í•˜ê³ , ì´ê²ƒì„ PHP engine ìœ¼ë¡œ ë³´ë‚¸ë‹¤. PHP engine ìœ¼ë¡œë¶€í„° ê²°ê³¼ê°’ì„ Web Serverê°€ ëŒë ¤ ë°›ìœ¼ë©´, ì´ê²ƒì„ Web Clientì— ì „ë‹¬í•œë‹¤. ì´ë ‡ê²Œ Web Serverì™€ PHP engine ì‚¬ì´ì˜ í†µì‹  ê·œì•½, ì•½ì†ì„ CGI(Common Gateway Interface) ë¼ê³  í•œë‹¤.
+¿¹¸¦ µé¾î µµ¸ÞÀÎ¿¡ o2.org/topic.php ¶ó°í Àû°í Enter Å°¸¦ ´©¸£¸é Web  Server¿¡¼­ È®ÀåÀÚ°¡ php¶ó´Â °ÍÀ» È®ÀÎÇÏ°í, ÀÌ°ÍÀ» PHP engine À¸·Î º¸³½´Ù. PHP engine À¸·ÎºÎÅÍ °á°ú°ªÀ» Web Server°¡ µ¹·Á ¹ÞÀ¸¸é, ÀÌ°ÍÀ» Web Client¿¡ Àü´ÞÇÑ´Ù. ÀÌ·¸°Ô Web Server¿Í PHP engine »çÀÌÀÇ Åë½Å ±Ô¾à, ¾à¼ÓÀ» CGI(Common Gateway Interface) ¶ó°í ÇÑ´Ù.
 
-PHP(Hypertext Preprocessor)ëŠ” ì„œë²„ìª½ì—ì„œ ì‹¤í–‰ ë˜ëŠ” í”„ë¡œê·¸ëž˜ë° ì–¸ì–´
+PHP(Hypertext Preprocessor)´Â ¼­¹öÂÊ¿¡¼­ ½ÇÇà µÇ´Â ÇÁ·Î±×·¡¹Ö ¾ð¾î
 
-PHPì˜ ìž¥ì 
-1. ì›¹ì— ìµœì í™”ëœ ì–¸ì–´
-2. ì›¹ê°œë°œì— í•„ìš”í•œ ìˆ˜ë§Žì€ ë¡œì§ë“¤ì´ í•¨ìˆ˜ì˜ í˜•íƒœë¡œ ë¯¸ë¦¬ ì œê³µë¨
-3. ê±°ì˜ ëª¨ë“  ë°ì´í„°ë² ì´ìŠ¤ë¥¼ ì§€ì›
-4. ì»´íŒŒì¼ì´ í•„ìš”ì—†ëŠ” interpreterë°©ì‹ì˜ ì–¸ì–´
+PHPÀÇ ÀåÁ¡
+1. À¥¿¡ ÃÖÀûÈ­µÈ ¾ð¾î
+2. À¥°³¹ß¿¡ ÇÊ¿äÇÑ ¼ö¸¹Àº ·ÎÁ÷µéÀÌ ÇÔ¼öÀÇ ÇüÅÂ·Î ¹Ì¸® Á¦°øµÊ
+3. °ÅÀÇ ¸ðµç µ¥ÀÌÅÍº£ÀÌ½º¸¦ Áö¿ø
+4. ÄÄÆÄÀÏÀÌ ÇÊ¿ä¾ø´Â interpreter¹æ½ÄÀÇ ¾ð¾î
 ----------------------------------------------------------------------------
-<h3>ì²«ë²ˆì§¸ PHP ì• í”Œë¦¬ì¼€ì´ì…˜</h3>
+<h3>Ã¹¹øÂ° PHP ¾ÖÇÃ¸®ÄÉÀÌ¼Ç</h3>
 
-í™•ìž¥ìžëª…ì´ .phpë¡œ ëë‚˜ëŠ” íŒŒì¼ì„ ìƒì„±í•´ë³´ìž.
+È®ÀåÀÚ¸íÀÌ .php·Î ³¡³ª´Â ÆÄÀÏÀ» »ý¼ºÇØº¸ÀÚ.
 
 ```php
 <?php
 echo "Hello world";
 ?>
 ```
-echoëŠ” ë’¤ì— ë”°ë¼ì˜¤ëŠ” ë°ì´í„°ë¥¼ ì¶œë ¥í•´ì£¼ëŠ” ì—­í• ì„ í•œë‹¤.
+echo´Â µÚ¿¡ µû¶ó¿À´Â µ¥ÀÌÅÍ¸¦ Ãâ·ÂÇØÁÖ´Â ¿ªÇÒÀ» ÇÑ´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79328251-ae80a880-7f50-11ea-8804-e0eb62b9db17.png)<br><br>
 
@@ -44,45 +44,45 @@ echo "Hello world";
 </body>
 </html>
 ```
-echo êµ¬ë¬¸ì„ php êµ¬ë¬¸ ì‚¬ì´ì— ìžˆì„ ë•Œì™€ body íƒœê·¸ ì•ˆì— ìžˆì„ ë•Œ ì–´ë–»ê²Œ ê²°ê³¼ê°€ ë‹¬ë¼ì§ˆê¹Œ? 
+echo ±¸¹®À» php ±¸¹® »çÀÌ¿¡ ÀÖÀ» ¶§¿Í body ÅÂ±× ¾È¿¡ ÀÖÀ» ¶§ ¾î¶»°Ô °á°ú°¡ ´Þ¶óÁú±î? 
 
 ![image](https://user-images.githubusercontent.com/62539341/79328008-5a75c400-7f50-11ea-803a-0e6f1d36f3cf.png)
 
 
 ----------------------------------------------------------------------------
-<h3>ì„œë²„ì¸¡ ì–¸ì–´ë¥¼ ì‚¬ìš©í•˜ëŠ” ì´ìœ </h3>
-ì™œ ìš°ë¦¬ëŠ” server side scriptë¥¼ ì“°ëŠ”ê°€?
+<h3>¼­¹öÃø ¾ð¾î¸¦ »ç¿ëÇÏ´Â ÀÌÀ¯</h3>
+¿Ö ¿ì¸®´Â server side script¸¦ ¾²´Â°¡?
 
-Web Browserì™€ Web Serverê°€ ìš”ì²­í•˜ê³  ì‘ë‹µí•˜ëŠ” ê³¼ì •ì„ ê±°ì¹˜ëŠ” ê²ƒì´ ì´ˆì°½ê¸°ì˜ ëª¨ìŠµì´ì—ˆë‹¤. PHPë‚˜ Java, Python, perl ê°™ì€ ì„œë²„ìª½ì—ì„œ ì‹¤í–‰ë˜ëŠ” ì–¸ì–´ë“¤ì€ ì—†ì—ˆë‹¤.
+Web Browser¿Í Web Server°¡ ¿äÃ»ÇÏ°í ÀÀ´äÇÏ´Â °úÁ¤À» °ÅÄ¡´Â °ÍÀÌ ÃÊÃ¢±âÀÇ ¸ð½ÀÀÌ¾ú´Ù. PHP³ª Java, Python, perl °°Àº ¼­¹öÂÊ¿¡¼­ ½ÇÇàµÇ´Â ¾ð¾îµéÀº ¾ø¾ú´Ù.
 
-ì´ ê³¼ì •ì—ì„œ Web Browserê°€ ì‚¬ìš©ìžì—ê²Œ ì •ë³´ë¥¼ ë³´ì—¬ì¤„ ë•Œ, ì •ë³´ê°€ ë‹´ê²¨ìžˆëŠ” ë©”ì„¸ì§€ê°€ HTML ì´ë‹¤. ê·¸ë¦¬ê³  HTMLì„ Serverì™€ Clientê°€ ì£¼ê³  ë°›ê¸° ìœ„í•œ ê·œì•½ì´ HTTPì´ë‹¤.
-URI, URLì„ ìš°ë¦¬ê°€ ë¸Œë¼ìš°ì €ì˜ ì£¼ì†Œì°½ì— ìž…ë ¥í•˜ë©´ ì´ì— í•´ë‹¹ë˜ëŠ” HTML ë¬¸ì„œë¥¼ ì°¾ì•„ì„œ í´ë¼ì´ì–¸íŠ¸ê°€ ê·¸ ë¬¸ì„œë¥¼ ë‹¤ìš´ë¡œë“œ í•  ìˆ˜ ìžˆê²Œ ëœë‹¤.
+ÀÌ °úÁ¤¿¡¼­ Web Browser°¡ »ç¿ëÀÚ¿¡°Ô Á¤º¸¸¦ º¸¿©ÁÙ ¶§, Á¤º¸°¡ ´ã°ÜÀÖ´Â ¸Þ¼¼Áö°¡ HTML ÀÌ´Ù. ±×¸®°í HTMLÀ» Server¿Í Client°¡ ÁÖ°í ¹Þ±â À§ÇÑ ±Ô¾àÀÌ HTTPÀÌ´Ù.
+URI, URLÀ» ¿ì¸®°¡ ºê¶ó¿ìÀúÀÇ ÁÖ¼ÒÃ¢¿¡ ÀÔ·ÂÇÏ¸é ÀÌ¿¡ ÇØ´çµÇ´Â HTML ¹®¼­¸¦ Ã£¾Æ¼­ Å¬¶óÀÌ¾ðÆ®°¡ ±× ¹®¼­¸¦ ´Ù¿î·Îµå ÇÒ ¼ö ÀÖ°Ô µÈ´Ù.
 
-ê·¸ëŸ°ë° ì¸í„°ë„·ì´ í­ë°œì ìœ¼ë¡œ ì„±ìž¥í•˜ê¸° ì‹œìž‘í•˜ë©´ì„œ ë¬¸ì œê°€ ë°œìƒí•˜ê¸° ì‹œìž‘í–ˆë‹¤.
-ì›¹ì‚¬ì´íŠ¸ê°€ ì„±ìž¥í•˜ë©´ì„œ ë§Žì€ ì‚¬ëžŒë“¤ì´ ì´ìš©í•˜ê²Œ ë˜ê³  Web Server ë§Œìœ¼ë¡œëŠ” ëª¨ë“  ì¼ì„ ì²˜ë¦¬í•˜ê¸°ì— ë²„ê±°ì›Œì¡Œë‹¤. ì´ë•Œ ê³ ì•ˆí•œ ê²ƒì´ ë°”ë¡œ CGI ì´ë‹¤.
+±×·±µ¥ ÀÎÅÍ³ÝÀÌ Æø¹ßÀûÀ¸·Î ¼ºÀåÇÏ±â ½ÃÀÛÇÏ¸é¼­ ¹®Á¦°¡ ¹ß»ýÇÏ±â ½ÃÀÛÇß´Ù.
+À¥»çÀÌÆ®°¡ ¼ºÀåÇÏ¸é¼­ ¸¹Àº »ç¶÷µéÀÌ ÀÌ¿ëÇÏ°Ô µÇ°í Web Server ¸¸À¸·Î´Â ¸ðµç ÀÏÀ» Ã³¸®ÇÏ±â¿¡ ¹ö°Å¿öÁ³´Ù. ÀÌ¶§ °í¾ÈÇÑ °ÍÀÌ ¹Ù·Î CGI ÀÌ´Ù.
 
-Web Serverì™€ PHP, Java, Python, perl ë“±ì˜ í”„ë¡œê·¸ëž˜ë° ì–¸ì–´ ì‚¬ì´ì— ì„œë¡œ ì»¤ë®¤ë‹ˆì¼€ì´ì…˜í•˜ê¸° ìœ„í•œ í†µì‹ ê·œì•½ì´ CGIì´ë‹¤.
+Web Server¿Í PHP, Java, Python, perl µîÀÇ ÇÁ·Î±×·¡¹Ö ¾ð¾î »çÀÌ¿¡ ¼­·Î Ä¿¹Â´ÏÄÉÀÌ¼ÇÇÏ±â À§ÇÑ Åë½Å±Ô¾àÀÌ CGIÀÌ´Ù.
 
-PHP, Java, Python, perl ë“¤ì€ Web Browserê°€ ìš”ì²­í•œ ê²ƒì´ HTMLì´ ì•„ë‹ˆë©´ Web Serverê°€ ì´ ì •ë³´ë¥¼ ì²˜ë¦¬í•  ìˆ˜ ì—†ê³  í•´ë‹¹ ì–¸ì–´ë¥¼ í˜¸ì¶œí•´ì„œ ì‚¬ìš©ìžê°€ ìš”ì²­í•œ íŒŒì¼ì„ ìˆ˜í–‰í•œë‹¤. ìˆ˜í–‰ ê²°ê³¼ë¥¼ Web Serverë¥¼ ë§¤ê°œë¡œ Web Browserì—ê²Œ ë§ˆì¹˜ HTMLì¸ ê²ƒì²˜ëŸ¼ ì „ì†¡í•˜ëŠ” ê²ƒì´ë‹¤.
+PHP, Java, Python, perl µéÀº Web Browser°¡ ¿äÃ»ÇÑ °ÍÀÌ HTMLÀÌ ¾Æ´Ï¸é Web Server°¡ ÀÌ Á¤º¸¸¦ Ã³¸®ÇÒ ¼ö ¾ø°í ÇØ´ç ¾ð¾î¸¦ È£ÃâÇØ¼­ »ç¿ëÀÚ°¡ ¿äÃ»ÇÑ ÆÄÀÏÀ» ¼öÇàÇÑ´Ù. ¼öÇà °á°ú¸¦ Web Server¸¦ ¸Å°³·Î Web Browser¿¡°Ô ¸¶Ä¡ HTMLÀÎ °ÍÃ³·³ Àü¼ÛÇÏ´Â °ÍÀÌ´Ù.
 
-DBì— í•´ë‹¹ë˜ëŠ” ê²ƒì€ MySQL, ORACLE ë“±ì´ ìžˆëŠ”ë° ì´ê²ƒì€ ë°ì´í„°ë¥¼ ì €ìž¥í•˜ëŠ” ê²ƒì— íŠ¹í™”ë˜ì–´ ìžˆë‹¤. ì œëª©ì´ë‚˜ ë³¸ë¬¸ê°™ì€ ê²ƒì˜ ë°ì´í„°ê°€ í•„ìš”í•˜ë©´ í”„ë¡œê·¸ëž˜ë°ì–¸ì–´ê°€ DBì—ì„œ í•´ë‹¹ ë°ì´í„°ë¥¼ ë½‘ì•„ì„œ ì“´ë‹¤.
-ê²°ë¡ ì ìœ¼ë¡œ ê°œë°œìžê°€ PHPíŒŒì¼ì„ í•˜ë‚˜ ë§Œë“¤ë©´, íŒŒì¼ì´ë‚˜ êµ¬í˜„ì •ë³´, ë°ì´í„° ë“±ì˜ ë³€ê²½ì‚¬í•­ì´ ëª¨ë‘ ì ìš©ë˜ëŠ” ê²ƒì´ë‹¤.
+DB¿¡ ÇØ´çµÇ´Â °ÍÀº MySQL, ORACLE µîÀÌ ÀÖ´Âµ¥ ÀÌ°ÍÀº µ¥ÀÌÅÍ¸¦ ÀúÀåÇÏ´Â °Í¿¡ Æ¯È­µÇ¾î ÀÖ´Ù. Á¦¸ñÀÌ³ª º»¹®°°Àº °ÍÀÇ µ¥ÀÌÅÍ°¡ ÇÊ¿äÇÏ¸é ÇÁ·Î±×·¡¹Ö¾ð¾î°¡ DB¿¡¼­ ÇØ´ç µ¥ÀÌÅÍ¸¦ »Ì¾Æ¼­ ¾´´Ù.
+°á·ÐÀûÀ¸·Î °³¹ßÀÚ°¡ PHPÆÄÀÏÀ» ÇÏ³ª ¸¸µé¸é, ÆÄÀÏÀÌ³ª ±¸ÇöÁ¤º¸, µ¥ÀÌÅÍ µîÀÇ º¯°æ»çÇ×ÀÌ ¸ðµÎ Àû¿ëµÇ´Â °ÍÀÌ´Ù.
 
 ----------------------------------------------------------------------------
-<h3>ìˆ«ìžì™€ ë¬¸ìž</h3>
+<h3>¼ýÀÚ¿Í ¹®ÀÚ</h3>
 
 ```php
 <?php
 echo 1;
 ?>
 ```
-echo 1 ì´ë¼ê³  í•˜ë©´ 1ì´ë¼ëŠ” ìˆ«ìžë¥¼ í™”ë©´ì— ì¶œë ¥í•œë‹¤
+echo 1 ÀÌ¶ó°í ÇÏ¸é 1ÀÌ¶ó´Â ¼ýÀÚ¸¦ È­¸é¿¡ Ãâ·ÂÇÑ´Ù
 ```php
 <?php
 var_dump(6);
 ?>
 ```
-var_dump(ë°ì´í„°)ëŠ” ë°ì´í„°ê°€ ì–´ë– í•œ í˜•ì‹ì¸ì§€ë¥¼ ë³´ì—¬ì¤€ë‹¤.
+var_dump(µ¥ÀÌÅÍ)´Â µ¥ÀÌÅÍ°¡ ¾î¶°ÇÑ Çü½ÄÀÎÁö¸¦ º¸¿©ÁØ´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79335610-43899e80-7f5d-11ea-89be-24b379d107b3.png)
 
@@ -92,7 +92,7 @@ echo var_dump(1234);
 echo var_dump("1234");
 ?>
 ```
-phpì—ì„œ ë¬¸ìžì—´ì„ ì˜ë¯¸í•  ë•ŒëŠ” "" ë˜ëŠ” ''ë¡œ í‘œí˜„í•œë‹¤. 
+php¿¡¼­ ¹®ÀÚ¿­À» ÀÇ¹ÌÇÒ ¶§´Â "" ¶Ç´Â ''·Î Ç¥ÇöÇÑ´Ù. 
 
 ![image](https://user-images.githubusercontent.com/62539341/79336240-551f7600-7f5e-11ea-8a56-728ba0b8cdd8.png)
 
@@ -101,10 +101,10 @@ phpì—ì„œ ë¬¸ìžì—´ì„ ì˜ë¯¸í•  ë•ŒëŠ” "" ë˜ëŠ” ''ë¡œ í‘œí˜„í•œë‹¤.
 echo "hello"." "."world";
 ?>
 ```
-ë¬¸ìžì™€ ë¬¸ìžë¥¼ ê²°í•©í•˜ê³  ì‹¶ë‹¤ë©´ ì´ë ‡ê²Œ phpì—ì„œëŠ” ë…íŠ¹í•˜ê²Œ +ëŒ€ì‹  .ì„ ì‚¬ìš©í•œë‹¤.
+¹®ÀÚ¿Í ¹®ÀÚ¸¦ °áÇÕÇÏ°í ½Í´Ù¸é ÀÌ·¸°Ô php¿¡¼­´Â µ¶Æ¯ÇÏ°Ô +´ë½Å .À» »ç¿ëÇÑ´Ù.
 
 ----------------------------------------------------------------------------
-<h3>ë³€ìˆ˜</h3>
+<h3>º¯¼ö</h3>
 
 ```php
 <html>
@@ -119,7 +119,7 @@ print $a+1; #3
 </body>
 </html>
 ```
-phpì—ì„œëŠ” ë³€ìˆ˜ë¥¼ ì„ ì–¸í•  ë•Œ '$ë³€ìˆ˜'ë¡œ ë³€ìˆ˜ ì•žì— $ë¥¼ ë¶™ì¸ë‹¤. ì£¼ì„ì„ ë‹¬ ë•ŒëŠ” #ì„ ë¶™ì¸ë‹¤. ì£¼ì„ì„ ì—¬ëŸ¬ì¤„ ë‹¬ê³  ì‹¶ìœ¼ë©´ /**/ë¥¼ ì‚¬ìš©í•˜ë©´ ëœë‹¤.
+php¿¡¼­´Â º¯¼ö¸¦ ¼±¾ðÇÒ ¶§ '$º¯¼ö'·Î º¯¼ö ¾Õ¿¡ $¸¦ ºÙÀÎ´Ù. ÁÖ¼®À» ´Þ ¶§´Â #À» ºÙÀÎ´Ù. ÁÖ¼®À» ¿©·¯ÁÙ ´Þ°í ½ÍÀ¸¸é /**/¸¦ »ç¿ëÇÏ¸é µÈ´Ù.
 ```php
 <html>
 <body>
@@ -130,9 +130,9 @@ echo $first." everybody";
 </body>
 </html>
 ```
-ì´ë ‡ê²Œ ë³€ìˆ˜ ì•ˆì—ëŠ” ìˆ«ìž ë¿ë§Œ ì•„ë‹ˆë¼ ë¬¸ìžì—´ë„ ë“¤ì–´ê°ˆ ìˆ˜ ìžˆë‹¤.<br><br>
+ÀÌ·¸°Ô º¯¼ö ¾È¿¡´Â ¼ýÀÚ »Ó¸¸ ¾Æ´Ï¶ó ¹®ÀÚ¿­µµ µé¾î°¥ ¼ö ÀÖ´Ù.<br><br>
 
-ìš°ë¦¬ëŠ” ë³€ìˆ˜ë¥¼ ì™œ ì“°ëŠ” ê±¸ê¹Œ?
+¿ì¸®´Â º¯¼ö¸¦ ¿Ö ¾²´Â °É±î?
 ```php
 <html>
 <body>
@@ -149,8 +149,8 @@ echo '<br />';
 </body>
 </html>
 ```
-ì´ ì½”ë“œì—ì„œ 100ì„ 1000ìœ¼ë¡œ ë°”ê¿”ì•¼ í•œë‹¤ë©´?
-ì•„ì£¼ ë²ˆê±°ë¡­ê³  ê·€ì°®ë‹¤. í•˜ì§€ë§Œ ë³€ìˆ˜ë¥¼ ì‚¬ìš©í•œë‹¤ë©´ ë³€ìˆ˜ì˜ ê°’ë§Œ ë³€ê²½í•´ì£¼ë©´ ë˜ë¯€ë¡œ íŽ¸ë¦¬í•˜ë‹¤.
+ÀÌ ÄÚµå¿¡¼­ 100À» 1000À¸·Î ¹Ù²ã¾ß ÇÑ´Ù¸é?
+¾ÆÁÖ ¹ø°Å·Ó°í ±ÍÂú´Ù. ÇÏÁö¸¸ º¯¼ö¸¦ »ç¿ëÇÑ´Ù¸é º¯¼öÀÇ °ª¸¸ º¯°æÇØÁÖ¸é µÇ¹Ç·Î Æí¸®ÇÏ´Ù.
 ```php
 <html>
 <body>
@@ -179,9 +179,9 @@ define('TITLE', 'JAVA Tutorial');
 </body>
 </html>
 ```
-ìƒìˆ˜ëŠ” ë³€ìˆ˜ì™€ ë‹¤ë¥´ê²Œ ê°’ì„ ë³€ê²½í•  ìˆ˜ ì—†ë‹¤. ì²«ë²ˆì§¸ defineì—ì„œ ìƒìˆ˜ TITLEì— PHP Tutorial ì´ë¼ëŠ” ê°’ì„ ì €ìž¥í–ˆë‹¤. ê·¸ëŸ°ë° ê·¸ ë°‘ì— ë‹¤ì‹œ ìƒìˆ˜ TITLEì— ë‹¤ë¥¸ ê°’ì„ ë„£ìœ¼ë ¤ í–ˆìœ¼ë¯€ë¡œ ì—¬ê¸°ì„œ errorê°€ ë°œìƒí•œë‹¤.
+»ó¼ö´Â º¯¼ö¿Í ´Ù¸£°Ô °ªÀ» º¯°æÇÒ ¼ö ¾ø´Ù. Ã¹¹øÂ° define¿¡¼­ »ó¼ö TITLE¿¡ PHP Tutorial ÀÌ¶ó´Â °ªÀ» ÀúÀåÇß´Ù. ±×·±µ¥ ±× ¹Ø¿¡ ´Ù½Ã »ó¼ö TITLE¿¡ ´Ù¸¥ °ªÀ» ³ÖÀ¸·Á ÇßÀ¸¹Ç·Î ¿©±â¼­ error°¡ ¹ß»ýÇÑ´Ù.
 
-ë³€ìˆ˜ì— ë‹´ê¸´ ë°ì´í„° í˜•ì„ ê²€ì‚¬í•˜ê³  ë³€ê²½í•˜ê¸°
+º¯¼ö¿¡ ´ã±ä µ¥ÀÌÅÍ ÇüÀ» °Ë»çÇÏ°í º¯°æÇÏ±â
 ```html
 <html>
 <body>
@@ -196,37 +196,37 @@ echo gettype($a);
 </html>
 ```
 ------------------------------------------------------------------
-<h3>ë¹„êµ</h3>
-í”„ë¡œê·¸ëž˜ë°ì—ì„œ ë¹„êµëž€ ì£¼ì–´ì§„ ê°’ë“¤ì´ ê°™ì€ì§€, ë‹¤ë¥¸ì§€, í°ì§€, ìž‘ì€ì§€ë¥¼ êµ¬ë¶„í•˜ëŠ” ê²ƒì„ ì˜ë¯¸í•œë‹¤. ì´ ë•Œ ë¹„êµ ì—°ì‚°ìžë¥¼ ì‚¬ìš©í•˜ëŠ”ë° ë¹„êµ ì—°ì‚°ìžì˜ ê²°ê³¼ëŠ” trueë‚˜ false ì¤‘ì˜ í•˜ë‚˜ë‹¤. -> ë°ì´í„°í˜•ì´ Boolean !
+<h3>ºñ±³</h3>
+ÇÁ·Î±×·¡¹Ö¿¡¼­ ºñ±³¶õ ÁÖ¾îÁø °ªµéÀÌ °°ÀºÁö, ´Ù¸¥Áö, Å«Áö, ÀÛÀºÁö¸¦ ±¸ºÐÇÏ´Â °ÍÀ» ÀÇ¹ÌÇÑ´Ù. ÀÌ ¶§ ºñ±³ ¿¬»êÀÚ¸¦ »ç¿ëÇÏ´Âµ¥ ºñ±³ ¿¬»êÀÚÀÇ °á°ú´Â true³ª false ÁßÀÇ ÇÏ³ª´Ù. -> µ¥ÀÌÅÍÇüÀÌ Boolean !
 
-1. "=="  : ì¢Œí•­ê³¼ ìš°í•­ì˜ ê°’ì´ ê°™ë‹¤ë©´ true, ë‹¤ë¥´ë©´ false
-2. "!="  : ==ì™€ ê²°ê³¼ê°€ ì •ë°˜ëŒ€
-3. ">"   : ì¢Œí•­ì˜ ê°’ì´ ìš°í•­ì˜ ê°’ë³´ë‹¤ í¬ë‹¤ë©´ true, ì•„ë‹ˆë©´ false
-4. ">="  : ì¢Œí•­ì˜ ê°’ì´ ìš°í•­ì˜ ê°’ë³´ë‹¤ í¬ê±°ë‚˜ ê°™ë‹¤ë©´ true, ì•„ë‹ˆë©´ false
-5. "<"   : ì¢Œí•­ì˜ ê°’ì´ ìš°í•­ì˜ ê°’ë³´ë‹¤ ìž‘ìœ¼ë©´ true, ì•„ë‹ˆë©´ false
-6. "<="  : ì¢Œí•­ì˜ ê°’ì´ ìš°í•­ì˜ ê°’ë³´ë‹¤ ìž‘ê±°ë‚˜ ê°™ë‹¤ë©´ true, ì•„ë‹ˆë©´ false
-7. "===" : ì¢Œí•­ê³¼ ìš°í•­ì˜ ê°’ì´ 'ì •í™•í•˜ê²Œ' ê°™ë‹¤ë©´ true, ì•„ë‹ˆë©´ false
+1. "=="  : ÁÂÇ×°ú ¿ìÇ×ÀÇ °ªÀÌ °°´Ù¸é true, ´Ù¸£¸é false
+2. "!="  : ==¿Í °á°ú°¡ Á¤¹Ý´ë
+3. ">"   : ÁÂÇ×ÀÇ °ªÀÌ ¿ìÇ×ÀÇ °ªº¸´Ù Å©´Ù¸é true, ¾Æ´Ï¸é false
+4. ">="  : ÁÂÇ×ÀÇ °ªÀÌ ¿ìÇ×ÀÇ °ªº¸´Ù Å©°Å³ª °°´Ù¸é true, ¾Æ´Ï¸é false
+5. "<"   : ÁÂÇ×ÀÇ °ªÀÌ ¿ìÇ×ÀÇ °ªº¸´Ù ÀÛÀ¸¸é true, ¾Æ´Ï¸é false
+6. "<="  : ÁÂÇ×ÀÇ °ªÀÌ ¿ìÇ×ÀÇ °ªº¸´Ù ÀÛ°Å³ª °°´Ù¸é true, ¾Æ´Ï¸é false
+7. "===" : ÁÂÇ×°ú ¿ìÇ×ÀÇ °ªÀÌ 'Á¤È®ÇÏ°Ô' °°´Ù¸é true, ¾Æ´Ï¸é false
 
 ------------------------------------------------------------------
-<h3>ìž…ì¶œë ¥ ê·¸ë¦¬ê³  í¼ê³¼ HTTP</h3>
-í”„ë¡œê·¸ëž¨ì€ ìž…ë ¥ ê°’ì„ ê°€ì§ˆ ìˆ˜ ìžˆë‹¤. ê·¸ë¦¬ê³  ìž…ë ¥ ê°’ì— ë”°ë¼ì„œ ë™ìž‘ ë°©ë²•ì´ ë‹¬ë¼ì§€ê±°ë‚˜ ìž…ë ¥ëœ ê°’ì„ ì €ìž¥/ì‚­ì œ/ì¶œë ¥ í•  ìˆ˜ ìžˆë‹¤. ì´ë²ˆ ì‹œê°„ì—ëŠ” PHPì˜ ë¬¸ë²•ì— ëŒ€í•œ ë‚´ìš©ì—ì„œ ìž ê¹ ë¹ ì ¸ë‚˜ì™€ì„œ PHP ì—í”Œë¦¬ì¼€ì´ì…˜ì´ ë°ì´í„°ë¥¼ ìž…ë ¥ ë°›ëŠ” ë°©ë²•ì— ëŒ€í•´ì„œ ì•Œì•„ë³¸ë‹¤.
+<h3>ÀÔÃâ·Â ±×¸®°í Æû°ú HTTP</h3>
+ÇÁ·Î±×·¥Àº ÀÔ·Â °ªÀ» °¡Áú ¼ö ÀÖ´Ù. ±×¸®°í ÀÔ·Â °ª¿¡ µû¶ó¼­ µ¿ÀÛ ¹æ¹ýÀÌ ´Þ¶óÁö°Å³ª ÀÔ·ÂµÈ °ªÀ» ÀúÀå/»èÁ¦/Ãâ·Â ÇÒ ¼ö ÀÖ´Ù. ÀÌ¹ø ½Ã°£¿¡´Â PHPÀÇ ¹®¹ý¿¡ ´ëÇÑ ³»¿ë¿¡¼­ Àá±ñ ºüÁ®³ª¿Í¼­ PHP ¿¡ÇÃ¸®ÄÉÀÌ¼ÇÀÌ µ¥ÀÌÅÍ¸¦ ÀÔ·Â ¹Þ´Â ¹æ¹ý¿¡ ´ëÇØ¼­ ¾Ë¾Æº»´Ù.
 
 ```php
 <?php
 echo $_GET['id'];
 ?>
 ```
-ì²˜ìŒ ë³´ëŠ” $_GET[]ì´ ë“±ìž¥í•˜ëŠ” ë° ì§€ê¸ˆì€ ì´ê²ƒì€ ë°°ì—´(array)ì´ë¼ëŠ” ê²ƒë§Œ ì•Œê³  ë„˜ì–´ê°€ìž. ì´ ì½”ë“œë¥¼ ì‹¤í–‰í•´ë³´ë©´
+Ã³À½ º¸´Â $_GET[]ÀÌ µîÀåÇÏ´Â µ¥ Áö±ÝÀº ÀÌ°ÍÀº ¹è¿­(array)ÀÌ¶ó´Â °Í¸¸ ¾Ë°í ³Ñ¾î°¡ÀÚ. ÀÌ ÄÚµå¸¦ ½ÇÇàÇØº¸¸é
 
 ![image](https://user-images.githubusercontent.com/62539341/79403993-6783c900-7fcb-11ea-8f3a-d7b57df3971d.png)
 
-ì´ë ‡ê²Œ URLì´ ì´ìƒí•˜ë‹¤. ì—¬ê¸°ì„œ egoingì„ k8805ë¡œ ë°”ê¾¸ë©´ í™”ë©´ì— egoing ëŒ€ì‹  k8805ê°€ ì¶œë ¥ëœë‹¤. ì¦‰, ìž…ë ¥í•œ ê°’ì— ë”°ë¼ ë‹¤ë¥¸ ì¶œë ¥ê°’ì„ ë‚´ë³´ë‚´ëŠ” Userì™€ ìƒí˜¸ìž‘ìš©í•˜ëŠ” ì• í”Œë¦¬ì¼€ì´ì…˜ì´ ë˜ì—ˆë‹¤ë¼ëŠ” ê²ƒì´ë‹¤.<br>
+ÀÌ·¸°Ô URLÀÌ ÀÌ»óÇÏ´Ù. ¿©±â¼­ egoingÀ» k8805·Î ¹Ù²Ù¸é È­¸é¿¡ egoing ´ë½Å k8805°¡ Ãâ·ÂµÈ´Ù. Áï, ÀÔ·ÂÇÑ °ª¿¡ µû¶ó ´Ù¸¥ Ãâ·Â°ªÀ» ³»º¸³»´Â User¿Í »óÈ£ÀÛ¿ëÇÏ´Â ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀÌ µÇ¾ú´Ù¶ó´Â °ÍÀÌ´Ù.<br>
 
-URLì— ìžˆëŠ” *localhost/ìž…ì¶œë ¥.php?id=egoing*ì„ í•œë²ˆ ì‚´íŽ´ë³´ìž.<br>
-ìž…ì¶œë ¥.phpë¼ëŠ” php ì• í”Œë¦¬ì¼€ì´ì…˜ì„ ì°¾ì•„ë‚´ëŠ” ì£¼ì†Œê°€ *localhost/ìž…ì¶œë ¥.php*ë¼ë©´ ?ë¥¼ ê¸°ì¤€ìœ¼ë¡œ ë’¤ì— ìžˆëŠ” *id=egoing* ì€ ì£¼ì†Œê°€ ê°€ë¦¬í‚¤ëŠ” php ì• í”Œë¦¬ì¼€ì´ì…˜ìœ¼ë¡œ ì „ë‹¬ë˜ëŠ” ê°’ì´ ë“¤ì–´ì˜¤ëŠ” ì˜ì—­ì´ë‹¤.<br>
-ì—¬ê¸°ì„œ ë‹¤ì‹œ, *id=egoing*ì„ ì‚´íŽ´ë³´ë©´, =ì„ ê¸°ì¤€ìœ¼ë¡œ ì•žì— ìžˆëŠ” id ëŠ” ê°’ì— ëŒ€í•œ ì´ë¦„ì´ê³ , = ë’¤ì— ìžˆëŠ” egoingì€ ê°’ì´ë‹¤.
+URL¿¡ ÀÖ´Â *localhost/ÀÔÃâ·Â.php?id=egoing*À» ÇÑ¹ø »ìÆìº¸ÀÚ.<br>
+ÀÔÃâ·Â.php¶ó´Â php ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀ» Ã£¾Æ³»´Â ÁÖ¼Ò°¡ *localhost/ÀÔÃâ·Â.php*¶ó¸é ?¸¦ ±âÁØÀ¸·Î µÚ¿¡ ÀÖ´Â *id=egoing* Àº ÁÖ¼Ò°¡ °¡¸®Å°´Â php ¾ÖÇÃ¸®ÄÉÀÌ¼ÇÀ¸·Î Àü´ÞµÇ´Â °ªÀÌ µé¾î¿À´Â ¿µ¿ªÀÌ´Ù.<br>
+¿©±â¼­ ´Ù½Ã, *id=egoing*À» »ìÆìº¸¸é, =À» ±âÁØÀ¸·Î ¾Õ¿¡ ÀÖ´Â id ´Â °ª¿¡ ´ëÇÑ ÀÌ¸§ÀÌ°í, = µÚ¿¡ ÀÖ´Â egoingÀº °ªÀÌ´Ù.
 
-ì¡°ê¸ˆ ë” ë³µìž¡í•˜ê²Œ, ì´ë²ˆì—” passwordê¹Œì§€ ìž…ë ¥ë°›ì•„ë³´ìž.
+Á¶±Ý ´õ º¹ÀâÇÏ°Ô, ÀÌ¹ø¿£ password±îÁö ÀÔ·Â¹Þ¾Æº¸ÀÚ.
 ```php
 <?php
 echo $_GET['id'].','.$_GET['password'];
@@ -235,9 +235,9 @@ echo $_GET['id'].','.$_GET['password'];
 
 ![image](https://user-images.githubusercontent.com/62539341/79404830-bfbbca80-7fcd-11ea-8275-39a90efd9565.png)
 
- &ì€ ê°’ê³¼ ê°’ì„ êµ¬ë¶„í•˜ëŠ” êµ¬ë¶„ìžì´ë‹¤.
+ &Àº °ª°ú °ªÀ» ±¸ºÐÇÏ´Â ±¸ºÐÀÚÀÌ´Ù.
 
-ê·¸ëŸ°ë° ë§¤ë²ˆ ì´ë ‡ê²Œ ì‚¬ìš©ìžê°€ idë‚˜ passwordê°™ì€ ì •ë³´ë¥¼ URLì— ì ì–´ì„œ ì „ë‹¬í•˜ëŠ” ê²ƒì€ ë§¤ìš° ë¶ˆíŽ¸í•˜ë‹¤. ê·¸ëž˜ì„œ ì‚¬ìš©í•˜ëŠ” ê²ƒì´ ë°”ë¡œ í¼(form)ì´ë‹¤.
+±×·±µ¥ ¸Å¹ø ÀÌ·¸°Ô »ç¿ëÀÚ°¡ id³ª password°°Àº Á¤º¸¸¦ URL¿¡ Àû¾î¼­ Àü´ÞÇÏ´Â °ÍÀº ¸Å¿ì ºÒÆíÇÏ´Ù. ±×·¡¼­ »ç¿ëÇÏ´Â °ÍÀÌ ¹Ù·Î Æû(form)ÀÌ´Ù.
 
 ```html
 <html>
@@ -256,9 +256,9 @@ echo $_GET['id'].','.$_GET['password'];
 ![image](https://user-images.githubusercontent.com/62539341/79406374-e11eb580-7fd1-11ea-85ac-450268f092ab.png)
 <br><br>
 
-ì´ë²ˆì—” Get ë°©ì‹ê³¼ Post ë°©ì‹ì˜ ì°¨ì´ì ì— ëŒ€í•´ ì‚´íŽ´ë³´ìž. ì§€ê¸ˆê¹Œì§€ ìš°ë¦¬ê°€ ì‚¬ìš©í•œ ê²ƒì€ Get ë°©ì‹ì´ë‹¤.
+ÀÌ¹ø¿£ Get ¹æ½Ä°ú Post ¹æ½ÄÀÇ Â÷ÀÌÁ¡¿¡ ´ëÇØ »ìÆìº¸ÀÚ. Áö±Ý±îÁö ¿ì¸®°¡ »ç¿ëÇÑ °ÍÀº Get ¹æ½ÄÀÌ´Ù.
 
-get ë°©ì‹ìœ¼ë¡œ ë°ì´í„°ë¥¼ ì „ì†¡í•  ë•Œ URLì— ë°ì´í„°ë¥¼ í¬í•¨ì‹œí‚¤ëŠ” ê²ƒì´ ë¹„í•´ì„œ POST ë°©ì‹ìœ¼ë¡œ ë°ì´í„°ë¥¼ ì „ì†¡í•  ë•ŒëŠ” ì „ì†¡í•˜ëŠ” ë°ì´í„°ë¥¼ URLì— í¬í•¨ì‹œí‚¤ì§€ ì•Šê³  ì „ì†¡ í•  ìˆ˜ ìžˆë‹¤. ì´ëŸ¬í•œ ì°¨ì´ë¡œ ì¸í•´ì„œ GET ë°©ì‹ì€ ì •ë³´ì— ëŒ€í•œ ë§í¬ë¡œ ë§Žì´ ì‚¬ìš©ë˜ê³ , POST ë°©ì‹ì€ ì‚¬ìš©ìžì˜ ì•„ì´ë””ë‚˜ ë¹„ë°€ë²ˆí˜¸ì™€ ê°™ì€ ë°ì´í„°ë¥¼ ì „ì†¡í•˜ëŠ” ë°©ì‹ìœ¼ë¡œ ì£¼ë¡œ ì‚¬ìš©í•œë‹¤.
+get ¹æ½ÄÀ¸·Î µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÒ ¶§ URL¿¡ µ¥ÀÌÅÍ¸¦ Æ÷ÇÔ½ÃÅ°´Â °ÍÀÌ ºñÇØ¼­ POST ¹æ½ÄÀ¸·Î µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÒ ¶§´Â Àü¼ÛÇÏ´Â µ¥ÀÌÅÍ¸¦ URL¿¡ Æ÷ÇÔ½ÃÅ°Áö ¾Ê°í Àü¼Û ÇÒ ¼ö ÀÖ´Ù. ÀÌ·¯ÇÑ Â÷ÀÌ·Î ÀÎÇØ¼­ GET ¹æ½ÄÀº Á¤º¸¿¡ ´ëÇÑ ¸µÅ©·Î ¸¹ÀÌ »ç¿ëµÇ°í, POST ¹æ½ÄÀº »ç¿ëÀÚÀÇ ¾ÆÀÌµð³ª ºñ¹Ð¹øÈ£¿Í °°Àº µ¥ÀÌÅÍ¸¦ Àü¼ÛÇÏ´Â ¹æ½ÄÀ¸·Î ÁÖ·Î »ç¿ëÇÑ´Ù.
 
 ```html
 <html>
@@ -278,22 +278,22 @@ echo $_POST['id'].','.$_POST['password'];
 ```
 
 ![image](https://user-images.githubusercontent.com/62539341/79406460-1c20e900-7fd2-11ea-9121-14af3c0ae040.png)
-ì´ë ‡ê²Œ ì•„ê¹Œì™€ëŠ” ë‹¤ë¥´ê²Œ URLì— ë°ì´í„°ê°€ ë“œëŸ¬ë‚˜ì§€ ì•Šê²Œ ëœë‹¤.
+ÀÌ·¸°Ô ¾Æ±î¿Í´Â ´Ù¸£°Ô URL¿¡ µ¥ÀÌÅÍ°¡ µå·¯³ªÁö ¾Ê°Ô µÈ´Ù.
 
 ------------------------------------------------------------------
-<h3>ì¡°ê±´ë¬¸</h3>
+<h3>Á¶°Ç¹®</h3>
 
-phpì—ì„œ ì¡°ê±´ë¬¸ì˜ ê¸°ë³¸ ë¬¸ë²•ì€ ë‹¤ë¥¸ í”„ë¡œê·¸ëž˜ë° ì–¸ì–´ì™€ ë™ì¼í•˜ë‹¤.
+php¿¡¼­ Á¶°Ç¹®ÀÇ ±âº» ¹®¹ýÀº ´Ù¸¥ ÇÁ·Î±×·¡¹Ö ¾ð¾î¿Í µ¿ÀÏÇÏ´Ù.
 ```php
 <?php
-if(ì¡°ê±´){
-    ì¡°ê±´ì´ trueë¼ë©´ ì‹¤í–‰í•  ëª…ë ¹
+if(Á¶°Ç){
+    Á¶°ÇÀÌ true¶ó¸é ½ÇÇàÇÒ ¸í·É
 }
 ?>
 ```
 
 <br>
-ì¡°ê±´ë¬¸ì„ ì‘ìš©í•´ë³´ìž.
+Á¶°Ç¹®À» ÀÀ¿ëÇØº¸ÀÚ.
 
 ```html
 <html>
@@ -320,35 +320,35 @@ if($_POST['id'] === 'egoing'){
 ?>
 ?>
 ```
-idì™€ passwordì˜ ê°’ì„ ìž…ë ¥ë°›ì•„ ì¡°ê±´ë¬¸ì„ ì´ìš©í•˜ë©´, ê°’ì´ ë§žëŠ”ì§€ í™•ì¸í•  ìˆ˜ ìžˆë‹¤. <br>ì¡°ê±´ë¬¸ì€ ì¤‘ì²© ê°€ëŠ¥!
+id¿Í passwordÀÇ °ªÀ» ÀÔ·Â¹Þ¾Æ Á¶°Ç¹®À» ÀÌ¿ëÇÏ¸é, °ªÀÌ ¸Â´ÂÁö È®ÀÎÇÒ ¼ö ÀÖ´Ù. <br>Á¶°Ç¹®Àº ÁßÃ¸ °¡´É!
 
-ì¡°ê±´ë¬¸ì— ì‚¬ìš©í•  ìˆ˜ ìžˆëŠ” ë…¼ë¦¬ ì—°ì‚°ìž
+Á¶°Ç¹®¿¡ »ç¿ëÇÒ ¼ö ÀÖ´Â ³í¸® ¿¬»êÀÚ
 
-1. and : andëŠ” ì¢Œí•­ê³¼ ìš°í•­ì´ ëª¨ë‘ ì°¸(true)ì¼ ë•Œ ì°¸ì´ëœë‹¤. &&ë¥¼ ì‚¬ìš©í•´ë„ ëœë‹¤.
-2. or  : orëŠ” orì˜ ì¢Œìš°í•­ ì¤‘ì— í•˜ë‚˜ë¼ë„ trueë¼ë©´ trueê°€ ë˜ëŠ” ë…¼ë¦¬ ì—°ì‚°ìžë‹¤.
-3. !   : !(not)ëŠ” ë¶€ì •ì˜ ì˜ë¯¸ë¡œ, trueë¥¼ falseë¡œ falseë¥¼ trueë¡œ ë§Œë“ ë‹¤.
+1. and : and´Â ÁÂÇ×°ú ¿ìÇ×ÀÌ ¸ðµÎ Âü(true)ÀÏ ¶§ ÂüÀÌµÈ´Ù. &&¸¦ »ç¿ëÇØµµ µÈ´Ù.
+2. or  : or´Â orÀÇ ÁÂ¿ìÇ× Áß¿¡ ÇÏ³ª¶óµµ true¶ó¸é true°¡ µÇ´Â ³í¸® ¿¬»êÀÚ´Ù.
+3. !   : !(not)´Â ºÎÁ¤ÀÇ ÀÇ¹Ì·Î, true¸¦ false·Î false¸¦ true·Î ¸¸µç´Ù.
 
 ------------------------------------------------------------------
-<h3>ë°˜ë³µë¬¸</h3>
+<h3>¹Ýº¹¹®</h3>
 
-ë°˜ë³µë¬¸ì—ì„œ ê°€ìž¥ ë§Žì´ ì‚¬ìš©ë˜ëŠ” ê²ƒì€ whileê³¼ forê°€ ìžˆë‹¤.
+¹Ýº¹¹®¿¡¼­ °¡Àå ¸¹ÀÌ »ç¿ëµÇ´Â °ÍÀº while°ú for°¡ ÀÖ´Ù.
 
-whileë¬¸ì˜ ë¬¸ë²•ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.
+while¹®ÀÇ ¹®¹ýÀº ´ÙÀ½°ú °°´Ù.
 ```php
-while(ì¡°ê±´){
-    ì½”ë“œ
-    ì½”ë“œ
+while(Á¶°Ç){
+    ÄÚµå
+    ÄÚµå
 }
 ```
-(ì˜ˆ)
+(¿¹)
 ```php
 <?php
-# iì˜ ê°’ìœ¼ë¡œ 0ì„ í• ë‹¹í•œë‹¤. 
+# iÀÇ °ªÀ¸·Î 0À» ÇÒ´çÇÑ´Ù. 
 $i = 0;
-# ì¢…ë£Œì¡°ê±´ìœ¼ë¡œ iì˜ ê°’ì´ 5ë³´ë‹¤ ìž‘ë‹¤ë©´ true, ê°™ê±°ë‚˜ í¬ë‹¤ë©´ false
+# Á¾·áÁ¶°ÇÀ¸·Î iÀÇ °ªÀÌ 5º¸´Ù ÀÛ´Ù¸é true, °°°Å³ª Å©´Ù¸é false
 while($i < 5){
     echo 'coding everybody';
-    # ë°˜ë³µë¬¸ì´ ì‹¤í–‰ë  ë•Œë§ˆë‹¤ iì˜ ê°’ì„ 1ì”© ì¦ê°€ì‹œí‚¨ë‹¤. ê·¸ ê²°ê³¼ iì˜ ê°’ì´ 5ê°€ ë˜ë©´ ì¢…ë£Œì¡°ê±´ì´ falseê°€ ë˜ë©´ì„œ ë°˜ë³µë¬¸ì´ ì¢…ë£Œëœë‹¤.
+    # ¹Ýº¹¹®ÀÌ ½ÇÇàµÉ ¶§¸¶´Ù iÀÇ °ªÀ» 1¾¿ Áõ°¡½ÃÅ²´Ù. ±× °á°ú iÀÇ °ªÀÌ 5°¡ µÇ¸é Á¾·áÁ¶°ÇÀÌ false°¡ µÇ¸é¼­ ¹Ýº¹¹®ÀÌ Á¾·áµÈ´Ù.
     $i += 1;
 }
 ?>
@@ -356,13 +356,13 @@ while($i < 5){
 
 ![image](https://user-images.githubusercontent.com/62539341/79409512-1e3a7600-7fd9-11ea-8ca4-231f1c0dd7cb.png)
 
-forë¬¸ì˜ ë¬¸ë²•ì€ ë‹¤ìŒê³¼ ê°™ë‹¤.
+for¹®ÀÇ ¹®¹ýÀº ´ÙÀ½°ú °°´Ù.
 ```php
-for(ì´ˆê¸°í™”; ë°˜ë³µ ì§€ì† ì—¬ë¶€; ë°˜ë³µ ì‹¤í–‰){
-    ì½”ë“œ;
+for(ÃÊ±âÈ­; ¹Ýº¹ Áö¼Ó ¿©ºÎ; ¹Ýº¹ ½ÇÇà){
+    ÄÚµå;
 }
 ```
-(ì˜ˆ)
+(¿¹)
 ```php
 <?php
 for($i = 0; $i < 10; $i++){
@@ -373,7 +373,7 @@ for($i = 0; $i < 10; $i++){
 
 ![image](https://user-images.githubusercontent.com/62539341/79409578-43c77f80-7fd9-11ea-8a4a-7a68145c2f4a.png)<br><br>
 
-ë°˜ë³µìž‘ì—…ì„ ì¤‘ê°„ì— ì¤‘ë‹¨ì‹œí‚¤ê³  ì‹¶ë‹¤ë©´ ì–´ë–»ê²Œ í•´ì•¼í• ê¹Œ?  breakë¥¼ ì‚¬ìš©í•˜ë©´ ëœë‹¤. ì•„ëž˜ì˜ ì˜ˆì œëŠ” ìœ„ì—ì„œ ì‚´íŽ´ë³¸ ì˜ˆì œë¥¼ ì¼ë¶€ ë³€í˜•í•œ ê²ƒì´ë‹¤.
+¹Ýº¹ÀÛ¾÷À» Áß°£¿¡ Áß´Ü½ÃÅ°°í ½Í´Ù¸é ¾î¶»°Ô ÇØ¾ßÇÒ±î?  break¸¦ »ç¿ëÇÏ¸é µÈ´Ù. ¾Æ·¡ÀÇ ¿¹Á¦´Â À§¿¡¼­ »ìÆìº» ¿¹Á¦¸¦ ÀÏºÎ º¯ÇüÇÑ °ÍÀÌ´Ù.
 ```php
 <?php
 for($i = 0; $i < 10; $i++){
@@ -387,7 +387,7 @@ for($i = 0; $i < 10; $i++){
 
 ![image](https://user-images.githubusercontent.com/62539341/79409746-a6208000-7fd9-11ea-959a-62f087a11e02.png)
 
-ê·¸ëŸ¼ ì‹¤í–‰ì„ ì¦‰ì‹œ ì¤‘ë‹¨ í•˜ë©´ì„œ ë°˜ë³µì€ ì§€ì†ë¼ê²Œ í•˜ë ¤ë©´ ì–´ë–»ê²Œ í•´ì•¼ í• ê¹Œ? continueë¥¼ ì‚¬ìš©í•˜ë©´ ëœë‹¤.
+±×·³ ½ÇÇàÀ» Áï½Ã Áß´Ü ÇÏ¸é¼­ ¹Ýº¹Àº Áö¼ÓµÅ°Ô ÇÏ·Á¸é ¾î¶»°Ô ÇØ¾ß ÇÒ±î? continue¸¦ »ç¿ëÇÏ¸é µÈ´Ù.
 ```php
 <?php
 for($i = 0; $i < 10; $i++){
@@ -402,17 +402,17 @@ for($i = 0; $i < 10; $i++){
 ![image](https://user-images.githubusercontent.com/62539341/79409945-19c28d00-7fda-11ea-917c-7ef2edcd8722.png)
 
 ------------------------------------------------------------------
-<h3>í•¨ìˆ˜</h3>
-í•¨ìˆ˜(function)ëž€ í•˜ë‚˜ì˜ ë¡œì§ì„ ìž¬ì‹¤í–‰ í•  ìˆ˜ ìžˆë„ë¡ í•˜ëŠ” ê²ƒìœ¼ë¡œ ì½”ë“œì˜ ìž¬ì‚¬ìš©ì„±ì„ ë†’ì—¬ì¤€ë‹¤. ê·¸ ì´í›„ë¶€í„° ë“±ìž¥í•˜ëŠ” í•¨ìˆ˜ë‚˜ ê°ì²´ì§€í–¥ê³¼ ê°™ì€ ê°œë…ë“¤ì€ ê·¸ê²ƒ ìžì²´ê°€ í”„ë¡œê·¸ëž˜ë°ì˜ ì—°ì‚°ì´ë‚˜ ë…¼ë¦¬ì— ì§ì ‘ì ìœ¼ë¡œ ê´€ì—¬í•˜ëŠ” ê²ƒì´ë¼ê¸° ë³´ë‹¤ëŠ” ë°©ëŒ€í•œ ì–‘ì˜ ì½”ë“œë¥¼ ì¤„ì—¬ì£¼ê³ , ìœ ì§€ë³´ìˆ˜ë¥¼ ì‰½ê²Œí•˜ê³ , ë²„ê·¸ê°€ ë°œìƒí•  ì—¬ì§€ë¥¼ ì¤„ì—¬ì£¼ëŠ” ê²ƒë“¤ì´ë¼ê³  í•  ìˆ˜ ìžˆë‹¤. 
+<h3>ÇÔ¼ö</h3>
+ÇÔ¼ö(function)¶õ ÇÏ³ªÀÇ ·ÎÁ÷À» Àç½ÇÇà ÇÒ ¼ö ÀÖµµ·Ï ÇÏ´Â °ÍÀ¸·Î ÄÚµåÀÇ Àç»ç¿ë¼ºÀ» ³ô¿©ÁØ´Ù. ±× ÀÌÈÄºÎÅÍ µîÀåÇÏ´Â ÇÔ¼ö³ª °´Ã¼ÁöÇâ°ú °°Àº °³³äµéÀº ±×°Í ÀÚÃ¼°¡ ÇÁ·Î±×·¡¹ÖÀÇ ¿¬»êÀÌ³ª ³í¸®¿¡ Á÷Á¢ÀûÀ¸·Î °ü¿©ÇÏ´Â °ÍÀÌ¶ó±â º¸´Ù´Â ¹æ´ëÇÑ ¾çÀÇ ÄÚµå¸¦ ÁÙ¿©ÁÖ°í, À¯Áöº¸¼ö¸¦ ½±°ÔÇÏ°í, ¹ö±×°¡ ¹ß»ýÇÒ ¿©Áö¸¦ ÁÙ¿©ÁÖ´Â °ÍµéÀÌ¶ó°í ÇÒ ¼ö ÀÖ´Ù. 
 
-í•¨ìˆ˜ì˜ ë¬¸ë²•
+ÇÔ¼öÀÇ ¹®¹ý
 ```php
-function í•¨ìˆ˜ëª…( [ì¸ìž...[,ì¸ìž]] ){
-   ì½”ë“œ
-   return ë°˜í™˜ê°’;
+function ÇÔ¼ö¸í( [ÀÎÀÚ...[,ÀÎÀÚ]] ){
+   ÄÚµå
+   return ¹ÝÈ¯°ª;
 }
 ```
-(ì˜ˆ)
+(¿¹)
 ```php
 <?php
 function get_member1(){
@@ -433,7 +433,7 @@ echo get_member2();
 ![image](https://user-images.githubusercontent.com/62539341/79410253-d3216280-7fda-11ea-9e9a-3094800ce6f3.png)
 
 <br>
-ì´ë ‡ê²Œ í•¨ìˆ˜ì— ì¸ìžê°’ì„ ë°›ì•„ì„œ ì‹¤í–‰ì‹œí‚¬ ìˆ˜ë„ ìžˆë‹¤.
+ÀÌ·¸°Ô ÇÔ¼ö¿¡ ÀÎÀÚ°ªÀ» ¹Þ¾Æ¼­ ½ÇÇà½ÃÅ³ ¼öµµ ÀÖ´Ù.
 
 ```php
 <?php
@@ -445,8 +445,8 @@ echo get_arguments(20, 30);
 ?>
 ```
 ------------------------------------------------------------------
-<h3>ë°°ì—´</h3>
-ë°°ì—´ì´ëž€ ì—°ê´€ëœ ë°ì´í„°ë¥¼ ëª¨ì•„ì„œ ê´€ë¦¬í•˜ê¸° ìœ„í•´ì„œ ì‚¬ìš©í•˜ëŠ” ë°ì´í„° íƒ€ìž…ì´ë‹¤. ë³€ìˆ˜ê°€ í•˜ë‚˜ì˜ ë°ì´í„°ë¥¼ ìž„ì‹œë¡œ ì €ìž¥í•˜ê¸° ìœ„í•œ ê²ƒì´ë¼ë©´ ë°°ì—´ì€ ì—¬ëŸ¬ ê°œì˜ ë°ì´í„°ë¥¼ ì €ìž¥í•˜ê¸° ìœ„í•œ ê²ƒì´ë¼ê³  í•  ìˆ˜ ìžˆë‹¤.
+<h3>¹è¿­</h3>
+¹è¿­ÀÌ¶õ ¿¬°üµÈ µ¥ÀÌÅÍ¸¦ ¸ð¾Æ¼­ °ü¸®ÇÏ±â À§ÇØ¼­ »ç¿ëÇÏ´Â µ¥ÀÌÅÍ Å¸ÀÔÀÌ´Ù. º¯¼ö°¡ ÇÏ³ªÀÇ µ¥ÀÌÅÍ¸¦ ÀÓ½Ã·Î ÀúÀåÇÏ±â À§ÇÑ °ÍÀÌ¶ó¸é ¹è¿­Àº ¿©·¯ °³ÀÇ µ¥ÀÌÅÍ¸¦ ÀúÀåÇÏ±â À§ÇÑ °ÍÀÌ¶ó°í ÇÒ ¼ö ÀÖ´Ù.
 
 ```php
 <?php
@@ -458,9 +458,9 @@ $member = ['egoing', 'k8805', 'sorialgi'];
 $member = array('egoing', 'k8805', 'sorialgi');
 ?>
 ```
-í•˜ë‚˜ì˜ ë³€ìˆ˜ì— 3ê°œì˜ ë°ì´í„°ë¥¼ ë‹´ì•˜ë‹¤. ê°ê°ì˜ ë°ì´í„°ë¥¼ ìš”ì†Œ(element)ë¼ê³  ë¶€ë¥¸ë‹¤. 
+ÇÏ³ªÀÇ º¯¼ö¿¡ 3°³ÀÇ µ¥ÀÌÅÍ¸¦ ´ã¾Ò´Ù. °¢°¢ÀÇ µ¥ÀÌÅÍ¸¦ ¿ä¼Ò(element)¶ó°í ºÎ¸¥´Ù. 
 
-ë°°ì—´ê³¼ ë°˜ë³µë¬¸ì„ ì‚¬ìš©í•˜ë©´ ì•„ì£¼ íŽ¸ë¦¬í•˜ë‹¤!
+¹è¿­°ú ¹Ýº¹¹®À» »ç¿ëÇÏ¸é ¾ÆÁÖ Æí¸®ÇÏ´Ù!
 ```php
 <?php
 function get_members(){
@@ -476,16 +476,16 @@ for($i = 0; $i < count($members); $i++){
 ?>
 ```
 <br>
-ë°°ì—´ì€ ë³µìˆ˜ì˜ ë°ì´í„°ë¥¼ íš¨ìœ¨ì ìœ¼ë¡œ ê´€ë¦¬, ì „ë‹¬í•˜ê¸° ìœ„í•œ ëª©ì ìœ¼ë¡œ ê³ ì•ˆëœ ë°ì´í„° íƒ€ìž…ì´ë‹¤. ë”°ë¼ì„œ ë°ì´í„°ì˜ ì¶”ê°€/ìˆ˜ì •/ì‚­ì œì™€ ê°™ì€ ì¼ì„ íŽ¸ë¦¬í•˜ê²Œ í•  ìˆ˜ ìžˆë„ë¡ ë•ëŠ” ë‹¤ì–‘í•œ ê¸°ëŠ¥ì„ ê°€ì§€ê³  ìžˆë‹¤. ëª‡ê°€ì§€ ì¤‘ìš”í•œ ê¸°ëŠ¥ë“¤ë§Œ ì‚´íŽ´ë³´ìž.
+¹è¿­Àº º¹¼öÀÇ µ¥ÀÌÅÍ¸¦ È¿À²ÀûÀ¸·Î °ü¸®, Àü´ÞÇÏ±â À§ÇÑ ¸ñÀûÀ¸·Î °í¾ÈµÈ µ¥ÀÌÅÍ Å¸ÀÔÀÌ´Ù. µû¶ó¼­ µ¥ÀÌÅÍÀÇ Ãß°¡/¼öÁ¤/»èÁ¦¿Í °°Àº ÀÏÀ» Æí¸®ÇÏ°Ô ÇÒ ¼ö ÀÖµµ·Ï µ½´Â ´Ù¾çÇÑ ±â´ÉÀ» °¡Áö°í ÀÖ´Ù. ¸î°¡Áö Áß¿äÇÑ ±â´Éµé¸¸ »ìÆìº¸ÀÚ.
 
-1. ë°°ì—´ì˜ í¬ê¸°
+1. ¹è¿­ÀÇ Å©±â
 ```php
 <?php
 $l = [1, 2, 3, 4, 5];
 echo count($l);
 ?>
 ```
-2. ë°°ì—´ì˜ ì¶”ê°€
+2. ¹è¿­ÀÇ Ãß°¡
 ```php
 <?php
 $arr = ['a', 'b', 'c', 'd', 'e'];
@@ -493,7 +493,7 @@ array_push($arr, 'f');
 var_dump($arr);
 ?>
 ```
-ë³µìˆ˜ì˜ ë°ì´í„°ë¥¼ ì¶”ê°€í•˜ë ¤ë©´
+º¹¼öÀÇ µ¥ÀÌÅÍ¸¦ Ãß°¡ÇÏ·Á¸é
 ```php
 <?php
 $li = ['a', 'b', 'c', 'd', 'e'];
@@ -501,7 +501,7 @@ $li = array_merge($li, ['f','g']);
 var_dump($li);
 ?>
 ```
-ë‹¤ìŒì€ ë°°ì—´ì˜ ì‹œìž‘ì ì— ì•„ì´í…œì„ ì¶”ê°€í•˜ëŠ” ë°©ë²•ì´ë‹¤. ë°°ì—´ liëŠ” z, a, b, c, d, eê°€ ëë‹¤. insertì˜ ì²«ë²ˆì§¸ ì¸ìžëŠ” ì¶”ê°€í•  ì•„ì´í…œì˜ ìœ„ì¹˜ë¥¼ ì˜ë¯¸í•˜ê³  ë‘ë²ˆì§¸ ì¸ìžëŠ” ì¶”ê°€í•  ê°’ì„ ì˜ë¯¸í•œë‹¤.
+´ÙÀ½Àº ¹è¿­ÀÇ ½ÃÀÛÁ¡¿¡ ¾ÆÀÌÅÛÀ» Ãß°¡ÇÏ´Â ¹æ¹ýÀÌ´Ù. ¹è¿­ li´Â z, a, b, c, d, e°¡ µÆ´Ù. insertÀÇ Ã¹¹øÂ° ÀÎÀÚ´Â Ãß°¡ÇÒ ¾ÆÀÌÅÛÀÇ À§Ä¡¸¦ ÀÇ¹ÌÇÏ°í µÎ¹øÂ° ÀÎÀÚ´Â Ãß°¡ÇÒ °ªÀ» ÀÇ¹ÌÇÑ´Ù.
 ```php
 <?php
 $li = ['a', 'b', 'c', 'd', 'e'];
@@ -509,7 +509,7 @@ array_unshift($li,'z');
 var_dump($li);
 ?>
 ```
-ë§Œì•½ ë‘ë²ˆì§¸ ì¸ë±ìŠ¤ ë’¤ì— ëŒ€ë¬¸ìž Bë¥¼ ë„£ê³  ì‹¶ë‹¤ë©´ ì•„ëž˜ì™€ ê°™ì´í•œë‹¤.
+¸¸¾à µÎ¹øÂ° ÀÎµ¦½º µÚ¿¡ ´ë¹®ÀÚ B¸¦ ³Ö°í ½Í´Ù¸é ¾Æ·¡¿Í °°ÀÌÇÑ´Ù.
 ```php
 <?php
 $li = ['a', 'b', 'c', 'd', 'e', 'z'];
@@ -517,9 +517,9 @@ array_splice($li, 2, 0, 'B');
 var_dump($li);
 ?>
 ```
-3. ë°°ì—´ì˜ ì œê±°
+3. ¹è¿­ÀÇ Á¦°Å
 
-ë‹¤ìŒì€ ë°°ì—´ì˜ ì²«ë²ˆì§¸ ìš”ì†Œë¥¼ ì œê±°í•˜ëŠ” ë°©ë²•ì´ë‹¤. 
+´ÙÀ½Àº ¹è¿­ÀÇ Ã¹¹øÂ° ¿ä¼Ò¸¦ Á¦°ÅÇÏ´Â ¹æ¹ýÀÌ´Ù. 
 ```php
 <?php
 $li = ['a', 'b', 'c', 'd', 'e', 'z'];
@@ -527,16 +527,16 @@ array_shift($li);
 var_dump($li);
 ?>
 ```
-ë‹¤ìŒì€ ë°°ì—´ì˜ ë§ˆì§€ë§‰ ìš”ì†Œë¥¼ ì œê±°í•˜ëŠ” ë°©ë²•ì´ë‹¤. 
+´ÙÀ½Àº ¹è¿­ÀÇ ¸¶Áö¸· ¿ä¼Ò¸¦ Á¦°ÅÇÏ´Â ¹æ¹ýÀÌ´Ù. 
 ```php
 <?php
 $li = ['a', 'b', 'c', 'd', 'e', 'z'];
 array_pop($li);
 var_dump($li);
 ```
-4. ë°°ì—´ì˜ ì •ë ¬
+4. ¹è¿­ÀÇ Á¤·Ä
 
-ë‹¤ìŒì€ ì •ë ¬í•˜ëŠ” ë°©ë²•ì´ë‹¤. ê²°ê³¼ëŠ” a, b, c, d, e ë‹¤.
+´ÙÀ½Àº Á¤·ÄÇÏ´Â ¹æ¹ýÀÌ´Ù. °á°ú´Â a, b, c, d, e ´Ù.
 ```php
 <?php
 $li = ['c','e','a','b','d'];
@@ -544,7 +544,7 @@ sort($li);
 var_dump($li);
 ?>
 ```
-ì—­ìˆœìœ¼ë¡œ ì •ë ¬í•˜ê³  ì‹¶ìœ¼ë©´
+¿ª¼øÀ¸·Î Á¤·ÄÇÏ°í ½ÍÀ¸¸é
 ```php
 <?php
 $li = ['c','e','a','b','d'];
@@ -553,14 +553,14 @@ var_dump($li);
 ?>
 ```
 <br>
-ì§€ê¸ˆê¹Œì§€ ì‚´íŽ´ë³¸ ë°°ì—´ì€ ì•„ì´í…œì— ëŒ€í•œ ì‹ë³„ìžë¡œ ìˆ«ìžë¥¼ ì‚¬ìš©í–ˆë‹¤. ë°ì´í„°ê°€ ì¶”ê°€ë˜ë©´ ë°°ì—´ ì „ì²´ì—ì„œ ì¤‘ë³µë˜ì§€ ì•ŠëŠ” ì¸ë±ìŠ¤ê°€ ìžë™ìœ¼ë¡œ ë§Œë“¤ì–´ì ¸ì„œ ê·¸ ë°ì´í„°ì— ëŒ€í•œ ì‹ë³„ìžê°€ ë˜ëŠ” ê²ƒì´ë‹¤. PHPì—ì„œëŠ” ì¸ë±ìŠ¤ë¡œ ë¬¸ìžë¥¼ ì‚¬ìš©í•˜ëŠ” ê²ƒë„ ê°€ëŠ¥í•˜ë‹¤. ì¼ë°˜ì ìœ¼ë¡œ ë‹¤ë¥¸ ì–¸ì–´ì—ì„œëŠ” ìˆ«ìžë¥¼ ì¸ë±ìŠ¤ë¡œ ì‚¬ìš©í•˜ëŠ” ê²ƒì„ ì¼ë°˜ì ìœ¼ë¡œ ë°°ì—´, í˜¹ì€ indexed arrayë¼ê³  í•˜ê³ , ë¬¸ìžë¥¼ ì¸ë±ìŠ¤ë¡œ ì‚¬ìš©í•˜ëŠ” ê²ƒì„ ì—°ê´€ë°°ì—´(associative array, hash, dictionary)ë¼ê³  ë¶€ë¥´ì§€ë§Œ PHPì—ì„œëŠ” ì´ë¥¼ íŠ¹ë³„ížˆ êµ¬ë¶„í•˜ì§€ ì•Šê³  ìžˆê¸° ë•Œë¬¸ì— í•˜ë‚˜ì˜ ë°°ì—´ì˜ í‚¤ ê°’ìœ¼ë¡œ ìˆ«ìžì™€ ë¬¸ìž ëª¨ë‘ë¥¼ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
+Áö±Ý±îÁö »ìÆìº» ¹è¿­Àº ¾ÆÀÌÅÛ¿¡ ´ëÇÑ ½Äº°ÀÚ·Î ¼ýÀÚ¸¦ »ç¿ëÇß´Ù. µ¥ÀÌÅÍ°¡ Ãß°¡µÇ¸é ¹è¿­ ÀüÃ¼¿¡¼­ Áßº¹µÇÁö ¾Ê´Â ÀÎµ¦½º°¡ ÀÚµ¿À¸·Î ¸¸µé¾îÁ®¼­ ±× µ¥ÀÌÅÍ¿¡ ´ëÇÑ ½Äº°ÀÚ°¡ µÇ´Â °ÍÀÌ´Ù. PHP¿¡¼­´Â ÀÎµ¦½º·Î ¹®ÀÚ¸¦ »ç¿ëÇÏ´Â °Íµµ °¡´ÉÇÏ´Ù. ÀÏ¹ÝÀûÀ¸·Î ´Ù¸¥ ¾ð¾î¿¡¼­´Â ¼ýÀÚ¸¦ ÀÎµ¦½º·Î »ç¿ëÇÏ´Â °ÍÀ» ÀÏ¹ÝÀûÀ¸·Î ¹è¿­, È¤Àº indexed array¶ó°í ÇÏ°í, ¹®ÀÚ¸¦ ÀÎµ¦½º·Î »ç¿ëÇÏ´Â °ÍÀ» ¿¬°ü¹è¿­(associative array, hash, dictionary)¶ó°í ºÎ¸£Áö¸¸ PHP¿¡¼­´Â ÀÌ¸¦ Æ¯º°È÷ ±¸ºÐÇÏÁö ¾Ê°í ÀÖ±â ¶§¹®¿¡ ÇÏ³ªÀÇ ¹è¿­ÀÇ Å° °ªÀ¸·Î ¼ýÀÚ¿Í ¹®ÀÚ ¸ðµÎ¸¦ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
 
 ```php
 <?php
 $grades = array('egoing'=>10, 'k8805'=>6, 'sorialgi'=>80);
 ?>
 ```
-ìœ„ì˜ ì˜ˆì œì—ì„œ egoingì€ keyê°€ ë˜ê³ , 10ì€ valueê°€ ëœë‹¤.
+À§ÀÇ ¿¹Á¦¿¡¼­ egoingÀº key°¡ µÇ°í, 10Àº value°¡ µÈ´Ù.
 ```php
 <?php
 $grades = [];
@@ -570,16 +570,16 @@ $grades['sorialgi'] = 80;
 var_dump($grades);
 ?>
 ```
-ì´ ë°©ë²•ìœ¼ë¡œë„ ì—°ê´€ë°°ì—´ì„ ë§Œë“¤ ìˆ˜ ìžˆë‹¤.
+ÀÌ ¹æ¹ýÀ¸·Îµµ ¿¬°ü¹è¿­À» ¸¸µé ¼ö ÀÖ´Ù.
 ```php
 <?php
 $grades = array('egoing'=>10, 'k8805'=>6, 'sorialgi'=>80);
 echo $grades['sorialgi'];
 ?>
 ```
-ì´ë ‡ê²Œ key ê°’ì„ ê°€ì ¸ ì˜¬ ìˆ˜ ìžˆë‹¤. ìœ„ ê²°ê³¼ëŠ” 80ì´ë‹¤.
+ÀÌ·¸°Ô key °ªÀ» °¡Á® ¿Ã ¼ö ÀÖ´Ù. À§ °á°ú´Â 80ÀÌ´Ù.
 
-ë°˜ë³µë¬¸ê³¼ í•¨ê»˜ ì‚¬ìš©í•  ìˆ˜ë„ ìžˆë‹¤.
+¹Ýº¹¹®°ú ÇÔ²² »ç¿ëÇÒ ¼öµµ ÀÖ´Ù.
 ```php
 <?php
 $grades = array('egoing'=>10, 'k8805'=>6, 'sorialgi'=>80);
@@ -588,7 +588,7 @@ foreach($grades as $key => $value){
 }
 ?>
 ```
-ê²°ê³¼ëŠ” ì•„ëž˜ì™€ ê°™ë‹¤.
+°á°ú´Â ¾Æ·¡¿Í °°´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79411674-64de9f00-7fde-11ea-8f9d-806dbad91769.png)
 
@@ -600,21 +600,21 @@ foreach($grades as $key => $value){
 
 ![image](https://user-images.githubusercontent.com/62539341/79440002-7771cc00-8010-11ea-99f6-8150dfa13f9f.png)
 
-view-sourcë¥¼ í´ë¦­!
+view-sourc¸¦ Å¬¸¯!
 
 ![image](https://user-images.githubusercontent.com/62539341/79440499-0aab0180-8011-11ea-81da-302c09323402.png)
 
-í˜„ìž¬ idëŠ” guest, pwëŠ” 123qweë¡œ ì €ìž¥ë˜ì–´ìžˆë‹¤. ê·¸ë¦¬ê³  forë¬¸ì„ ì‚´íŽ´ë³´ë©´, idì™€ pwë¥¼ base64_encodeë¥¼ 20ë²ˆ ë°˜ë³µí•œë‹¤...
+ÇöÀç id´Â guest, pw´Â 123qwe·Î ÀúÀåµÇ¾îÀÖ´Ù. ±×¸®°í for¹®À» »ìÆìº¸¸é, id¿Í pw¸¦ base64_encode¸¦ 20¹ø ¹Ýº¹ÇÑ´Ù...
 
 ![image](https://user-images.githubusercontent.com/62539341/79441594-65912880-8012-11ea-8768-3117cf678746.png)
 
-ì´ ë¶€ë¶„ì„ ë³´ë‹ˆê¹Œ decode_idê°€ admin ì´ê³  decode_pwê°€ nimdaì´ë©´ ë¬¸ì œê°€ í•´ê²°ë˜ëŠ” ê²ƒ ê°™ë‹¤.
+ÀÌ ºÎºÐÀ» º¸´Ï±î decode_id°¡ admin ÀÌ°í decode_pw°¡ nimdaÀÌ¸é ¹®Á¦°¡ ÇØ°áµÇ´Â °Í °°´Ù.
 
-ìš°ì„  encodeì™€ decodeê°€ ë¬´ì—‡ì¸ì§€ ìž˜ ëª¨ë¥´ê² ì–´ì„œ ì°¾ì•„ë³´ë‹ˆ encodeëŠ” ì•”í˜¸í™”, decodeëŠ” ë³µí˜¸í™”ë¼ëŠ” ê²ƒì„ ì•Œê²Œ ë¬ë‹¤.
+¿ì¼± encode¿Í decode°¡ ¹«¾ùÀÎÁö Àß ¸ð¸£°Ú¾î¼­ Ã£¾Æº¸´Ï encode´Â ¾ÏÈ£È­, decode´Â º¹È£È­¶ó´Â °ÍÀ» ¾Ë°Ô ‰ç´Ù.
 
-ë‹¤ì‹œ ë‘ë²ˆì§¸ ì‚¬ì§„ì„ ë´¤ì„ ë•Œ, ë³µí˜¸í™”í•œ ì¦‰ ë””ì½”ë”©í•œ ê°’ì´ ê°ê° admin, nimda ì´ì–´ì•¼ í•œë‹¤. ê·¸ëŸ¬ëŸ¬ë©´ ë””ì½”ë”©í•˜ê¸° ì „, ì¸ì½”ë”©í•œ ê°’ì´ admin, nimdaë¡œ ë°”ë€Œë©´... ë˜ì§€ ì•Šì„ê¹Œ?
+´Ù½Ã µÎ¹øÂ° »çÁøÀ» ºÃÀ» ¶§, º¹È£È­ÇÑ Áï µðÄÚµùÇÑ °ªÀÌ °¢°¢ admin, nimda ÀÌ¾î¾ß ÇÑ´Ù. ±×·¯·¯¸é µðÄÚµùÇÏ±â Àü, ÀÎÄÚµùÇÑ °ªÀÌ admin, nimda·Î ¹Ù²î¸é... µÇÁö ¾ÊÀ»±î?
 
-php online compiler ì—ì„œ
+php online compiler ¿¡¼­
 ```php
  $val_id="guest";
   $val_pw="123qwe";
@@ -623,95 +623,94 @@ php online compiler ì—ì„œ
     $val_pw=base64_encode($val_pw);
   }
 ```
-ì´ ë¶€ë¶„ì„ ì‚´ì§ ë°”ê¿”ì„œ adminê³¼ nimdaë¥¼ 20ë²ˆ ì¸ì½”ë”©í•œ ê°’ì„ ì¿ í‚¤ userì™€ passwordì— ê°ê° ë„£ê³  ìƒˆë¡œê³ ì¹¨í–ˆëŠ”ë° 
+ÀÌ ºÎºÐÀ» »ìÂ¦ ¹Ù²ã¼­ admin°ú nimda¸¦ 20¹ø ÀÎÄÚµùÇÑ °ªÀ» ÄíÅ° user¿Í password¿¡ °¢°¢ ³Ö°í »õ·Î°íÄ§Çß´Âµ¥ 
 
 ![image](https://user-images.githubusercontent.com/62539341/79446600-69747900-8019-11ea-8df8-71bd66f722e1.png)
 
-ì˜¤ë¥˜ê°€ ë– ì„œ ë¬¸ì œë¥¼ í’€ì§€ ëª»í–ˆë‹¤.. ë¸Œë¼ìš°ì €ë¥¼ ì›¨ì¼ë¡œ í•´ì„œ ê·¸ëŸ°ê°€ ìƒê°í•˜ê³  í¬ë¡¬ìœ¼ë¡œ ì ‘ì†í•´ì„œ ë‹¤ì‹œ ì‹œë„í•´ë´¤ëŠ”ë° ë˜‘ê°™ì€ ì˜¤ë¥˜ê°€ ë‚¬ë‹¤...
+¿À·ù°¡ ¶°¼­ ¹®Á¦¸¦ Ç®Áö ¸øÇß´Ù.. ºê¶ó¿ìÀú¸¦ ¿þÀÏ·Î ÇØ¼­ ±×·±°¡ »ý°¢ÇÏ°í Å©·ÒÀ¸·Î Á¢¼ÓÇØ¼­ ´Ù½Ã ½ÃµµÇØºÃ´Âµ¥ ¶È°°Àº ¿À·ù°¡ ³µ´Ù...
 
 2.webhacking.kr old-33
 
-view-source í´ë¦­!
+view-source Å¬¸¯!
 
 ![image](https://user-images.githubusercontent.com/62539341/79446940-0d5e2480-801a-11ea-8972-11c021adb043.png)
 
-ì´ë²ˆì—” ì—„ì²­ ì½”ë“œê°€ ê°„ë‹¨í•´ë³´ì´ëŠ”ë°..
+ÀÌ¹ø¿£ ¾öÃ» ÄÚµå°¡ °£´ÜÇØº¸ÀÌ´Âµ¥..
 
-php ë‚´ë¶€ë¥¼ ì‚´íŽ´ë³´ë‹ˆ GET ë°©ì‹ìœ¼ë¡œ ë³€ìˆ˜ getì´ heheë¡œ ê°’ì„ ìž…ë ¥ë°›ìœ¼ë©´
-echoë¡œ ë¬´ì–¸ê°€?ë¥¼ ì¶œë ¥í•˜ëŠ” ê²ƒ ê°™ë‹¤.
+php ³»ºÎ¸¦ »ìÆìº¸´Ï GET ¹æ½ÄÀ¸·Î º¯¼ö getÀÌ hehe·Î °ªÀ» ÀÔ·Â¹ÞÀ¸¸é
+echo·Î ¹«¾ð°¡?¸¦ Ãâ·ÂÇÏ´Â °Í °°´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79447450-d2a8bc00-801a-11ea-8f5a-6464bb3f07fa.png)
 
-ì´ë ‡ê²Œ getì„ heheë¡œ ìž…ë ¥í•˜ë‹ˆê¹ Next ë²„íŠ¼ì´ ìƒê²¼ë‹¤! Next í´ë¦­!<br><Br>
+ÀÌ·¸°Ô getÀ» hehe·Î ÀÔ·ÂÇÏ´Ï±ñ Next ¹öÆ°ÀÌ »ý°å´Ù! Next Å¬¸¯!<br><Br>
 
 ![image](https://user-images.githubusercontent.com/62539341/79447641-20bdbf80-801b-11ea-8592-bb5d5f0e1707.png)
 
-ì´ë²ˆì—” POST ë°©ì‹ìœ¼ë¡œ postì— hehe, post2ì— hehe2ë¥¼ ìž…ë ¥í•˜ë©´ ë‹¤ìŒ ë‹¨ê³„ë¡œ ë„˜ì–´ê°€ëŠ”ê°€ë³´ë‹¤.
+ÀÌ¹ø¿£ POST ¹æ½ÄÀ¸·Î post¿¡ hehe, post2¿¡ hehe2¸¦ ÀÔ·ÂÇÏ¸é ´ÙÀ½ ´Ü°è·Î ³Ñ¾î°¡´Â°¡º¸´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79452530-3cc55f00-8023-11ea-97e5-476d726797ea.png)
 
-ì´ë ‡ê²Œ ê¸°ì¡´ html ì½”ë“œì— ì´ ì½”ë“œë¥¼ ì¶”ê°€í•´ì„œ postë¡œ submit í•  ìˆ˜ ìžˆê²Œ ìž…ë ¥ì¹¸ ë‘ê°œëž‘ submit ë²„íŠ¼ì„ ë§Œë“¤ì—ˆë‹¤.
+ÀÌ·¸°Ô ±âÁ¸ html ÄÚµå¿¡ ÀÌ ÄÚµå¸¦ Ãß°¡ÇØ¼­ post·Î submit ÇÒ ¼ö ÀÖ°Ô ÀÔ·ÂÄ­ µÎ°³¶û submit ¹öÆ°À» ¸¸µé¾ú´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79452630-65e5ef80-8023-11ea-9210-49ee152b706d.png)
 Next!<br><br>
 
 ![image](https://user-images.githubusercontent.com/62539341/79452725-92017080-8023-11ea-99f1-36f591736580.png)
 
-GETë°©ì‹ìœ¼ë¡œ myipì— REMOTE_ADDRì„ ìž…ë ¥í•˜ë©´ ë¬¸ì œê°€ í’€ë¦¬ëŠ” ê²ƒ ê°™ë‹¤.
-ë˜‘ê°™ì´ ìž…ë ¥í–ˆëŠ”ë°... ë‹µì´ ì•„ë‹ˆë¼ê³  ë‚˜ì™”ë‹¤.
+GET¹æ½ÄÀ¸·Î myip¿¡ REMOTE_ADDRÀ» ÀÔ·ÂÇÏ¸é ¹®Á¦°¡ Ç®¸®´Â °Í °°´Ù.
+¶È°°ÀÌ ÀÔ·ÂÇß´Âµ¥... ´äÀÌ ¾Æ´Ï¶ó°í ³ª¿Ô´Ù.
 
-ì°¾ì•„ë³´ë‹ˆ REMOTE_ADDRëŠ” ë‚´ ip ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ë¼ëŠ” ê²ƒì„ ì•Œê²Œ ë˜ì—ˆë‹¤.
-ë‹¤ì‹œ ip ì£¼ì†Œë¥¼ ìž…ë ¥í•˜ë‹ˆê¹ ë¬¸ì œ í•´ê²°!
+Ã£¾Æº¸´Ï REMOTE_ADDR´Â ³» ip ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ¶ó´Â °ÍÀ» ¾Ë°Ô µÇ¾ú´Ù.
+´Ù½Ã ip ÁÖ¼Ò¸¦ ÀÔ·ÂÇÏ´Ï±ñ ¹®Á¦ ÇØ°á!
 
 ![image](https://user-images.githubusercontent.com/62539341/79453363-9417ff00-8024-11ea-8677-10f80619932f.png)
 
-<br>ì´ì œ 4ë²ˆì§¸ ë¬¸ì œë‹¤.
+<br>ÀÌÁ¦ 4¹øÂ° ¹®Á¦´Ù.
 ![image](https://user-images.githubusercontent.com/62539341/79453408-a2feb180-8024-11ea-8d17-c9bc8c593ea9.png)
 
-hintê°€ ì í˜€ìžˆë‹¤.. ì•„ì§ ì–´ë–»ê²Œ ì“°ì¼ì§€ ëª¨ë¥´ë‹ˆ ì¼ë‹¨ view-source
+hint°¡ ÀûÇôÀÖ´Ù.. ¾ÆÁ÷ ¾î¶»°Ô ¾²ÀÏÁö ¸ð¸£´Ï ÀÏ´Ü view-source
 
 ![image](https://user-images.githubusercontent.com/62539341/79453487-bc9ff900-8024-11ea-9547-413ee749b8be.png)
 
-ì´ë²ˆì—ë„ GET ë°©ì‹ìœ¼ë¡œ password ì— ê°’ì„ ìž…ë ¥í•˜ëŠ” ë¬¸ì œë‹¤
-ê·¸ëŸ°ë° md5ëŠ” ì²˜ìŒ ë³´ëŠ” ê²ƒì´ë‹¤. 
+ÀÌ¹ø¿¡µµ GET ¹æ½ÄÀ¸·Î password ¿¡ °ªÀ» ÀÔ·ÂÇÏ´Â ¹®Á¦´Ù
+±×·±µ¥ md5´Â Ã³À½ º¸´Â °ÍÀÌ´Ù. 
 
 ![image](https://user-images.githubusercontent.com/62539341/79453926-55cf0f80-8025-11ea-8d4c-05327208cfdf.png)
 
-êµ¬ê¸€ì— ê²€ìƒ‰í•´ì„œ hintì˜ ìˆ«ìžë¥¼ ë„£ìœ¼ë‹ˆê¹Œ êµ‰ìž¥ížˆ ë³µìž¡í•œ ì¹œêµ¬ë“¤ì´ ì¶œë ¥ë¬ë‹¤. ì´ ì¹œêµ¬ë“¤ì„ passwordì— ë„£ì—‡ë‹¤. ê·¼ë° ì‹œê°„ì´ ì§€ë‚˜ë©´ ìˆ«ìžê°€ ë°”ë€Œì–´ì„œ ìˆ«ìžë¥¼ ë„‰ë„‰í•˜ê²Œ ì„¤ì •í–ˆë‹¤. íƒ€ì´ë°ì— ë§žì¶°ì„œ ìƒˆë¡œê³ ì¹¨í•˜ë‹ˆê¹Œ ë¬¸ì œê°€ í’€ë ¸ë‹¤!
+±¸±Û¿¡ °Ë»öÇØ¼­ hintÀÇ ¼ýÀÚ¸¦ ³ÖÀ¸´Ï±î ±²ÀåÈ÷ º¹ÀâÇÑ Ä£±¸µéÀÌ Ãâ·Â‰ç´Ù. ÀÌ Ä£±¸µéÀ» password¿¡ ³Ö¾ù´Ù. ±Ùµ¥ ½Ã°£ÀÌ Áö³ª¸é ¼ýÀÚ°¡ ¹Ù²î¾î¼­ ¼ýÀÚ¸¦ ³Ë³ËÇÏ°Ô ¼³Á¤Çß´Ù. Å¸ÀÌ¹Ö¿¡ ¸ÂÃç¼­ »õ·Î°íÄ§ÇÏ´Ï±î ¹®Á¦°¡ Ç®·È´Ù!
 
 ![image](https://user-images.githubusercontent.com/62539341/79454324-f7566100-8025-11ea-911f-1d98b853965e.png)<br><br>
 
 ![image](https://user-images.githubusercontent.com/62539341/79454361-0d642180-8026-11ea-9b13-d3b5e8c93d90.png)
 
-ì´ë²ˆì—” GETì´ëž‘ POSTëž‘ COOKIEëž‘ ë‹¤ê°™ì´ ìžˆëŠ” ë¬¸ì œë‹¤.
+ÀÌ¹ø¿£ GETÀÌ¶û POST¶û COOKIE¶û ´Ù°°ÀÌ ÀÖ´Â ¹®Á¦´Ù.
 
-ì¼ë‹¨ GETì€ imgetì„ URLì— ì¶”ê°€í•˜ë©´ ë˜ê³  POST ë¶€ë¶„ì„ í•´ê²°í•´ì•¼ ë˜ë‹ˆê¹Œ íŽ˜ì´ì§€ ì†ŒìŠ¤ë¥¼ ì¡°ê¸ˆ ìˆ˜ì •í•  í•„ìš”ê°€ ìžˆë‹¤.
+ÀÏ´Ü GETÀº imgetÀ» URL¿¡ Ãß°¡ÇÏ¸é µÇ°í POST ºÎºÐÀ» ÇØ°áÇØ¾ß µÇ´Ï±î ÆäÀÌÁö ¼Ò½º¸¦ Á¶±Ý ¼öÁ¤ÇÒ ÇÊ¿ä°¡ ÀÖ´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79455843-751b6c00-8028-11ea-925a-c1e2e70a1b70.png)
 
 
-ì´ë ‡ê²Œ post í•  ìˆ˜ ìžˆê²Œ ì½”ë“œë¥¼ ì¶”ê°€í–ˆë‹¤.
+ÀÌ·¸°Ô post ÇÒ ¼ö ÀÖ°Ô ÄÚµå¸¦ Ãß°¡Çß´Ù.
 
-ì´ì œ imcookieì˜ ì´ë¦„ìœ¼ë¡œ ì¿ í‚¤ë¥¼ ë§Œë“¤ì–´ì¤„ ì°¨ë¡€!
+ÀÌÁ¦ imcookieÀÇ ÀÌ¸§À¸·Î ÄíÅ°¸¦ ¸¸µé¾îÁÙ Â÷·Ê!
 
 ![image](https://user-images.githubusercontent.com/62539341/79455272-962f8d00-8027-11ea-9402-a533cabe345e.png)
 
 ![image](https://user-images.githubusercontent.com/62539341/79455918-9419fe00-8028-11ea-8ce1-e85c1c95bdd9.png)
 
-submitì„ í•˜ë‹ˆ í†µê³¼!<br><br>
+submitÀ» ÇÏ´Ï Åë°ú!<br><br>
 
 ![image](https://user-images.githubusercontent.com/62539341/79455991-b27ff980-8028-11ea-84fe-e637e4599948.png)
 
-ì´ë²ˆ ë¬¸ì œì—ë„ hintê°€ ì í˜€ìžˆë‹¤. ë¸Œë¼ìš°ì €ë§ˆë‹¤ íŠ¹ì • ìˆ«ìžë¥¼ ì§€ì •í•´ë†“ì€ê±´ê°€?
+ÀÌ¹ø ¹®Á¦¿¡µµ hint°¡ ÀûÇôÀÖ´Ù. ºê¶ó¿ìÀú¸¶´Ù Æ¯Á¤ ¼ýÀÚ¸¦ ÁöÁ¤ÇØ³õÀº°Ç°¡?
 
 ![image](https://user-images.githubusercontent.com/62539341/79456103-dfcca780-8028-11ea-87bf-45b2458e5d5b.png)
 
-ì¿ í‚¤ì™€ í¬ìŠ¤íŠ¸ ë°©ì‹ì„ ì´ìš©í•´ì„œ ë¬¸ì œë¥¼ í’€ì–´ì•¼ ë˜ê² ë‹¤.
+ÄíÅ°¿Í Æ÷½ºÆ® ¹æ½ÄÀ» ÀÌ¿ëÇØ¼­ ¹®Á¦¸¦ Ç®¾î¾ß µÇ°Ú´Ù.
 
-ë‚´ ipì£¼ì†Œë¥¼ ë„£ì€ ì¿ í‚¤ 'test'ë¥¼ ìƒì„±,
-ê·¸ë¦¬ê³  ì´ì œ post ë°©ì‹ìœ¼ë¡œ hintì— ì ížŒ ìˆ«ìžë¥¼ ë„£ì–´ì•¼ ê² ë‹¤.
+³» ipÁÖ¼Ò¸¦ ³ÖÀº ÄíÅ° 'test'¸¦ »ý¼º,
+±×¸®°í ÀÌÁ¦ post ¹æ½ÄÀ¸·Î hint¿¡ ÀûÈù ¼ýÀÚ¸¦ ³Ö¾î¾ß °Ú´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/79457473-3b983000-802b-11ea-98f6-26b2c5ef709b.png)
 
-ë‹µì´ ì•„ë‹ˆë¼ê³  ê²°ê³¼ê°€ ë–´ë‹¤. ì–´ë–»ê²Œ í’€ì–´ì•¼ ë˜ëŠ” ê±´ì§€ ìž˜ ëª¨ë¥´ê² ë‹¤...
-
+´äÀÌ ¾Æ´Ï¶ó°í °á°ú°¡ ¶¹´Ù. ¾î¶»°Ô Ç®¾î¾ß µÇ´Â °ÇÁö Àß ¸ð¸£°Ú´Ù...

