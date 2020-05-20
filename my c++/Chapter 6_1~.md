@@ -123,3 +123,177 @@ int main(){
     return 0;
 }
 ```
+
+<h3>6_4 배열과 선택 정렬 selection sort</h3>
+
+              value   index
+    3 5 2 1 4   1       3
+    1 5 2 3 4   2       2 
+    1 2 5 3 4   3       3
+    1 2 3 5 4   5       3
+    1 2 3 4 5
+이렇게 출력할 수 있도록 selection sort를 배열을 이용해서 구현해보기
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+void printArray(int array[], int length){
+    for(int index = 0; index < length; index++){
+       cout << array[index] << " ";
+   }cout << endl;
+}
+
+void sortArray(int array[], int length, int min, int minIndex);
+
+int main(){
+   const int length = 5;
+
+   int array[length] = {3, 5, 2, 1, 4};
+
+   printArray(array, length);
+
+   for(int i = 0; i < length - 1; i++){
+       sortArray(array, length, array[i], i);
+       printArray(array, length);
+   }
+
+    return 0;
+}
+
+void sortArray(int array[], int length, int min, int minIndex){
+    int originMin = min;
+    int originIndex = minIndex;
+
+    for(int i = minIndex; i < length; i++){
+        if(min > array[i]){
+            min = array[i];
+            minIndex = i;
+        }
+    }
+
+    array[originIndex] = min;
+    array[minIndex] = originMin;
+}
+```
+
+이번엔 bubble sort로 구현해보자.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+void printArray(int array[], int length){
+    for(int index = 0; index < length; index++){
+       cout << array[index] << " ";
+   }cout << endl;
+}
+
+int sortArray(int array[], int length);
+
+int main(){
+   const int length = 5;
+
+   int array[length] = {3, 5, 2, 1, 4};
+
+   printArray(array, length);
+
+   for(int i = 0; i < length - 1; i++){
+       if(sortArray(array, length) == 0) break;
+       printArray(array, length);
+   }
+
+    return 0;
+}
+
+int sortArray(int array[], int length){
+    int exchange = 0;
+
+    for(int i = 0; i < length - 1; i++){
+        if(array[i] > array[i+1]){
+            int temp = array[i];
+            array[i] = array[i+1];
+            array[i+1] = temp;
+
+            exchange++;
+        }
+    }
+
+    return exchange;
+}
+```
+
+<h3>6_5 정적 다차원 배열 Multi-dimensional Array</h3>
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    const int num_rows = 3;
+    const int num_columns = 5;
+
+    for(int row = 0; row < num_rows; row++){
+        for(int col = 0; col < num_columns; col++){
+            cout << "[" << row << "]" << "[" << col << "]" << "\t";
+        }
+        cout << endl;
+    }
+
+    int array[num_rows][num_columns] =
+    {
+        {1, 2, },
+        {6, 7, 8, 9, 10},
+        {11, 12, 13, 14, 15}
+    };
+
+    for(int row = 0; row < num_rows; row++){
+        for(int col = 0; col < num_columns; col++){
+            cout << array[row][col] << "\t";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    int array[5][4][3] = {0};
+
+    for(int row = 0; row < 5; row++){
+        for(int col = 0; col < 4; col++){
+            for(int col2 = 0; col2 < 3; col2++)
+                cout << (long long)array[row][col] << "\t";
+        }
+        cout << endl;
+    }
+
+    return 0;
+}
+```
+
+<h3>6_6 C언어 스타일의 배열 문자열</h3>
+문자열 맨 뒤에는 우리 눈엔 보이지 않지만 null charater 이 있다. 따라서 아래의 문자열의 길이는 총 7 인 것이다.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int main(){
+    char myString[] = "string";
+
+    cout << sizeof(myString) / sizeof(char) << endl;
+
+    return 0;
+}
+```
