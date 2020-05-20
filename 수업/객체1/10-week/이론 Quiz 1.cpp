@@ -53,11 +53,13 @@ int binarySearch(const int b[], int searchKey, int low, int high, int size){
             if (searchKey < b[middle])
             {
                 high = middle - 1;
+                return binarySearch(b, searchKey, low, high, size);
             }
 
             else
             {
                 low = middle + 1;
+                return binarySearch(b, searchKey, low, high, size);
             }
         }
     }
@@ -76,6 +78,23 @@ void printHeader(int size){
 
     for(int k = 1; k <= 4 * size; k++){
         cout << "-";
+    }
+    cout << endl;
+}
+
+void printRow(const int b[], int low, int mid, int high, int size){
+    for(int m = 0; m < size; m++){
+        if(m < low || m > high)
+            cout << "    ";
+        
+        else{
+            if(m == mid)
+                cout << setw(3) << b[m] << "*";
+            else
+            {
+                    cout << setw(3) << b[m] << " ";
+            }
+        }
     }
     cout << endl;
 }
