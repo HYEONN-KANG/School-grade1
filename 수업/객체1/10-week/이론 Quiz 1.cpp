@@ -53,13 +53,13 @@ int binarySearch(const int b[], int searchKey, int low, int high, int size){
             if (searchKey < b[middle])
             {
                 high = middle - 1;
-                return binarySearch(b, searchKey, low, high, size);
+                binarySearch(b, searchKey, low, high, size);
             }
 
             else
             {
                 low = middle + 1;
-                return binarySearch(b, searchKey, low, high, size);
+                binarySearch(b, searchKey, low, high, size);
             }
         }
     }

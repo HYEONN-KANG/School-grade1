@@ -1,32 +1,30 @@
-#include <iostream>
+#include <stdio.h>
 
 int main(){
-    using namespace std;
-
     int N;
-    cin >> N;
+    scanf("%d", &N);
 
-    int grade[100];
+    float grade[1000];
     for(int i = 0; i < N; i++){
-        cin >> grade[i];
+        scanf("%f", &grade[i]);
     }
 
-    // Mê°’ êµ¬í•˜ê¸°
+    // ÃÖ´ñ°ª ±¸ÇÏ±â
     int M;
     M = grade[0];
     for(int i = 1; i < N; i++){
         if(grade[i] > M) M = grade[i];
     }
 
-    // ì‹œí—˜ ì„±ì  ë°”ê¾¸ê¸°
+    // Á¡¼ö Á¶ÀÛÇÏ±â
+    float sum = 0;
     for(int i = 0; i < N; i++){
         grade[i] = (static_cast<float>(grade[i]) / M) * 100;
-    }
-
-    // ë°”ë€ ì‹œí—˜ ì„±ì  í‰ê·  êµ¬í•˜ê¸°
-    int sum = 0;
-    for(int i = 0; i < N; i++){
         sum += grade[i];
     }
-    cout << sum << endl;
+    
+    float average = sum / N;
+    printf("%f", average);
+
+    return 0;
 }
