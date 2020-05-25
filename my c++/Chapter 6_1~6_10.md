@@ -506,6 +506,156 @@ int main(){
 
 <h3>6_9 포인터 연산과 배열 인덱싱(Indexing)</h3>
 
-```cpp
+포인터를 선언할 때 데이터 타입의 역할은! 포인터 연산을 할 때 의미하는 저 1이 몇 byte인가를 알려준다.
 
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    short value = 7;
+    short *ptr = &value;
+
+    cout << uintptr_t(ptr - 1) << endl;
+    cout << uintptr_t(ptr) << endl;
+    cout << uintptr_t(ptr + 1) << endl;
+    cout << uintptr_t(ptr + 2) << endl;
+}
+
+/*output
+7929364
+7929366
+7929368
+7929370
+*/
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    int array[] = {9, 7, 5, 3, 1};
+    int *ptr = array;
+
+    for(int i = 0; i < 5; i++){
+        cout << array[i] << " " << (uintptr_t)&array[i] << endl;
+    }cout << endl;
+
+    for(int i = 0; i < 5; i++){
+        cout << *(ptr+i) << " " << (uintptr_t)(ptr+i) << endl;
+    }
+}
+
+/*output
+9 7929328
+7 7929332
+5 7929336
+3 7929340
+1 7929344
+
+9 7929328
+7 7929332
+5 7929336
+3 7929340
+1 7929344
+*/
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    char name[] = "hello";
+
+    const int n_name = sizeof(name) / sizeof(char);
+
+    char *ptr = name;
+
+    for(int i = 0; i < n_name; i++){
+        cout << *(name + i);
+    }
+    for(int i = 0; i < n_name; i++){
+        cout << *(ptr + i);
+    }
+}
+
+/*output
+hello hello
+*/
+```
+
+(연습문제) 포인터 연산을 사용해서 null character을 제외하고 출력하기
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    char name[] = "hello";
+
+    const int n_name = sizeof(name) / sizeof(char);
+
+    char *ptr = name;
+
+    for(int i = 0; i < n_name; i++){
+        if(*(name + i) == '\0') break;
+        cout << *(name + i);
+    }
+    for(int i = 0; i < n_name; i++){
+        if(*(ptr + i) == '\0') break;
+        cout << *(ptr + i);
+    }
+}
+
+/*output
+hellohello
+*/
+```
+
+<h3>6_10 C언어 스타일의 문자열 심볼릭Symbolic 상수</h3>
+
+```cpp
+#include <iostream>
+using namespace std;
+
+const char *getName(){
+    return "hello";
+}
+
+int main(){
+    // char name[] = "hello";
+    const char *name = getName();
+    const char *name2 = getName();
+
+    cout << (uintptr_t)name << endl;
+    cout << (uintptr_t)name2 << endl;
+}
+
+/*output
+4943873
+4943873
+*/
+```
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main(){
+    int int_arr[5] = {1, 2, 3, 4, 5};
+    char char_arr[] = "Hello, World!";
+    const char *name = "Harry Porter";
+
+    cout << int_arr << endl;
+    cout << char_arr << endl;
+    cout << name << endl;
+}
+
+/*output
+0x78fe00
+Hello, World!
+Harry Porter
+*/
 ```
