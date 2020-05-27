@@ -251,3 +251,124 @@ int main(){
     return 0;
 }
 ```
+
+<h3>5_10 std::cin 더 잘쓰기 - ignore(), clear(), fail()</h3>
+
+사용자는 프로그래머가 의도하지 않은 값을 입력할 가능성이 많다. 다음의 코드는 입력 받은 것을 버퍼에 저장하고 cin으로 하나씩 꺼내가는 형식이기 때문에 예기치 못한 오류가 발생한다.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int getInt(){
+    cout << "Enter a integer number : ";
+    int x;
+    cin >> x;
+    
+    return x;
+}
+
+char getOperator(){
+    cout << "Enter an operator (+, -) : ";
+    char op;
+    cin >> op;
+    return op;
+}
+
+void printResult(int x, char op, int y){
+    if(op == '+') cout << x + y << endl;
+    else if(op == '-') cout << x - y << endl;
+    else{
+        cout << "Invalid operator" << endl;
+    }
+}
+
+int main(){
+    int x = getInt();
+    char op = getOperator();
+    int y = getInt();
+
+    printResult(x, op, y);
+
+    return 0;
+}
+
+/*output
+Enter a integer number : 1 2
+Enter an operator (+, -) : Enter a integer number : 3
+Invalid operator
+*/
+```
+
+cin에서는 사용자의 입력을 버퍼에 담아놓고 이것을 x에 넣어주고, y에 넣어주고.. 하는 과정을 거친다. 사용자가 두 개의 값을 입력했다면 두번째 입력은 버퍼에 남아 있을 텐데 이 버퍼를 비워주면 된다. -> std::cin.ignore()
+또, 사용자가 int 값을 입력할 때 너무 큰 숫자를 입력하면 에러가 난다. 이때 std::cin.fail()을 사용할 수 있다. std::cin.fail()는 실패했냐라고 물어보는거고 실패했을 경우 true를 리턴한다.
+
+```cpp
+#include <iostream>
+
+using namespace std;
+
+int getInt(){
+    while(true){
+        cout << "Enter a integer number : ";
+        int x;
+        cin >> x;
+        
+        if(std::cin.fail()){
+            std::cin.clear();
+            std::cin.ignore(32767, '\n');
+            cout << "Invalid number, please try again" << endl;
+        }else{
+            std::cin.ignore(32767, '\n');
+            return x;
+        }
+    }
+}
+
+char getOperator(){
+    while(true){
+        cout << "Enter an operator (+, -) : ";
+        char op;
+        cin >> op;
+        std::cin.ignore(32767, '\n');
+
+        if(op == '+' || op == '-'){
+            return op;
+        }else{
+            cout << "Invalid operator, please try again" << endl;
+        }
+    }
+}
+
+void printResult(int x, char op, int y){
+    if(op == '+') cout << x + y << endl;
+    else if(op == '-') cout << x - y << endl;
+    else{
+        cout << "Invalid operator" << endl;
+    }
+}
+
+int main(){
+    int x = getInt();
+    char op = getOperator();
+    int y = getInt();
+
+    printResult(x, op, y);
+
+    return 0;
+}
+
+/*
+Enter a integer number : 111111111111111111111111
+Invalid number, please try again
+Enter a integer number : 111111111111111111
+Invalid number, please try again
+Enter a integer number : 2
+Enter an operator (+, -) : e
+Invalid operator, please try again
+Enter an operator (+, -) : +
+Enter a integer number : 3
+5
+*/
+```

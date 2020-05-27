@@ -8,7 +8,7 @@
             "name": "(gdb) Launch",
             "type": "cppdbg",
             "request": "launch",
-            "program": "./add.exe",
+            "program": "./Program Files/추가 Quiz 3.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
