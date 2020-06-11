@@ -11,7 +11,7 @@ int main() {
 
 	char temp[20] = "";
 	for (int i = 0; i < arrsize; i++) {
-		strcat_s(temp, arr[i]);
+		strcat(temp, arr[i]);
 	}
 
 	cout << "temp[20] = ";
