@@ -4,7 +4,7 @@
 
 using namespace std;
 
-Time::Time() {
+void Time::Time() {
 	hour = minute = second = 0;
 }
 
