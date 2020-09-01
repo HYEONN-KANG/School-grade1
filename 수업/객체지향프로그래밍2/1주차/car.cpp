@@ -9,7 +9,7 @@ int car::getSpeed() {
 
 void car::setSpeed(int input) {
 	if (input < 0) {
-		cout << "speed °ª ÀÔ·Â ¿¡·¯ ¹ß»ý\n";
+		cout << "speed ê°’ ìž…ë ¥ ì—ëŸ¬ ë°œìƒ\n";
 	}
 	else {
 		speed = input;
@@ -18,7 +18,7 @@ void car::setSpeed(int input) {
 
 void car::setGear(int input) {
 	if (input < 0) {
-		cout << "gear °ª ÀÔ·Â ¿¡·¯ ¹ß»ý\n";
+		cout << "gear ê°’ ìž…ë ¥ ì—ëŸ¬ ë°œìƒ\n";
 	}
 	else {
 		gear = input;
@@ -31,7 +31,7 @@ void car::speedUp() {
 
 void car::setDistance(int input) {
 	if (input < 0) {
-		cout << "distance °ª ÀÔ·Â ¿¡·¯ ¹ß»ý\n";
+		cout << "distance ê°’ ìž…ë ¥ ì—ëŸ¬ ë°œìƒ\n";
 	}
 	else {
 		distance = input;

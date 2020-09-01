@@ -3,31 +3,37 @@
 
 using namespace std;
 
-int main() {
-	const int num = 20;
+int main()
+{
+    const int num = 20;
 
-	int array[num];
+    int array[num];
 
-	for (int i = 0; i < num; i++) {
-		array[i] = rand() % 991 + 10;
-	}
+    for (int i = 0; i < num; i++)
+    {
+        array[i] = rand() % 991 + 10;
+    }
 
-	cout << "·£´ıÀ¸·Î »ı¼ºµÈ 20°³ÀÇ ¼ö´Â: ";
+    cout << "ëœë¤ìœ¼ë¡œ ìƒì„±ëœ 20ê°œì˜ ìˆ˜ëŠ”: ";
 
-	for (int i = 0; i < num; i++) {
-		cout << array[i] << " ";
-	}
+    for (int i = 0; i < num; i++)
+    {
+        cout << array[i] << " ";
+    }
 
-	int input;
-	cout << "\n" << "Ã£À¸·Á´Â ¼ö¸¦ ÀÔ·ÂÇÏ¼¼¿ä: ";
-	cin >> input;
+    int input;
+    cout << "\n"
+         << "ì°¾ìœ¼ë ¤ëŠ” ìˆ˜ë¥¼ ì…ë ¥í•˜ì„¸ìš”: ";
+    cin >> input;
 
-	for (int i = 0; i < num; i++) {
-		if (input == array[i]) {
-			cout << "Ã£À¸·Á´Â ¼öÀÇ index°ªÀº: " << i << " ¹øÂ° ÀÔ´Ï´Ù.\n";
-			break;
-		}
-	}
+    for (int i = 0; i < num; i++)
+    {
+        if (input == array[i])
+        {
+            cout << "ì°¾ìœ¼ë ¤ëŠ” ìˆ˜ì˜ indexê°’ì€: " << i << " ë²ˆì§¸ ì…ë‹ˆë‹¤.\n";
+            break;
+        }
+    }
 
-	return 0;
+    return 0;
 }

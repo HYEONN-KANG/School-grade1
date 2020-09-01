@@ -2,10 +2,11 @@
 #include <Windows.h>
 #include "car.h"
 
-int main() {
+int main()
+{
 	using namespace std;
 
-	car myCar, yourCar; // °´Ã¼ º¯¼ö »ı¼º
+	car myCar, yourCar; // ê°ì²´ ë³€ìˆ˜ ìƒì„±
 
 	// set gear and speed
 	myCar.setSpeed(20);
@@ -15,7 +16,8 @@ int main() {
 	yourCar.setGear(3);
 
 	int time = 0;
-	while (true) {
+	while (true)
+	{
 		Sleep(1000);
 		time++;
 		myCar.setDistance(myCar.getSpeed());
@@ -24,16 +26,15 @@ int main() {
 		myCar.speedUp();
 		yourCar.speedUp();
 
-		if (myCar.getDistance() <= yourCar.getDistance()) {
+		if (myCar.getDistance() <= yourCar.getDistance())
+		{
 			break;
 		}
 	}
 
-	cout << time << " ÃÊ ÈÄ¿¡ yourCar°¡ myCar¸¦ µû¶óÀâ¾Ò½À´Ï´Ù.\n";
-	cout << "myCar ÀÌµ¿°Å¸®: " << myCar.getDistance() <<
-		"\tyourCar ÀÌµ¿°Å¸®: " << yourCar.getDistance() << "\n" <<
-		"myCar speed: " << myCar.getSpeed() <<
-		"\t\tyourCar speed: " << yourCar.getSpeed() << "\n";
+	cout << time << " ì´ˆ í›„ì— yourCarê°€ myCarë¥¼ ë”°ë¼ì¡ì•˜ìŠµë‹ˆë‹¤.\n";
+	cout << "myCar ì´ë™ê±°ë¦¬: " << myCar.getDistance() << "\tyourCar ì´ë™ê±°ë¦¬: " << yourCar.getDistance() << "\n"
+		 << "myCar speed: " << myCar.getSpeed() << "\t\tyourCar speed: " << yourCar.getSpeed() << "\n";
 
 	return 0;
 }

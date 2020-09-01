@@ -5,10 +5,10 @@ using namespace std;
 int main() {
 	const int length = 100;
 	char array[length];
-	cout << "char ¹è¿­À» ÀÔ·ÂÇÏ¼¼¿ä: ";
+	cout << "char ë°°ì—´ì„ ì…ë ¥í•˜ì„¸ìš”: ";
 	cin >> array;
 
-	cout << "°Å²Ù·Î ¹è¿­À» »ı¼ºÇÏ¿´°í ¹è¿­Àº: ";
+	cout << "ê±°ê¾¸ë¡œ ë°°ì—´ì„ ìƒì„±í•˜ì˜€ê³  ë°°ì—´ì€: ";
 	int end = 100;
 	for (int i = 0; i < length; i++) {
 		if (array[i] == NULL) {

@@ -5,7 +5,7 @@ public:
 	int getSpeed();
 	void setSpeed(int);
 	void setGear(int);
-	void speedUp();		// °¡¼ÓÇÏ´Â ÇÔ¼ö, speed+gear
+	void speedUp();		// ê°€ì†í•˜ëŠ” í•¨ìˆ˜, speed+gear
 	void setDistance(int);
 	int getDistance();
 
