@@ -1,126 +1,111 @@
 #include <iostream>
 #include <string>
-
 using namespace std;
 
-class Node
-{
-public:
-    int data;
-    Node *next;
+class StackArray {
+private:
+	int* arr;
+	int fullsize;
+	int size;
+	int t;
 
-    Node(int e)
-    {
-        this->data = e;
-        this->next = NULL;
-    }
+public:
+	StackArray(int sz) {
+		fullsize = sz;
+		arr = new int[fullsize];
+		t = 0;
+		size = 0;
+		for (int i = 0; i < fullsize; i++) {
+			arr[i] = 0;
+		}
+	}
+	int Empty();
+	void empty();
+	int Size();
+	void top();
+	void push(int e);
+	void pop();
 };
 
-class linkedStack
-{
-public:
-    Node *head;
-    Node *tail;
-    int n;
-
-    linkedStack()
-    {
-        this->head = NULL;
-        this->tail = NULL;
-        this->n = 0;
-    }
-
-    int size();
-    bool empty();
-    int top();
-    void push(int e, int sz);
-    int pop();
-};
-
-int main()
-{
-    linkedStack Stack;
-    int t = 0; // t = stack max size
-    cin >> t;
-    int N = 0; // N = instruction count
-    cin >> N;
-
-    int element = 0;
-
-    string s = ""; // input string
-    for (int i = 0; i < N; i++)
-    {
-        cin >> s;
-
-        if (s == "empty")
-        {
-            cout << Stack.empty() << endl;
-        }
-        else if (s == "top")
-        {
-            cout << Stack.top() << endl;
-        }
-        else if (s == "push")
-        {
-            cin >> element;
-            Stack.push(element, t);
-        }
-        else if (s == "pop")
-        {
-            cout << Stack.pop() << endl;
-        }
-    }
-
-    return 0;
+int StackArray::Empty() {
+	return (Size()==0);
 }
 
-int linkedStack::size()
-{
-    return n;
+void StackArray::empty() {
+	if (Empty())
+		cout << 1 << endl;
+	else
+		cout << 0 << endl;
 }
 
-bool linkedStack::empty()
-{
-    return n == 0;
+int StackArray::Size() {
+	return size;
 }
 
-int linkedStack::top()
-{
-    if (empty())
-        return -1;
-    else
-    {
-        return head->data;
-    }
+void StackArray::top() {
+	if (Empty())
+		cout << -1 << endl;
+	else
+	{
+		cout << arr[t] << endl;
+	}
 }
 
-void linkedStack::push(int e, int sz)
-{
-    Node *newNode = new Node(e);
-    if (size() == sz)
-        cout << "FULL" << endl;
-    else if (empty())
-    {
-        head = tail = newNode;
-        n++;
-    }
-    else
-    {
-        newNode->next = head;
-        head = newNode;
-        n++;
-    }
+void StackArray::push(int e) {
+	if (Empty()) {
+		arr[0] = e;
+	}
+	else if (t == fullsize - 1) {
+		cout << "FULL" << endl;
+		return;
+	}
+	else {
+		t++;
+		arr[t] = e;
+	}
+	size++;
 }
 
-int linkedStack::pop()
-{
-    if (empty())
-        return -1;
-    else
-    {
-        Node *temp = head;
-        head = head->next;
-        n--;
-        return temp->data;
-    }
+void StackArray::pop() {
+	if (Empty())
+		cout << -1 << endl;
+	else if (Size() == 1) {
+		cout << arr[t] << endl;
+		arr[t] = 0;
+		size--;
+	}
+	else {
+		cout << arr[t] << endl;
+		t--;
+		arr[t + 1] = 0;
+		size--;
+	}
+
+}
+
+int main() {
+	int t, N;
+	cin >> t >> N;
+
+	StackArray stack(t);
+
+	for (int i = 0; i < N; i++) {
+		string oper;
+		cin >> oper;
+
+		if (oper == "empty") {
+			stack.empty();
+		}
+		else if (oper == "top") {
+			stack.top();
+		}
+		else if (oper == "push") {
+			int e;
+			cin >> e;
+			stack.push(e);
+		}
+		else if (oper == "pop") {
+			stack.pop();
+		}
+	}
 }
